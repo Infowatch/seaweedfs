@@ -1,19 +1,12 @@
 package stats
 
 import (
-	"log"
 	"net"
-	"net/http"
 	"os"
 	"strconv"
 	"strings"
-	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/prometheus/client_golang/prometheus/collectors"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/prometheus/client_golang/prometheus/push"
-	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // Readonly volume types
@@ -242,8 +235,6 @@ func init() {
 	Gather.MustRegister(FilerStoreHistogram)
 	Gather.MustRegister(FilerSyncOffsetGauge)
 	Gather.MustRegister(FilerServerLastSendTsOfSubscribeGauge)
-	Gather.MustRegister(collectors.NewGoCollector())
-	Gather.MustRegister(collectors.NewProcessCollector(collectors.ProcessCollectorOpts{}))
 
 	Gather.MustRegister(VolumeServerRequestCounter)
 	Gather.MustRegister(VolumeServerRequestHistogram)
@@ -260,42 +251,12 @@ func init() {
 	Gather.MustRegister(S3RequestHistogram)
 }
 
-func LoopPushingMetric(name, instance, addr string, intervalSeconds int) {
-	if addr == "" || intervalSeconds == 0 {
-		return
-	}
-
-	glog.V(0).Infof("%s server sends metrics to %s every %d seconds", name, addr, intervalSeconds)
-
-	pusher := push.New(addr, name).Gatherer(Gather).Grouping("instance", instance)
-
-	for {
-		err := pusher.Push()
-		if err != nil && !strings.HasPrefix(err.Error(), "unexpected status code 200") {
-			glog.V(0).Infof("could not push metrics to prometheus push gateway %s: %v", addr, err)
-		}
-		if intervalSeconds <= 0 {
-			intervalSeconds = 15
-		}
-		time.Sleep(time.Duration(intervalSeconds) * time.Second)
-	}
-}
-
 func JoinHostPort(host string, port int) string {
 	portStr := strconv.Itoa(port)
 	if strings.HasPrefix(host, "[") && strings.HasSuffix(host, "]") {
 		return host + ":" + portStr
 	}
 	return net.JoinHostPort(host, portStr)
-}
-
-
-func StartMetricsServer(ip string, port int) {
-	if port == 0 {
-		return
-	}
-	http.Handle("/metrics", promhttp.HandlerFor(Gather, promhttp.HandlerOpts{}))
-	log.Fatal(http.ListenAndServe(JoinHostPort(ip, port), nil))
 }
 
 func SourceName(port uint32) string {

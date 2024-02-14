@@ -3,16 +3,11 @@ package storage
 import (
 	"fmt"
 	"io"
-	"path/filepath"
-	"strings"
 	"sync"
 	"sync/atomic"
 
 	"github.com/Infowatch/seaweedfs/weed/pb"
-	"github.com/Infowatch/seaweedfs/weed/storage/volume_info"
 	"github.com/Infowatch/seaweedfs/weed/util"
-
-	"google.golang.org/grpc"
 
 	"github.com/Infowatch/seaweedfs/weed/glog"
 	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
@@ -56,7 +51,7 @@ type ReadOption struct {
  */
 type Store struct {
 	MasterAddress       pb.ServerAddress
-	grpcDialOption      grpc.DialOption
+	grpcDialOption      any
 	volumeSizeLimit     uint64 // read from the master
 	Ip                  string
 	Port                int
@@ -79,7 +74,7 @@ func (s *Store) String() (str string) {
 	return
 }
 
-func NewStore(grpcDialOption grpc.DialOption, ip string, port int, grpcPort int, publicUrl string, dirnames []string, maxVolumeCounts []int32,
+func NewStore(grpcDialOption any, ip string, port int, grpcPort int, publicUrl string, dirnames []string, maxVolumeCounts []int32,
 	minFreeSpaces []util.MinFreeSpace, idxFolder string, needleMapKind NeedleMapKind, diskTypes []DiskType, ldbTimeout int64) (s *Store) {
 	s = &Store{grpcDialOption: grpcDialOption, Port: port, Ip: ip, GrpcPort: grpcPort, PublicUrl: publicUrl, NeedleMapKind: needleMapKind}
 	s.Locations = make([]*DiskLocation, 0)
@@ -547,31 +542,6 @@ func (s *Store) DeleteVolume(i needle.VolumeId, onlyEmpty bool) error {
 		} else {
 			glog.Errorf("DeleteVolume %d: %v", i, err)
 		}
-	}
-
-	return fmt.Errorf("volume %d not found on disk", i)
-}
-
-func (s *Store) ConfigureVolume(i needle.VolumeId, replication string) error {
-
-	for _, location := range s.Locations {
-		fileInfo, found := location.LocateVolume(i)
-		if !found {
-			continue
-		}
-		// load, modify, save
-		baseFileName := strings.TrimSuffix(fileInfo.Name(), filepath.Ext(fileInfo.Name()))
-		vifFile := filepath.Join(location.Directory, baseFileName+".vif")
-		volumeInfo, _, _, err := volume_info.MaybeLoadVolumeInfo(vifFile)
-		if err != nil {
-			return fmt.Errorf("volume %d failed to load vif: %v", i, err)
-		}
-		volumeInfo.Replication = replication
-		err = volume_info.SaveVolumeInfo(vifFile, volumeInfo)
-		if err != nil {
-			return fmt.Errorf("volume %d failed to save vif: %v", i, err)
-		}
-		return nil
 	}
 
 	return fmt.Errorf("volume %d not found on disk", i)

@@ -4,8 +4,6 @@ import (
 	"github.com/Infowatch/seaweedfs/weed/glog"
 	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 	"github.com/Infowatch/seaweedfs/weed/storage/backend"
-	_ "github.com/Infowatch/seaweedfs/weed/storage/backend/rclone_backend"
-	_ "github.com/Infowatch/seaweedfs/weed/storage/backend/s3_backend"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 	"github.com/Infowatch/seaweedfs/weed/storage/types"
 	"github.com/Infowatch/seaweedfs/weed/storage/volume_info"

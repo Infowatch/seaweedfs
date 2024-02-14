@@ -1,15 +1,12 @@
 package storage
 
 import (
-	"context"
 	"fmt"
-	"github.com/Infowatch/seaweedfs/weed/pb"
 	"io"
 	"os"
 
-	"google.golang.org/grpc"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 
-	"github.com/Infowatch/seaweedfs/weed/operation"
 	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 	"github.com/Infowatch/seaweedfs/weed/storage/idx"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
@@ -63,54 +60,8 @@ update needle map when receiving new .dat bytes. But seems not necessary now.)
 
 */
 
-func (v *Volume) IncrementalBackup(volumeServer pb.ServerAddress, grpcDialOption grpc.DialOption) error {
-
-	startFromOffset, _, _ := v.FileStat()
-	appendAtNs, err := v.findLastAppendAtNs()
-	if err != nil {
-		return err
-	}
-
-	writeOffset := int64(startFromOffset)
-
-	err = operation.WithVolumeServerClient(false, volumeServer, grpcDialOption, func(client volume_server_pb.VolumeServerClient) error {
-
-		stream, err := client.VolumeIncrementalCopy(context.Background(), &volume_server_pb.VolumeIncrementalCopyRequest{
-			VolumeId: uint32(v.Id),
-			SinceNs:  appendAtNs,
-		})
-		if err != nil {
-			return err
-		}
-
-		for {
-			resp, recvErr := stream.Recv()
-			if recvErr != nil {
-				if recvErr == io.EOF {
-					break
-				} else {
-					return recvErr
-				}
-			}
-
-			n, writeErr := v.DataBackend.WriteAt(resp.FileContent, writeOffset)
-			if writeErr != nil {
-				return writeErr
-			}
-			writeOffset += int64(n)
-		}
-
-		return nil
-
-	})
-
-	if err != nil {
-		return err
-	}
-
-	// add to needle map
-	return ScanVolumeFileFrom(v.Version(), v.DataBackend, int64(startFromOffset), &VolumeFileScanner4GenIdx{v: v})
-
+func (v *Volume) IncrementalBackup(volumeServer pb.ServerAddress, grpcDialOption any) error {
+	return fmt.Errorf("IncrementalBackup operation is not implemented")
 }
 
 func (v *Volume) findLastAppendAtNs() (uint64, error) {

@@ -1,7 +1,6 @@
 package backend
 
 import (
-	"github.com/Infowatch/seaweedfs/weed/util"
 	"io"
 	"os"
 	"strings"
@@ -43,37 +42,6 @@ var (
 	BackendStorageFactories = make(map[StorageType]BackendStorageFactory)
 	BackendStorages         = make(map[string]BackendStorage)
 )
-
-// used by master to load remote storage configurations
-func LoadConfiguration(config *util.ViperProxy) {
-
-	StorageBackendPrefix := "storage.backend"
-
-	for backendTypeName := range config.GetStringMap(StorageBackendPrefix) {
-		backendStorageFactory, found := BackendStorageFactories[StorageType(backendTypeName)]
-		if !found {
-			glog.Fatalf("backend storage type %s not found", backendTypeName)
-		}
-		for backendStorageId := range config.GetStringMap(StorageBackendPrefix + "." + backendTypeName) {
-			if !config.GetBool(StorageBackendPrefix + "." + backendTypeName + "." + backendStorageId + ".enabled") {
-				continue
-			}
-			if _, found := BackendStorages[backendTypeName+"."+backendStorageId]; found {
-				continue
-			}
-			backendStorage, buildErr := backendStorageFactory.BuildStorage(config,
-				StorageBackendPrefix+"."+backendTypeName+"."+backendStorageId+".", backendStorageId)
-			if buildErr != nil {
-				glog.Fatalf("fail to create backend storage %s.%s", backendTypeName, backendStorageId)
-			}
-			BackendStorages[backendTypeName+"."+backendStorageId] = backendStorage
-			if backendStorageId == "default" {
-				BackendStorages[backendTypeName] = backendStorage
-			}
-		}
-	}
-
-}
 
 // used by volume server to receive remote storage configurations from master
 func LoadFromPbStorageBackends(storageBackends []*master_pb.StorageBackend) {

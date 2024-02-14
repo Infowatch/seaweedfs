@@ -2,14 +2,12 @@ package needle
 
 import (
 	"bytes"
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"strconv"
 	"strings"
 	"time"
 
-	"github.com/Infowatch/seaweedfs/weed/images"
 	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
@@ -50,74 +48,10 @@ func (n *Needle) String() (str string) {
 }
 
 func CreateNeedleFromRequest(r *http.Request, fixJpgOrientation bool, sizeLimit int64, bytesBuffer *bytes.Buffer) (n *Needle, originalSize int, contentMd5 string, e error) {
-	n = new(Needle)
-	pu, e := ParseUpload(r, sizeLimit, bytesBuffer)
-	if e != nil {
-		return
-	}
-	n.Data = pu.Data
-	originalSize = pu.OriginalDataSize
-	n.LastModified = pu.ModifiedTime
-	n.Ttl = pu.Ttl
-	contentMd5 = pu.ContentMd5
-
-	if len(pu.FileName) < 256 {
-		n.Name = []byte(pu.FileName)
-		n.SetHasName()
-	}
-	if len(pu.MimeType) < 256 {
-		n.Mime = []byte(pu.MimeType)
-		n.SetHasMime()
-	}
-	if len(pu.PairMap) != 0 {
-		trimmedPairMap := make(map[string]string)
-		for k, v := range pu.PairMap {
-			trimmedPairMap[k[len(PairNamePrefix):]] = v
-		}
-
-		pairs, _ := json.Marshal(trimmedPairMap)
-		if len(pairs) < 65536 {
-			n.Pairs = pairs
-			n.PairsSize = uint16(len(pairs))
-			n.SetHasPairs()
-		}
-	}
-	if pu.IsGzipped {
-		// println(r.URL.Path, "is set to compressed", pu.FileName, pu.IsGzipped, "dataSize", pu.OriginalDataSize)
-		n.SetIsCompressed()
-	}
-	if n.LastModified == 0 {
-		n.LastModified = uint64(time.Now().Unix())
-	}
-	n.SetHasLastModifiedDate()
-	if n.Ttl != EMPTY_TTL {
-		n.SetHasTtl()
-	}
-
-	if pu.IsChunkedFile {
-		n.SetIsChunkManifest()
-	}
-
-	if fixJpgOrientation {
-		loweredName := strings.ToLower(pu.FileName)
-		if pu.MimeType == "image/jpeg" || strings.HasSuffix(loweredName, ".jpg") || strings.HasSuffix(loweredName, ".jpeg") {
-			n.Data = images.FixJpgOrientation(n.Data)
-		}
-	}
-
-	n.Checksum = NewCRC(n.Data)
-
-	commaSep := strings.LastIndex(r.URL.Path, ",")
-	dotSep := strings.LastIndex(r.URL.Path, ".")
-	fid := r.URL.Path[commaSep+1:]
-	if dotSep > 0 {
-		fid = r.URL.Path[commaSep+1 : dotSep]
-	}
-
-	e = n.ParsePath(fid)
-
+	e = fmt.Errorf("CreateNeedleFromRequest is not implemented")
 	return
 }
+
 func (n *Needle) ParsePath(fid string) (err error) {
 	length := len(fid)
 	if length <= CookieSize*2 {

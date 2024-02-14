@@ -1,9 +1,7 @@
 package storage
 
 import (
-	"context"
 	"fmt"
-	"io"
 	"os"
 	"sync"
 	"time"
@@ -14,9 +12,7 @@ import (
 	"github.com/klauspost/reedsolomon"
 
 	"github.com/Infowatch/seaweedfs/weed/glog"
-	"github.com/Infowatch/seaweedfs/weed/operation"
 	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
-	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 	"github.com/Infowatch/seaweedfs/weed/stats"
 	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
@@ -251,31 +247,7 @@ func (s *Store) cachedLookupEcShardLocations(ecVolume *erasure_coding.EcVolume) 
 
 	glog.V(3).Infof("lookup and cache ec volume %d locations", ecVolume.VolumeId)
 
-	err = operation.WithMasterServerClient(false, s.MasterAddress, s.grpcDialOption, func(masterClient master_pb.SeaweedClient) error {
-		req := &master_pb.LookupEcVolumeRequest{
-			VolumeId: uint32(ecVolume.VolumeId),
-		}
-		resp, err := masterClient.LookupEcVolume(context.Background(), req)
-		if err != nil {
-			return fmt.Errorf("lookup ec volume %d: %v", ecVolume.VolumeId, err)
-		}
-		if len(resp.ShardIdLocations) < erasure_coding.DataShardsCount {
-			return fmt.Errorf("only %d shards found but %d required", len(resp.ShardIdLocations), erasure_coding.DataShardsCount)
-		}
-
-		ecVolume.ShardLocationsLock.Lock()
-		for _, shardIdLocations := range resp.ShardIdLocations {
-			shardId := erasure_coding.ShardId(shardIdLocations.ShardId)
-			delete(ecVolume.ShardLocations, shardId)
-			for _, loc := range shardIdLocations.Locations {
-				ecVolume.ShardLocations[shardId] = append(ecVolume.ShardLocations[shardId], pb.NewServerAddressFromLocation(loc))
-			}
-		}
-		ecVolume.ShardLocationsRefreshTime = time.Now()
-		ecVolume.ShardLocationsLock.Unlock()
-
-		return nil
-	})
+	err = fmt.Errorf("cachedLookupEcShardLocations operation is not implemented")
 	return
 }
 
@@ -298,42 +270,7 @@ func (s *Store) readRemoteEcShardInterval(sourceDataNodes []pb.ServerAddress, ne
 }
 
 func (s *Store) doReadRemoteEcShardInterval(sourceDataNode pb.ServerAddress, needleId types.NeedleId, vid needle.VolumeId, shardId erasure_coding.ShardId, buf []byte, offset int64) (n int, is_deleted bool, err error) {
-
-	err = operation.WithVolumeServerClient(false, sourceDataNode, s.grpcDialOption, func(client volume_server_pb.VolumeServerClient) error {
-
-		// copy data slice
-		shardReadClient, err := client.VolumeEcShardRead(context.Background(), &volume_server_pb.VolumeEcShardReadRequest{
-			VolumeId: uint32(vid),
-			ShardId:  uint32(shardId),
-			Offset:   offset,
-			Size:     int64(len(buf)),
-			FileKey:  uint64(needleId),
-		})
-		if err != nil {
-			return fmt.Errorf("failed to start reading ec shard %d.%d from %s: %v", vid, shardId, sourceDataNode, err)
-		}
-
-		for {
-			resp, receiveErr := shardReadClient.Recv()
-			if receiveErr == io.EOF {
-				break
-			}
-			if receiveErr != nil {
-				return fmt.Errorf("receiving ec shard %d.%d from %s: %v", vid, shardId, sourceDataNode, receiveErr)
-			}
-			if resp.IsDeleted {
-				is_deleted = true
-			}
-			copy(buf[n:n+len(resp.Data)], resp.Data)
-			n += len(resp.Data)
-		}
-
-		return nil
-	})
-	if err != nil {
-		return 0, is_deleted, fmt.Errorf("read ec shard %d.%d from %s: %v", vid, shardId, sourceDataNode, err)
-	}
-
+	err = fmt.Errorf("doReadRemoteEcShardInterval operation is not implemented")
 	return
 }
 

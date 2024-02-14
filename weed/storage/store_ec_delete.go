@@ -1,13 +1,11 @@
 package storage
 
 import (
-	"context"
 	"fmt"
+
 	"github.com/Infowatch/seaweedfs/weed/pb"
 
 	"github.com/Infowatch/seaweedfs/weed/glog"
-	"github.com/Infowatch/seaweedfs/weed/operation"
-	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 	"github.com/Infowatch/seaweedfs/weed/storage/types"
@@ -88,19 +86,5 @@ func (s *Store) doDeleteNeedleFromRemoteEcShardServers(shardId erasure_coding.Sh
 
 func (s *Store) doDeleteNeedleFromRemoteEcShard(sourceDataNode pb.ServerAddress, vid needle.VolumeId, collection string, version needle.Version, needleId types.NeedleId) error {
 
-	return operation.WithVolumeServerClient(false, sourceDataNode, s.grpcDialOption, func(client volume_server_pb.VolumeServerClient) error {
-
-		// copy data slice
-		_, err := client.VolumeEcBlobDelete(context.Background(), &volume_server_pb.VolumeEcBlobDeleteRequest{
-			VolumeId:   uint32(vid),
-			Collection: collection,
-			FileKey:    uint64(needleId),
-			Version:    uint32(version),
-		})
-		if err != nil {
-			return fmt.Errorf("failed to delete from ec shard %d on %s: %v", vid, sourceDataNode, err)
-		}
-		return nil
-	})
-
+	return fmt.Errorf("doDeleteNeedleFromRemoteEcShard operation is not implemented")
 }
