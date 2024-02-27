@@ -94,8 +94,14 @@ func (mm *mapMetric) MaybeSetMaxFileKey(key NeedleId) {
 func needleMapMetricFromIndexFile(r *os.File, mm *mapMetric) error {
 	var bf *boom.BloomFilter
 	buf := make([]byte, NeedleIdSize)
+	var delids map[NeedleId]struct{}
 	err := reverseWalkIndexFile(r, func(entryCount int64) {
 		bf = boom.NewBloomFilter(uint(entryCount), 0.001)
+		if entryCount < 100_000 {
+			// Специально не делаем карту с размером, так как
+			// расчитываем, что удалённых файлов очень мало
+			delids = make(map[NeedleId]struct{})
+		}
 	}, func(key NeedleId, offset Offset, size Size) error {
 
 		mm.MaybeSetMaxFileKey(key)
@@ -105,17 +111,33 @@ func needleMapMetricFromIndexFile(r *os.File, mm *mapMetric) error {
 		}
 
 		mm.FileCounter++
-		if !bf.TestAndAdd(buf) {
-			// if !size.IsValid(), then this file is deleted already
-			if !size.IsValid() {
+
+		if delids == nil {
+			if !bf.TestAndAdd(buf) {
+				// if !size.IsValid(), then this file is deleted already
+				if !size.IsValid() {
+					mm.DeletionCounter++
+				}
+			} else {
+				// deleted file
 				mm.DeletionCounter++
+				if size.IsValid() {
+					// previously already deleted file
+					mm.DeletionByteCounter += uint64(size)
+				}
 			}
 		} else {
-			// deleted file
-			mm.DeletionCounter++
 			if size.IsValid() {
-				// previously already deleted file
-				mm.DeletionByteCounter += uint64(size)
+				if _, ok := delids[key]; ok {
+					// deleted file
+					mm.DeletionCounter++
+					// previously already deleted file
+					mm.DeletionByteCounter += uint64(size)
+				}
+			} else {
+				// deleted file stub
+				mm.DeletionCounter++
+				delids[key] = struct{}{}
 			}
 		}
 		return nil
