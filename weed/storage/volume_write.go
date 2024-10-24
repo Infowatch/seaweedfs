@@ -143,31 +143,48 @@ func (v *Volume) writeNeedle2(n *needle.Needle, checkCookie bool, fsync bool) (o
 
 func (v *Volume) doWriteRequest(n *needle.Needle, checkCookie bool) (offset uint64, size Size, isUnchanged bool, err error) {
 	// glog.V(4).Infof("writing needle %s", needle.NewFileIdFromNeedle(v.Id, n).String())
-	if v.isFileUnchanged(n) {
-		size = Size(n.DataSize)
-		isUnchanged = true
-		return
-	}
 
-	// check whether existing needle cookie matches
-	nv, ok := v.nm.Get(n.Id)
-	if ok {
-		existingNeedle, _, _, existingNeedleReadErr := needle.ReadNeedleHeader(v.DataBackend, v.Version(), nv.Offset.ToActualOffset())
-		if existingNeedleReadErr != nil {
-			err = fmt.Errorf("reading existing needle: %v", existingNeedleReadErr)
+	pushNeedle := false
+	var existingOffset uint64
+
+	if checkCookie {
+		if v.isFileUnchanged(n) {
+			size = Size(n.DataSize)
+			isUnchanged = true
 			return
 		}
-		if n.Cookie == 0 && !checkCookie {
-			// this is from batch deletion, and read back again when tailing a remote volume
-			// which only happens when checkCookie == false and fsync == false
-			n.Cookie = existingNeedle.Cookie
+
+		// check whether existing needle cookie matches
+		nv, ok := v.nm.Get(n.Id)
+		if ok {
+			existingNeedle, _, _, existingNeedleReadErr := needle.ReadNeedleHeader(v.DataBackend, v.Version(), nv.Offset.ToActualOffset())
+			if existingNeedleReadErr != nil {
+				err = fmt.Errorf("reading existing needle: %v", existingNeedleReadErr)
+				return
+			}
+			if n.Cookie == 0 && !checkCookie {
+				// this is from batch deletion, and read back again when tailing a remote volume
+				// which only happens when checkCookie == false and fsync == false
+				n.Cookie = existingNeedle.Cookie
+			}
+			if existingNeedle.Cookie != n.Cookie {
+				glog.V(0).Infof("write cookie mismatch: existing %s, new %s",
+					needle.NewFileIdFromNeedle(v.Id, existingNeedle), needle.NewFileIdFromNeedle(v.Id, n))
+				err = fmt.Errorf("mismatching cookie %x", n.Cookie)
+				return
+			}
+
+			existingOffset = uint64(nv.Offset.ToActualOffset())
 		}
-		if existingNeedle.Cookie != n.Cookie {
-			glog.V(0).Infof("write cookie mismatch: existing %s, new %s",
-				needle.NewFileIdFromNeedle(v.Id, existingNeedle), needle.NewFileIdFromNeedle(v.Id, n))
-			err = fmt.Errorf("mismatching cookie %x", n.Cookie)
-			return
+
+		if !ok {
+			// Make new index record
+			pushNeedle = true
 		}
+
+	} else {
+		// Always overwrite index record if we do explicit append
+		pushNeedle = true
 	}
 
 	// append to dat file
@@ -180,7 +197,7 @@ func (v *Volume) doWriteRequest(n *needle.Needle, checkCookie bool) (offset uint
 	v.lastAppendAtNs = n.AppendAtNs
 
 	// add to needle map
-	if !ok || uint64(nv.Offset.ToActualOffset()) < offset {
+	if pushNeedle || existingOffset < offset {
 		if err = v.nm.Put(n.Id, ToOffset(int64(offset)), n.Size); err != nil {
 			glog.V(4).Infof("failed to save in needle map %d: %v", n.Id, err)
 		}
