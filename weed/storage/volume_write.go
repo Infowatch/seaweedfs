@@ -162,11 +162,7 @@ func (v *Volume) doWriteRequest(n *needle.Needle, checkCookie bool) (offset uint
 				err = fmt.Errorf("reading existing needle: %v", existingNeedleReadErr)
 				return
 			}
-			if n.Cookie == 0 && !checkCookie {
-				// this is from batch deletion, and read back again when tailing a remote volume
-				// which only happens when checkCookie == false and fsync == false
-				n.Cookie = existingNeedle.Cookie
-			}
+
 			if existingNeedle.Cookie != n.Cookie {
 				glog.V(0).Infof("write cookie mismatch: existing %s, new %s",
 					needle.NewFileIdFromNeedle(v.Id, existingNeedle), needle.NewFileIdFromNeedle(v.Id, n))
@@ -258,7 +254,7 @@ func (v *Volume) doDeleteRequest(n *needle.Needle, erase bool) (Size, error) {
 			if erase {
 				// Оставляем заголовок Needle выписанным в том, чтобы он прходил все проверки целостности
 				zero := make([]byte, needle.NeedleBodyLength(nv.Size, v.Version()))
-				_, err = v.DataBackend.WriteAt(zero, nv.Offset.ToActualOffset() + NeedleHeaderSize)
+				_, err = v.DataBackend.WriteAt(zero, nv.Offset.ToActualOffset()+NeedleHeaderSize)
 				v.checkReadWriteError(err)
 				if err != nil {
 					return size, err
