@@ -28,6 +28,9 @@ func Uint64ToNeedleId(needleId uint64) NeedleId {
 }
 
 func BytesToNeedleId(bytes []byte) NeedleId {
+	if bytes == nil {
+		return NeedleIdEmpty
+	}
 	return NeedleId(util.BytesToUint64(bytes))
 }
 
