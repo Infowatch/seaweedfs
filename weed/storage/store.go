@@ -1,6 +1,7 @@
 package storage
 
 import (
+	"errors"
 	"fmt"
 	"io"
 	"sync"
@@ -21,6 +22,8 @@ import (
 const (
 	MAX_TTL_VOLUME_REMOVAL_DELAY = 10 // 10 minutes
 )
+
+var ErrorLowDiskSpace = errors.New("low disk space")
 
 type ReadOption struct {
 	// request
@@ -176,7 +179,7 @@ func (s *Store) addVolume(vid needle.VolumeId, collection string, needleMapKind 
 			return err
 		}
 	}
-	return fmt.Errorf("No more free space left")
+	return ErrorLowDiskSpace
 }
 
 func (s *Store) VolumeInfos() (allStats []*VolumeInfo) {
@@ -418,7 +421,7 @@ func (s *Store) DeleteVolumeNeedle(i needle.VolumeId, n *needle.Needle) (Size, e
 func (s *Store) DeleteVolumeNeedleWithErase(i needle.VolumeId, n *needle.Needle) (Size, error) {
 	if v := s.findVolume(i); v != nil {
 		if v.location.isDiskSpaceLow {
-			return 0, fmt.Errorf("volume %d is low disk space", i)
+			return 0, fmt.Errorf("%w: volume %d", ErrorLowDiskSpace, i)
 		}
 		return v.deleteNeedle2(n, true)
 	}
