@@ -4,11 +4,12 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"os"
+
 	"github.com/Infowatch/seaweedfs/weed/glog"
 	"github.com/Infowatch/seaweedfs/weed/storage/backend"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 	. "github.com/Infowatch/seaweedfs/weed/storage/types"
-	"os"
 )
 
 var ErrorNotFound = errors.New("not found")
@@ -113,7 +114,7 @@ func (v *Volume) syncWrite(n *needle.Needle, checkCookie bool) (offset uint64, s
 	defer v.dataFileAccessLock.Unlock()
 
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(actualSize) {
-		err = fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.nm.ContentSize())
+		err = fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 		return
 	}
 
@@ -215,7 +216,7 @@ func (v *Volume) syncDelete(n *needle.Needle, erase bool) (Size, error) {
 	}
 
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(actualSize) {
-		err := fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.nm.ContentSize())
+		err := fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 		return 0, err
 	}
 
@@ -303,7 +304,7 @@ func (v *Volume) startWorker() {
 				}
 				if MaxPossibleVolumeSize < v.ContentSize()+uint64(currentBytesToWrite+request.ActualSize) {
 					request.Complete(0, 0, false,
-						fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.ContentSize()))
+						fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.ContentSize()))
 					break
 				}
 				currentRequests = append(currentRequests, request)
@@ -365,7 +366,7 @@ func (v *Volume) WriteNeedleBlob(needleId NeedleId, needleBlob []byte, size Size
 	defer v.dataFileAccessLock.Unlock()
 
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(len(needleBlob)) {
-		return fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.nm.ContentSize())
+		return fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 	}
 
 	appendAtNs := needle.GetAppendAtNs(v.lastAppendAtNs)
