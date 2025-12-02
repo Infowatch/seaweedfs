@@ -397,8 +397,7 @@ func (s *Store) WriteVolumeNeedle(i needle.VolumeId, n *needle.Needle, checkCook
 
 func (s *Store) SyncVolume(i needle.VolumeId) error {
 	if v := s.findVolume(i); v != nil {
-		v.SyncToDisk()
-		return nil
+		return v.SyncToDisk()
 	}
 	glog.V(0).Infoln("volume", i, "not found!")
 	return fmt.Errorf("volume %d not found on %s:%d", i, s.Ip, s.Port)

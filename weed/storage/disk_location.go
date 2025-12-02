@@ -10,13 +10,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/Infowatch/seaweedfs/weed/glog"
 	"github.com/Infowatch/seaweedfs/weed/stats"
 	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 	"github.com/Infowatch/seaweedfs/weed/storage/types"
 	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/google/uuid"
 )
 
 type DiskLocation struct {
@@ -37,6 +37,10 @@ type DiskLocation struct {
 	isDiskSpaceLow bool
 	closeCh        chan struct{}
 }
+
+const (
+	checkDiskSpaceInterval = 5 * time.Second
+)
 
 func GenerateDirUuid(dir string) (dirUuidString string, err error) {
 	glog.V(1).Infof("Getting uuid of volume directory:%s", dir)
@@ -88,7 +92,7 @@ func NewDiskLocation(dir string, maxVolumeCount int32, minFreeSpace util.MinFree
 			select {
 			case <-location.closeCh:
 				return
-			case <-time.After(time.Minute):
+			case <-time.After(checkDiskSpaceInterval):
 				location.CheckDiskSpace()
 			}
 		}
