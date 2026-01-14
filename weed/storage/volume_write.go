@@ -15,6 +15,7 @@ import (
 var ErrorNotFound = errors.New("not found")
 var ErrorDeleted = errors.New("already deleted")
 var ErrorSizeMismatch = errors.New("size mismatch")
+var ErrNotReady = errors.New("not ready")
 
 func (v *Volume) checkReadWriteError(err error) {
 	if err == nil {
