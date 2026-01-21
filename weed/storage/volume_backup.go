@@ -18,6 +18,10 @@ func (v *Volume) GetVolumeSyncStatus() *volume_server_pb.VolumeSyncStatusRespons
 	v.dataFileAccessLock.RLock()
 	defer v.dataFileAccessLock.RUnlock()
 
+	if v.nm == nil || v.DataBackend == nil {
+		return nil
+	}
+
 	var syncStatus = &volume_server_pb.VolumeSyncStatusResponse{}
 	if datSize, _, err := v.DataBackend.GetStat(); err == nil {
 		syncStatus.TailOffset = uint64(datSize)

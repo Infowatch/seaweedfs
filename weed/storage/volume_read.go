@@ -92,6 +92,11 @@ func (v *Volume) readNeedle(n *needle.Needle, readOption *ReadOption, onReadSize
 func (v *Volume) readNeedleMetaAt(n *needle.Needle, offset int64, size int32) (err error) {
 	v.dataFileAccessLock.RLock()
 	defer v.dataFileAccessLock.RUnlock()
+
+	if v.nm == nil || v.DataBackend == nil {
+		return ErrNotReady
+	}
+
 	// read deleted needle meta data
 	if size < 0 {
 		size = 0
@@ -116,6 +121,9 @@ func (v *Volume) readNeedleDataInto(n *needle.Needle, readOption *ReadOption, wr
 
 	if readOption.HasSlowRead {
 		v.dataFileAccessLock.RLock()
+	}
+	if v.nm == nil || v.DataBackend == nil {
+		return ErrNotReady
 	}
 	nv, ok := v.nm.Get(n.Id)
 	if readOption.HasSlowRead {
@@ -156,6 +164,9 @@ func (v *Volume) readNeedleDataInto(n *needle.Needle, readOption *ReadOption, wr
 		// possibly re-read needle offset if volume is compacted
 		if readOption.VolumeRevision != v.SuperBlock.CompactionRevision {
 			// the volume is compacted
+			if v.nm == nil || v.DataBackend == nil {
+				return ErrNotReady
+			}
 			nv, ok = v.nm.Get(n.Id)
 			if !ok || nv.Offset.IsZero() {
 				if readOption.HasSlowRead {
