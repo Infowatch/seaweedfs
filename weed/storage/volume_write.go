@@ -32,6 +32,9 @@ func (v *Volume) checkReadWriteError(err error) {
 // isFileUnchanged checks whether this needle to write is same as last one.
 // It requires serialized access in the same volume.
 func (v *Volume) isFileUnchanged(n *needle.Needle) bool {
+	if v.nm == nil || v.DataBackend == nil {
+		return false
+	}
 	if v.Ttl.String() != "" {
 		return false
 	}
@@ -113,7 +116,10 @@ func (v *Volume) syncWrite(n *needle.Needle, checkCookie bool) (offset uint64, s
 
 	v.dataFileAccessLock.Lock()
 	defer v.dataFileAccessLock.Unlock()
-
+	if v.nm == nil {
+		err = ErrNotReady
+		return
+	}
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(actualSize) {
 		err = fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 		return
@@ -155,7 +161,9 @@ func (v *Volume) doWriteRequest(n *needle.Needle, checkCookie bool) (offset uint
 			isUnchanged = true
 			return
 		}
-
+		if v.nm == nil || v.DataBackend == nil {
+			return 0, -1, false, ErrNotReady
+		}
 		// check whether existing needle cookie matches
 		nv, ok := v.nm.Get(n.Id)
 		if ok {
@@ -246,6 +254,9 @@ func (v *Volume) deleteNeedle2(n *needle.Needle, erase bool) (Size, error) {
 
 func (v *Volume) doDeleteRequest(n *needle.Needle, erase bool) (Size, error) {
 	glog.V(4).Infof("delete needle %s", needle.NewFileIdFromNeedle(v.Id, n).String())
+	if v.nm == nil || v.DataBackend == nil {
+		return -1, ErrNotReady
+	}
 	nv, ok := v.nm.Get(n.Id)
 	// fmt.Println("key", n.Id, "volume offset", nv.Offset, "data_size", n.Size, "cached size", nv.Size)
 	if ok && nv.Size.IsValid() {
@@ -366,6 +377,9 @@ func (v *Volume) WriteNeedleBlob(needleId NeedleId, needleBlob []byte, size Size
 	v.dataFileAccessLock.Lock()
 	defer v.dataFileAccessLock.Unlock()
 
+	if v.nm == nil {
+		return ErrNotReady
+	}
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(len(needleBlob)) {
 		return fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 	}
