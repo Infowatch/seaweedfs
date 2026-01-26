@@ -7,6 +7,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/klauspost/reedsolomon v1.12.1
 	github.com/prometheus/client_golang v1.18.0
+	github.com/shirou/gopsutil/v3 v3.23.12
 	github.com/syndtr/goleveldb v1.0.0
 	github.com/tylertreat/BoomFilters v0.0.0-20210315201527-1a82519a3e43
 	golang.org/x/exp v0.0.0-20240213143201-ec583247a57a
@@ -19,14 +20,16 @@ require (
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/d4l3k/messagediff v1.2.1 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
+	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.6 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/onsi/ginkgo v1.16.5 // indirect
 	github.com/onsi/gomega v1.27.1 // indirect
+	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/prometheus/client_model v0.5.0 // indirect
 	github.com/prometheus/common v0.45.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
+	github.com/yusufpapurcu/wmi v1.2.3 // indirect
 	golang.org/x/net v0.21.0 // indirect
 )
