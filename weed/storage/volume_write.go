@@ -281,7 +281,7 @@ func (v *Volume) startWorker() {
 				}
 				if MaxPossibleVolumeSize < v.ContentSize()+uint64(currentBytesToWrite+request.ActualSize) {
 					request.Complete(0, 0, false,
-						fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.ContentSize()))
+						fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.ContentSize()))
 					break
 				}
 				currentRequests = append(currentRequests, request)
@@ -343,7 +343,7 @@ func (v *Volume) WriteNeedleBlob(needleId NeedleId, needleBlob []byte, size Size
 	defer v.dataFileAccessLock.Unlock()
 
 	if MaxPossibleVolumeSize < v.nm.ContentSize()+uint64(len(needleBlob)) {
-		return fmt.Errorf("volume size limit %d exceeded! current size is %d", MaxPossibleVolumeSize, v.nm.ContentSize())
+		return fmt.Errorf("%w: volume size limit %d exceeded! current size is %d", ErrorLowDiskSpace, MaxPossibleVolumeSize, v.nm.ContentSize())
 	}
 
 	nv, ok := v.nm.Get(needleId)

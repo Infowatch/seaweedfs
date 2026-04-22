@@ -1,6 +1,7 @@
 package storage
 
 import (
+	"errors"
 	"fmt"
 	"io"
 	"path/filepath"
@@ -28,6 +29,8 @@ const (
 	MAX_TTL_VOLUME_REMOVAL_DELAY = 10 // 10 minutes
 	HEARTBEAT_CHAN_SIZE          = 1024
 )
+
+var ErrorLowDiskSpace = errors.New("low disk space")
 
 type ReadOption struct {
 	// request
@@ -286,7 +289,7 @@ func (s *Store) addVolume(vid needle.VolumeId, collection string, needleMapKind 
 			return err
 		}
 	}
-	return fmt.Errorf("No more free space left")
+	return ErrorLowDiskSpace
 }
 
 // hasFreeDiskLocation checks if a disk location has free space
