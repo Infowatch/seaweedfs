@@ -435,6 +435,10 @@ func (scanner *VolumeFileScanner4Vacuum) VisitNeedle(n *needle.Needle, offset in
 	if n.HasTtl() && scanner.now >= n.LastModified+uint64(scanner.v.Ttl.Minutes()*60) {
 		return nil
 	}
+	if scanner.v.nm == nil || scanner.v.DataBackend == nil {
+		return ErrNotReady
+	}
+
 	nv, ok := scanner.v.nm.Get(n.Id)
 	glog.V(4).Infoln("needle expected offset ", offset, "ok", ok, "nv", nv)
 	if ok && nv.Offset.ToActualOffset() == offset && nv.Size > 0 && nv.Size.IsValid() {

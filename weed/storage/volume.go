@@ -116,7 +116,7 @@ func (v *Volume) FileStat() (datSize uint64, idxSize uint64, modTime time.Time) 
 	v.dataFileAccessLock.RLock()
 	defer v.dataFileAccessLock.RUnlock()
 
-	if v.DataBackend == nil {
+	if v.nm == nil || v.DataBackend == nil {
 		return
 	}
 
