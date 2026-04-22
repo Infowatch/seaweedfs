@@ -1,10 +1,12 @@
 package storage
 
 import (
+	"errors"
 	"fmt"
 	"path"
 	"strconv"
 	"sync"
+	"syscall"
 	"sync/atomic"
 	"time"
 
@@ -207,19 +209,31 @@ func (v *Volume) DiskType() types.DiskType {
 	return v.location.DiskType
 }
 
-func (v *Volume) SyncToDisk() {
+func (v *Volume) SyncToDisk() error {
 	v.dataFileAccessLock.Lock()
 	defer v.dataFileAccessLock.Unlock()
-	if v.nm != nil {
-		if err := v.nm.Sync(); err != nil {
-			glog.Warningf("Volume Close fail to sync volume idx %d", v.Id)
-		}
-	}
+
 	if v.DataBackend != nil {
 		if err := v.DataBackend.Sync(); err != nil {
-			glog.Warningf("Volume Close fail to sync volume %d", v.Id)
+			glog.Warningf("Volume Close fail to sync volume %d err=%s", v.Id, err)
+			if errors.Is(err, syscall.ENOSPC) ||
+				errors.Is(err, syscall.EDQUOT) {
+				return ErrorLowDiskSpace
+			}
 		}
 	}
+
+	if v.nm != nil {
+		if err := v.nm.Sync(); err != nil {
+			glog.Warningf("Volume Close fail to sync volume idx %d err=%s", v.Id, err)
+			if errors.Is(err, syscall.ENOSPC) ||
+				errors.Is(err, syscall.EDQUOT) {
+				return ErrorLowDiskSpace
+			}
+		}
+	}
+
+	return nil
 }
 
 // Close cleanly shuts down this volume

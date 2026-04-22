@@ -49,6 +49,10 @@ type DiskLocation struct {
 	closeCh        chan struct{}
 }
 
+const (
+	checkDiskSpaceInterval = 5 * time.Second
+)
+
 func GenerateDirUuid(dir string) (dirUuidString string, err error) {
 	glog.V(1).Infof("Getting uuid of volume directory:%s", dir)
 	fileName := filepath.Join(dir, UUIDFileName)
@@ -114,7 +118,7 @@ func NewDiskLocation(dir string, maxVolumeCount int32, minFreeSpace util.MinFree
 			select {
 			case <-location.closeCh:
 				return
-			case <-time.After(time.Minute):
+			case <-time.After(checkDiskSpaceInterval):
 				location.CheckDiskSpace()
 			}
 		}
