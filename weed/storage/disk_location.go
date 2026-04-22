@@ -26,6 +26,8 @@ const (
 	UUIDFileMod  = 0644
 )
 
+var checkDiskTracing = os.Getenv("SEAWEEDFS_CHECKDISK_TRACING")
+
 type DiskLocation struct {
 	Directory              string
 	DirectoryUuid          string
@@ -530,7 +532,9 @@ func (l *DiskLocation) UnUsedSpace(volumeSizeLimit uint64) (unUsedSpace uint64) 
 
 func (l *DiskLocation) CheckDiskSpace() {
 	if dir, e := filepath.Abs(l.Directory); e == nil {
+		startWorkTime := time.Now()
 		s := stats.NewDiskStatus(dir)
+		checkTimeWork := time.Since(startWorkTime)
 		available := l.MinFreeSpace.AvailableSpace(s.Free, s.All)
 		stats.VolumeServerResourceGauge.WithLabelValues(l.Directory, "all").Set(float64(s.All))
 		stats.VolumeServerResourceGauge.WithLabelValues(l.Directory, "used").Set(float64(s.Used))
@@ -543,10 +547,11 @@ func (l *DiskLocation) CheckDiskSpace() {
 		}
 
 		logLevel := glog.Level(4)
-		if l.isDiskSpaceLow {
+		if checkDiskTracing != "" || l.isDiskSpaceLow {
 			logLevel = glog.Level(0)
 		}
 
-		glog.V(logLevel).Infof("dir %s %s", dir, desc)
+		glog.V(logLevel).Infof("duration=%v sec,dir = %s resultCheck=%s,freeBytes=%d,isDiskSpaceLow=%v", checkTimeWork.Seconds(),
+					dir, desc, s.Free, l.isDiskSpaceLow)
 	}
 }
