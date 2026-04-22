@@ -2,7 +2,7 @@ package app
 
 import (
 	"fmt"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 templ ClusterBrokers(data dash.ClusterBrokersData) {
@@ -115,9 +115,9 @@ templ ClusterBrokers(data dash.ClusterBrokersData) {
 	function exportBrokers() {
 		const table = document.getElementById('brokersTable');
 		if (!table) return;
-		
+
 		let csv = 'Address,Version,Data Center,Rack,Created At\n';
-		
+
 		const rows = table.querySelectorAll('tbody tr');
 		rows.forEach(row => {
 			const cells = row.querySelectorAll('td');
@@ -127,11 +127,11 @@ templ ClusterBrokers(data dash.ClusterBrokersData) {
 				const dataCenter = cells[2].textContent.trim();
 				const rack = cells[3].textContent.trim();
 				const createdAt = cells[4].textContent.trim();
-				
+
 				csv += `"${address}","${version}","${dataCenter}","${rack}","${createdAt}"\n`;
 			}
 		});
-		
+
 		const blob = new Blob([csv], { type: 'text/csv' });
 		const url = window.URL.createObjectURL(blob);
 		const a = document.createElement('a');
@@ -141,4 +141,4 @@ templ ClusterBrokers(data dash.ClusterBrokersData) {
 		window.URL.revokeObjectURL(url);
 	}
 	</script>
-} 
+}

@@ -24,7 +24,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-// Integration test for https://github.com/seaweedfs/seaweedfs/issues/9075:
+// Integration test for https://github.com/Infowatch/seaweedfs/issues/9075:
 // presigned PUT URLs that request a flexible-checksum algorithm (SHA256, SHA1, ...)
 // must cause the server to compute and persist that checksum, and HEAD/GET must
 // return the x-amz-checksum-* header when the caller asks for it.

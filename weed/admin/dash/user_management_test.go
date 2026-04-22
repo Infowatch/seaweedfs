@@ -3,9 +3,9 @@ package dash
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/filer_etc" // Import to register filer_etc store
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/filer_etc" // Import to register filer_etc store
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"google.golang.org/grpc"
 )
 

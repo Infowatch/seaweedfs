@@ -8,14 +8,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq"
-	"github.com/seaweedfs/seaweedfs/weed/mq/logstore"
-	"github.com/seaweedfs/seaweedfs/weed/mq/pub_balancer"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq"
+	"github.com/Infowatch/seaweedfs/weed/mq/logstore"
+	"github.com/Infowatch/seaweedfs/weed/mq/pub_balancer"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 )
 
 func (b *MessageQueueBroker) GetOrGenerateLocalPartition(t topic.Topic, partition topic.Partition) (localTopicPartition *topic.LocalPartition, getOrGenError error) {

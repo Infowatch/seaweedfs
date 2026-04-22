@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	vacuumtask "github.com/seaweedfs/seaweedfs/weed/worker/tasks/vacuum"
-	workertypes "github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	vacuumtask "github.com/Infowatch/seaweedfs/weed/worker/tasks/vacuum"
+	workertypes "github.com/Infowatch/seaweedfs/weed/worker/types"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )

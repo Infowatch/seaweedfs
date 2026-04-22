@@ -3,17 +3,17 @@ RUN apk add git g++ fuse
 RUN mkdir -p /go/src/github.com/seaweedfs/
 ARG BRANCH=${BRANCH:-master}
 # Clone with full history and all tags to ensure all commits are available
-RUN git clone --no-single-branch --tags https://github.com/seaweedfs/seaweedfs /go/src/github.com/seaweedfs/seaweedfs
+RUN git clone --no-single-branch --tags https://github.com/Infowatch/seaweedfs /go/src/github.com/Infowatch/seaweedfs
 ARG TAGS
-RUN cd /go/src/github.com/seaweedfs/seaweedfs && \
+RUN cd /go/src/github.com/Infowatch/seaweedfs && \
     (git checkout $BRANCH || \
      (echo "Checkout failed, fetching all history..." && \
       git fetch --all --tags --prune && \
       git checkout $BRANCH) || \
      (echo "ERROR: Branch/commit $BRANCH not found in repository" && \
       echo "Available branches:" && git branch -a && exit 1))
-RUN cd /go/src/github.com/seaweedfs/seaweedfs/weed \
-  && export LDFLAGS="-X github.com/seaweedfs/seaweedfs/weed/util/version.COMMIT=$(git rev-parse --short HEAD)" \
+RUN cd /go/src/github.com/Infowatch/seaweedfs/weed \
+  && export LDFLAGS="-X github.com/Infowatch/seaweedfs/weed/util/version.COMMIT=$(git rev-parse --short HEAD)" \
   && CGO_ENABLED=0 go install -tags "$TAGS" -ldflags "-extldflags -static ${LDFLAGS}"
 
 # Rust volume server: use pre-built binary from CI when available (placed in
@@ -24,8 +24,8 @@ FROM alpine:3.23 as rust_builder
 ARG TARGETARCH
 ARG TAGS
 COPY weed-volume-prebuilt/ /prebuilt/
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/seaweed-volume /build/seaweed-volume
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/weed /build/weed
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/seaweed-volume /build/seaweed-volume
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/weed /build/weed
 WORKDIR /build/seaweed-volume
 RUN if [ -f "/prebuilt/weed-volume-${TARGETARCH}" ]; then \
       echo "Using pre-built Rust binary for ${TARGETARCH}" && \
@@ -49,8 +49,8 @@ COPY --from=builder /go/bin/weed /usr/bin/
 # Copy Rust volume server binary (real binary on amd64/arm64, empty placeholder on other platforms)
 COPY --from=rust_builder /weed-volume /usr/bin/weed-volume
 RUN mkdir -p /etc/seaweedfs
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/filer.toml /etc/seaweedfs/filer.toml
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/entrypoint.sh /entrypoint.sh
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/filer.toml /etc/seaweedfs/filer.toml
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/entrypoint.sh /entrypoint.sh
 
 # FIPS 140-3 mode is ON by default (Go 1.24+)
 # To disable: docker run -e GODEBUG=fips140=off ...

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // CopyValidationError represents validation errors during copy operations

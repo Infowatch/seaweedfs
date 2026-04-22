@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
-	swv "github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
+	swv "github.com/Infowatch/seaweedfs/weed/util/version"
 	"golang.org/x/net/context/ctxhttp"
 )
 
@@ -77,8 +77,8 @@ func init() {
 
 var cmdUpdate = &Command{
 	UsageLine: "update [-dir=/path/to/dir] [-name=name] [-version=x.xx]",
-	Short:     "get latest or specific version from https://github.com/seaweedfs/seaweedfs",
-	Long:      `get latest or specific version from https://github.com/seaweedfs/seaweedfs`,
+	Short:     "get latest or specific version from https://github.com/Infowatch/seaweedfs",
+	Long:      `get latest or specific version from https://github.com/Infowatch/seaweedfs`,
 }
 
 func runUpdate(cmd *Command, args []string) bool {

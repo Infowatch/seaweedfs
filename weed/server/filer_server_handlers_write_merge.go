@@ -5,11 +5,11 @@ import (
 	"io"
 	"math"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/operation"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/operation"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 const MergeChunkMinCount int = 1000

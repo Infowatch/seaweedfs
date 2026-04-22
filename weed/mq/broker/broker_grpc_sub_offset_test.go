@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/offset"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util/log_buffer"
+	"github.com/Infowatch/seaweedfs/weed/mq/offset"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/util/log_buffer"
 )
 
 func TestConvertOffsetToMessagePosition(t *testing.T) {

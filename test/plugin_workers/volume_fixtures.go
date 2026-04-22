@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 // WriteTestVolumeFiles creates a minimal .dat/.idx pair for the given volume.

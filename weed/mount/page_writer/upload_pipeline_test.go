@@ -3,7 +3,7 @@ package page_writer
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestUploadPipeline(t *testing.T) {

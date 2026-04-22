@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 // TaskSource represents a single source in a multi-source task (for replicated volume cleanup)

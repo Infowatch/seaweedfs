@@ -3,12 +3,12 @@ package command
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	weed_server_nfs "github.com/seaweedfs/seaweedfs/weed/server/nfs"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	weed_server_nfs "github.com/Infowatch/seaweedfs/weed/server/nfs"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 )
 
 var (

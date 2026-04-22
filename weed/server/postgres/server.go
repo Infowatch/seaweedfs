@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/query/engine"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/query/engine"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 )
 
 // PostgreSQL protocol constants

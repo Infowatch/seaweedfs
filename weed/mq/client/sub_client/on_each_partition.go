@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 type KeyedTimestamp struct {

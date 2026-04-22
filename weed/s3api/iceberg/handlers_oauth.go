@@ -9,7 +9,7 @@ import (
 	"time"
 
 	jwt "github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // OAuthTokenResponse is the response for POST /v1/oauth/tokens.

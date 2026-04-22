@@ -9,14 +9,14 @@ import (
 	"sync/atomic"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/s3_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/s3_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 type CircuitBreaker struct {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
 )
 
 // NormalizeSessionPolicy validates and normalizes inline session policy JSON.

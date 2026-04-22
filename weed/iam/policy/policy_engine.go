@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
 )
 
 // Effect represents the policy evaluation result

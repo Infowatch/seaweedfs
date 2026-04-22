@@ -6,9 +6,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/agent_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/schema"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/agent_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/schema"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 var (

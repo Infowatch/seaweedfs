@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package plugin;
 
-option go_package = "github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb";
+option go_package = "github.com/Infowatch/seaweedfs/weed/pb/plugin_pb";
 
 import "google/protobuf/duration.proto";
 import "google/protobuf/timestamp.proto";

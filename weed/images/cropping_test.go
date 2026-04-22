@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestCropping(t *testing.T) {

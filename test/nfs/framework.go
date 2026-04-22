@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 	"github.com/stretchr/testify/require"
 	nfsclient "github.com/willscott/go-nfs-client/nfs"
 	"github.com/willscott/go-nfs-client/nfs/rpc"

@@ -3,8 +3,8 @@ package broker
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 )
 
 func (b *MessageQueueBroker) ClosePublishers(ctx context.Context, request *mq_pb.ClosePublishersRequest) (resp *mq_pb.ClosePublishersResponse, err error) {

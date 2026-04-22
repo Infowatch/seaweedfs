@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
 )
 
 // tagsToEntry converts a map of tag key-value pairs to the entry.Extended format
@@ -984,7 +984,7 @@ func TestExistingObjectTagDenyPolicy(t *testing.T) {
 
 // TestMultipartUploadInheritsPutObjectPermission verifies that granting s3:PutObject
 // in a bucket policy implicitly allows multipart upload operations.
-// See https://github.com/seaweedfs/seaweedfs/discussions/8751
+// See https://github.com/Infowatch/seaweedfs/discussions/8751
 func TestMultipartUploadInheritsPutObjectPermission(t *testing.T) {
 	engine := NewPolicyEngine()
 

@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 // TestEnvironment mirrors the one in trino_catalog_test.go but simplified

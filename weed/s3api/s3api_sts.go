@@ -14,13 +14,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/integration"
-	"github.com/seaweedfs/seaweedfs/weed/iam/ldap"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
-	"github.com/seaweedfs/seaweedfs/weed/iam/utils"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/integration"
+	"github.com/Infowatch/seaweedfs/weed/iam/ldap"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/iam/utils"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 )
 
 // STS API constants matching AWS STS specification

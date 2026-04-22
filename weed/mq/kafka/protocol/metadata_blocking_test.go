@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/integration"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/integration"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // TestMetadataRequestBlocking documents the original bug where Metadata requests hang

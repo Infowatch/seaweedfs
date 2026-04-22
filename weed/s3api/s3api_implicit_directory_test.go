@@ -4,7 +4,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 // TestImplicitDirectoryBehaviorLogic tests the core logic for implicit directory detection

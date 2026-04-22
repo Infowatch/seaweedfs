@@ -6,7 +6,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
 )
 
 // Factory defines a generic factory interface

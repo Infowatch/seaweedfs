@@ -4,7 +4,7 @@ This directory contains tests for S3 object tagging functionality.
 
 ## Issue Reference
 
-These tests were created to verify the fix for [GitHub Issue #7589](https://github.com/seaweedfs/seaweedfs/issues/7589):
+These tests were created to verify the fix for [GitHub Issue #7589](https://github.com/Infowatch/seaweedfs/issues/7589):
 **S3 object Tags query comes back empty**
 
 ## Problem Description

@@ -7,7 +7,7 @@ import (
 	"github.com/apache/iceberg-go"
 	"github.com/apache/iceberg-go/table"
 	"github.com/parquet-go/parquet-go"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 type compactionRewritePlan struct {

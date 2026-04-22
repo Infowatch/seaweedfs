@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 func TestDoMaybeManifestize(t *testing.T) {

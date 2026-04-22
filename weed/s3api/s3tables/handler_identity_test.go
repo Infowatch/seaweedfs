@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 	"github.com/stretchr/testify/assert"
 )
 

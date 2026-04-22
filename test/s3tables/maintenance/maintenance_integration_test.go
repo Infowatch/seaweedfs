@@ -39,13 +39,13 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/weed/command"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	icebergHandler "github.com/seaweedfs/seaweedfs/weed/plugin/worker/iceberg"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/weed/command"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	icebergHandler "github.com/Infowatch/seaweedfs/weed/plugin/worker/iceberg"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 // ---------------------------------------------------------------------------

@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func TestFastLoadingNeedleMapMetrics(t *testing.T) {

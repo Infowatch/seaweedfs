@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package iam_pb;
 
-option go_package = "github.com/seaweedfs/seaweedfs/weed/pb/iam_pb";
+option go_package = "github.com/Infowatch/seaweedfs/weed/pb/iam_pb";
 option java_package = "seaweedfs.client";
 option java_outer_classname = "IamProto";
 
@@ -12,19 +12,19 @@ service SeaweedIdentityAccessManagement {
     // Configuration Management
     rpc GetConfiguration (GetConfigurationRequest) returns (GetConfigurationResponse);
     rpc PutConfiguration (PutConfigurationRequest) returns (PutConfigurationResponse);
-    
+
     // User Management
     rpc CreateUser (CreateUserRequest) returns (CreateUserResponse);
     rpc GetUser (GetUserRequest) returns (GetUserResponse);
     rpc UpdateUser (UpdateUserRequest) returns (UpdateUserResponse);
     rpc DeleteUser (DeleteUserRequest) returns (DeleteUserResponse);
     rpc ListUsers (ListUsersRequest) returns (ListUsersResponse);
-    
+
     // Access Key Management
     rpc CreateAccessKey (CreateAccessKeyRequest) returns (CreateAccessKeyResponse);
     rpc DeleteAccessKey (DeleteAccessKeyRequest) returns (DeleteAccessKeyResponse);
     rpc GetUserByAccessKey (GetUserByAccessKeyRequest) returns (GetUserByAccessKeyResponse);
-    
+
     // Policy Management
     rpc PutPolicy (PutPolicyRequest) returns (PutPolicyResponse);
     rpc GetPolicy (GetPolicyRequest) returns (GetPolicyResponse);

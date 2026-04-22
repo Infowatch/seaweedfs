@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 func TestPrintClusterInfo(t *testing.T) {

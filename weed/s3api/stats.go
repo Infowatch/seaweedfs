@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	stats_collect "github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	stats_collect "github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 func track(f http.HandlerFunc, action string) http.HandlerFunc {

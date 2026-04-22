@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 func TestSetupRoutes_RegistersPluginSchedulerStatesAPI_NoAuth(t *testing.T) {

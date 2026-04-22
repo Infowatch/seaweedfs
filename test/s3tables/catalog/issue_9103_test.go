@@ -1,4 +1,4 @@
-// Reproduction tests for https://github.com/seaweedfs/seaweedfs/issues/9103
+// Reproduction tests for https://github.com/Infowatch/seaweedfs/issues/9103
 //
 // The issue reports two distinct failure modes when using DuckDB against the
 // SeaweedFS Iceberg REST catalog:
@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 // TestIssue9103_ConfigDoesNotVendWarehousePrefix reproduces failure mode #2.

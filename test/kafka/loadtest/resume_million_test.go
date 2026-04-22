@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // TestResumeMillionRecords_Fixed - Fixed version with better concurrency handling

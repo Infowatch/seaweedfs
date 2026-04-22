@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	"github.com/stretchr/testify/assert"
 )
 

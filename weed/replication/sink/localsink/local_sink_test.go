@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
 )
 
 // TestCreateEntry_OverwriteReadOnlyFile reproduces a bug where

@@ -6,13 +6,13 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 	"github.com/stretchr/testify/assert"
 )
 
 func TestDoMinusChunks(t *testing.T) {
-	// https://github.com/seaweedfs/seaweedfs/issues/3328
+	// https://github.com/Infowatch/seaweedfs/issues/3328
 
 	// clusterA and clusterB using filer.sync to sync file: hello.txt
 	// clusterA append a new line and then clusterB also append a new line

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/consumer"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/consumer"
 )
 
 // Heartbeat API (key 12) - Consumer group heartbeat

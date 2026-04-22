@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // TestAuthorizeWithIAMSessionTokenExtraction tests that the authorizeWithIAM function

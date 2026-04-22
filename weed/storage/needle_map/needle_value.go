@@ -2,8 +2,8 @@ package needle_map
 
 import (
 	"github.com/google/btree"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type NeedleValue struct {

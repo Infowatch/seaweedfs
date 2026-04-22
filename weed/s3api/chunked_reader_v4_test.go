@@ -13,7 +13,7 @@ import (
 
 	"hash/crc32"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 	"github.com/stretchr/testify/assert"
 )
 

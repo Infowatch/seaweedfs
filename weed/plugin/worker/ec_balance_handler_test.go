@@ -3,10 +3,10 @@ package pluginworker
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	ecbalancetask "github.com/seaweedfs/seaweedfs/weed/worker/tasks/ec_balance"
-	workertypes "github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	ecbalancetask "github.com/Infowatch/seaweedfs/weed/worker/tasks/ec_balance"
+	workertypes "github.com/Infowatch/seaweedfs/weed/worker/types"
 	"google.golang.org/protobuf/proto"
 )
 

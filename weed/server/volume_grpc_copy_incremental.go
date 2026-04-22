@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 func (vs *VolumeServer) VolumeIncrementalCopy(req *volume_server_pb.VolumeIncrementalCopyRequest, stream volume_server_pb.VolumeServer_VolumeIncrementalCopyServer) error {

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

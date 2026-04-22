@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 )
 
 func TestMapBrokerErrorToKafka(t *testing.T) {

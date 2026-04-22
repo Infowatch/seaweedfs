@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/mem"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/mem"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 )
 
 // chunkPipeResult represents a prefetched chunk streaming through a pipe.

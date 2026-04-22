@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/sync/singleflight"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // VolumeLocationProvider is the interface for looking up volume locations

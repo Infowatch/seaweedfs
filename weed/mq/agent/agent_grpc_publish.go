@@ -3,7 +3,7 @@ package agent
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_agent_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_agent_pb"
 )
 
 func (a *MessageQueueAgent) PublishRecord(stream mq_agent_pb.SeaweedMessagingAgent_PublishRecordServer) error {

@@ -8,13 +8,13 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 var (

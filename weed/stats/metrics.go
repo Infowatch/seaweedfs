@@ -14,7 +14,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/client_golang/prometheus/push"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // SetVersionInfo sets the version information for the BuildInfo metric

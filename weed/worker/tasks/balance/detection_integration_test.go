@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 const (

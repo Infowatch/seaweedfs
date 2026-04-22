@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 // TestEcReadRoundTrip tests the EC encode→read cycle via LocateData for various

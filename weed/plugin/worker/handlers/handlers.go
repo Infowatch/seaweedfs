@@ -5,5 +5,5 @@
 package handlers
 
 import (
-	_ "github.com/seaweedfs/seaweedfs/weed/plugin/worker/iceberg" // register iceberg_maintenance handler
+	_ "github.com/Infowatch/seaweedfs/weed/plugin/worker/iceberg" // register iceberg_maintenance handler
 )

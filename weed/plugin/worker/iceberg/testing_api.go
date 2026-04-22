@@ -3,7 +3,7 @@ package iceberg
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 // The following methods export the internal maintenance operations for use

@@ -6,7 +6,7 @@
   <name>SeaweedFS HDFS3 Client</name>
   <version>${seaweedfs.client.version}</version>
   <description>A java client for SeaweedFS.</description>
-  <url>https://github.com/seaweedfs/seaweedfs</url>
+  <url>https://github.com/Infowatch/seaweedfs</url>
   <developers>
     <developer>
       <name>Chris Lu</name>
@@ -22,9 +22,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git://github.com/seaweedfs/seaweedfs.git</connection>
+    <connection>scm:git:git://github.com/Infowatch/seaweedfs.git</connection>
     <developerConnection>scm:git:ssh://github.com:seaweedfs/seaweedfs.git</developerConnection>
-    <url>https://github.com/seaweedfs/seaweedfs/tree/master</url>
+    <url>https://github.com/Infowatch/seaweedfs/tree/master</url>
   </scm>
   <build>
     <plugins>

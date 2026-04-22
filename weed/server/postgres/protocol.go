@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
-	"github.com/seaweedfs/seaweedfs/weed/query/engine"
-	"github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
-	"github.com/seaweedfs/seaweedfs/weed/util/sqlutil"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/query/engine"
+	"github.com/Infowatch/seaweedfs/weed/query/sqltypes"
+	"github.com/Infowatch/seaweedfs/weed/util/sqlutil"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 )
 
 // mapErrorToPostgreSQLCode maps SeaweedFS SQL engine errors to appropriate PostgreSQL error codes

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync"
 
-	util "github.com/seaweedfs/seaweedfs/weed/util"
+	util "github.com/Infowatch/seaweedfs/weed/util"
 	"github.com/spf13/viper"
 )
 

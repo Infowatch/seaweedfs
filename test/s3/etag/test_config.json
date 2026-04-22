@@ -6,7 +6,7 @@
   "bucket_prefix": "test-etag-",
   "notes": {
     "description": "S3 ETag format integration tests",
-    "issue": "https://github.com/seaweedfs/seaweedfs/issues/7768",
+    "issue": "https://github.com/Infowatch/seaweedfs/issues/7768",
     "auto_chunk_size": "8MB - files larger than this trigger auto-chunking",
     "test_sizes": {
       "small": "1KB - single chunk",

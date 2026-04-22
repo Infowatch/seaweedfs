@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // TaskDefinition encapsulates everything needed to define a complete task type

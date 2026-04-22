@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package worker_pb;
 
-option go_package = "github.com/seaweedfs/seaweedfs/weed/pb/worker_pb";
+option go_package = "github.com/Infowatch/seaweedfs/weed/pb/worker_pb";
 
 // WorkerService provides bidirectional communication between admin and worker
 service WorkerService {
@@ -14,7 +14,7 @@ service WorkerService {
 message WorkerMessage {
   string worker_id = 1;
   int64 timestamp = 2;
-  
+
   oneof message {
     WorkerRegistration registration = 3;
     WorkerHeartbeat heartbeat = 4;
@@ -30,7 +30,7 @@ message WorkerMessage {
 message AdminMessage {
   string admin_id = 1;
   int64 timestamp = 2;
-  
+
   oneof message {
     RegistrationResponse registration_response = 3;
     HeartbeatResponse heartbeat_response = 4;
@@ -100,11 +100,11 @@ message TaskParams {
   string data_center = 4;               // Primary data center
   string rack = 5;                      // Primary rack
   uint64 volume_size = 6;               // Original volume size in bytes for tracking size changes
-  
+
   // Unified source and target arrays for all task types
   repeated TaskSource sources = 7;      // Source locations (volume replicas, EC shards, etc.)
   repeated TaskTarget targets = 8;      // Target locations (destinations, new replicas, etc.)
-  
+
   // Typed task parameters
   oneof task_params {
     VacuumTaskParams vacuum_params = 9;
@@ -148,7 +148,7 @@ message TaskSource {
 // TaskTarget represents a unified target location for any task type
 message TaskTarget {
   string node = 1;                        // Target server address
-  uint32 disk_id = 2;                     // Target disk ID  
+  uint32 disk_id = 2;                     // Target disk ID
   string rack = 3;                        // Target rack for tracking
   string data_center = 4;                 // Target data center for tracking
   uint32 volume_id = 5;                   // Volume ID (for volume operations)
@@ -301,7 +301,7 @@ message TaskPolicy {
   int32 max_concurrent = 2;
   int32 repeat_interval_seconds = 3;  // Seconds to wait before repeating
   int32 check_interval_seconds = 4;   // Seconds between checks
-  
+
   // Typed task-specific configuration (replaces generic map)
   oneof task_config {
     VacuumTaskConfig vacuum_config = 5;
@@ -438,4 +438,4 @@ message TaskStateFile {
   MaintenanceTaskData task = 1;
   int64 last_updated = 2;
   string admin_version = 3;
-} 
+}

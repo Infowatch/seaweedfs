@@ -3,8 +3,8 @@ package storage
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 // TestLoadBalancingDistribution tests that volumes are evenly distributed

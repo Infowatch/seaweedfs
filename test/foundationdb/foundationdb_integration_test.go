@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/filer/foundationdb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer/foundationdb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestFoundationDBStore_BasicOperations(t *testing.T) {

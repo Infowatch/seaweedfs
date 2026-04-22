@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
-	"github.com/seaweedfs/seaweedfs/weed/util/mem"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/util/mem"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 
 	"io"
 	"math/rand/v2"

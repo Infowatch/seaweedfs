@@ -5,10 +5,10 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	stats_collect "github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	stats_collect "github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 // PutObjectRetentionHandler Put object Retention

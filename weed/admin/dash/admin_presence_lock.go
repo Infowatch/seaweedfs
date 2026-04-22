@@ -3,9 +3,9 @@ package dash
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient/exclusive_locks"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/wdclient/exclusive_locks"
 )
 
 const adminPresenceClientName = "admin-server"

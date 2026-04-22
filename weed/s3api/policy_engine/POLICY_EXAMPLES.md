@@ -42,7 +42,7 @@ The examples file provides helper functions:
 
 ```go
 // Remove build tags from examples.go, then:
-import "github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
+import "github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
 
 // Use examples
 examples := policy_engine.GetAllExamples()
@@ -51,4 +51,4 @@ policy, err := policy_engine.GetExamplePolicy("read-only-user")
 
 ## Note
 
-The examples are excluded from production builds to keep binary size minimal. They are available for development and testing purposes only. 
+The examples are excluded from production builds to keep binary size minimal. They are available for development and testing purposes only.

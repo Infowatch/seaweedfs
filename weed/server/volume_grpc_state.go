@@ -3,7 +3,7 @@ package weed_server
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 )
 
 // GetState returns a volume server's state flags.

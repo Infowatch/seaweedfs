@@ -11,9 +11,9 @@ import (
 
 	vault "github.com/hashicorp/vault/api"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	seaweedkms "github.com/seaweedfs/seaweedfs/weed/kms"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	seaweedkms "github.com/Infowatch/seaweedfs/weed/kms"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func init() {

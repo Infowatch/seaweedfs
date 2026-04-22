@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // MinFreeSpaceType is the type of MinFreeSpace.

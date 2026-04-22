@@ -259,7 +259,7 @@ const file_telemetry_proto_telemetry_proto_rawDesc = "" +
 	"\x04data\x18\x01 \x01(\v2\x18.telemetry.TelemetryDataR\x04data\"G\n" +
 	"\x11TelemetryResponse\x12\x18\n" +
 	"\asuccess\x18\x01 \x01(\bR\asuccess\x12\x18\n" +
-	"\amessage\x18\x02 \x01(\tR\amessageB0Z.github.com/seaweedfs/seaweedfs/telemetry/protob\x06proto3"
+	"\amessage\x18\x02 \x01(\tR\amessageB0Z.github.com/Infowatch/seaweedfs/telemetry/protob\x06proto3"
 
 var (
 	file_telemetry_proto_telemetry_proto_rawDescOnce sync.Once

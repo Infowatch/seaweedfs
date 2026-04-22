@@ -5,13 +5,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"google.golang.org/grpc"
 )
 
 // TestWaitUntilConnectedWithoutKeepConnected verifies that WaitUntilConnected
 // respects context cancellation when KeepConnectedToMaster is not running.
-// This tests the fix for https://github.com/seaweedfs/seaweedfs/issues/7721
+// This tests the fix for https://github.com/Infowatch/seaweedfs/issues/7721
 func TestWaitUntilConnectedWithoutKeepConnected(t *testing.T) {
 	mc := NewMasterClient(grpc.EmptyDialOption{}, "test-group", "test-client", "", "", "", pb.ServerDiscovery{})
 

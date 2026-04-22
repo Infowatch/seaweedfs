@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestInodeEntry_removeOnePath(t *testing.T) {

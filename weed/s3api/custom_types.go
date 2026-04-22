@@ -1,8 +1,8 @@
 package s3api
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 const s3TimeFormat = "2006-01-02T15:04:05.999Z07:00"

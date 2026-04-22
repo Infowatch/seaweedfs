@@ -9,7 +9,7 @@
 
     <name>SeaweedFS Java Client</name>
     <description>A java client for SeaweedFS.</description>
-    <url>https://github.com/seaweedfs/seaweedfs</url>
+    <url>https://github.com/Infowatch/seaweedfs</url>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
@@ -25,9 +25,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git://github.com/seaweedfs/seaweedfs.git</connection>
+        <connection>scm:git:git://github.com/Infowatch/seaweedfs.git</connection>
         <developerConnection>scm:git:ssh://github.com:seaweedfs/seaweedfs.git</developerConnection>
-        <url>https://github.com/seaweedfs/seaweedfs/tree/master</url>
+        <url>https://github.com/Infowatch/seaweedfs/tree/master</url>
     </scm>
 
     <properties>

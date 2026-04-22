@@ -1,4 +1,4 @@
-module github.com/seaweedfs/seaweedfs/test/s3/iam
+module github.com/Infowatch/seaweedfs/test/s3/iam
 
 go 1.24
 

@@ -3,7 +3,7 @@ package pluginworker
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 func makeTestVolumeListResponse(volumes ...*master_pb.VolumeInformationMessage) *master_pb.VolumeListResponse {

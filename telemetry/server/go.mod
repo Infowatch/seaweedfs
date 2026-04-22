@@ -1,10 +1,10 @@
-module github.com/seaweedfs/seaweedfs/telemetry/server
+module github.com/Infowatch/seaweedfs/telemetry/server
 
 go 1.25.0
 
 require (
 	github.com/prometheus/client_golang v1.23.2
-	github.com/seaweedfs/seaweedfs v0.0.0-00010101000000-000000000000
+	github.com/Infowatch/seaweedfs v0.0.0-00010101000000-000000000000
 	google.golang.org/protobuf v1.36.11
 )
 
@@ -19,4 +19,4 @@ require (
 	golang.org/x/sys v0.42.0 // indirect
 )
 
-replace github.com/seaweedfs/seaweedfs => ../..
+replace github.com/Infowatch/seaweedfs => ../..

@@ -3,12 +3,12 @@ package maintenance
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // MaintenanceIntegration bridges the task system with existing maintenance

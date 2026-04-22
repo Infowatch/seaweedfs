@@ -4,7 +4,7 @@ import (
 	"cmp"
 	"flag"
 	"fmt"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	"io"
 	"os"
 	"regexp"
@@ -13,13 +13,13 @@ import (
 
 	"slices"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 const (

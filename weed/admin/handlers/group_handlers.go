@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 func groupErrorToHTTPStatus(err error) int {

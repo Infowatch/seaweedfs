@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 func TestNewJSONSchemaDecoder(t *testing.T) {

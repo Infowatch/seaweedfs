@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/hashicorp/raft"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 func TestRaftServerID(t *testing.T) {

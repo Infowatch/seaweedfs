@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
-	"github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/query/sqltypes"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 	"google.golang.org/protobuf/proto"
 )
 

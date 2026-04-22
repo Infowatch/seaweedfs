@@ -4,7 +4,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // getRequestDataReader returns the appropriate reader for the request body.

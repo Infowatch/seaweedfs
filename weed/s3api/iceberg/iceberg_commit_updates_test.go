@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/apache/iceberg-go/table"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 func TestParseCommitUpdatesSeparatesStatistics(t *testing.T) {

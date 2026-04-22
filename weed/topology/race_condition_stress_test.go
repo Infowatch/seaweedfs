@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/sequence"
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/sequence"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 // TestRaceConditionStress simulates the original issue scenario:

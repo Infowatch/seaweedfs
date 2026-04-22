@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 // healthzHandler checks the local health of the volume server.
@@ -15,7 +15,7 @@ import (
 // volume servers go down. Previously, this handler checked if all replicated
 // volumes could reach their remote replicas, which caused healthy volume
 // servers to fail health checks when a peer went down.
-// See https://github.com/seaweedfs/seaweedfs/issues/6823
+// See https://github.com/Infowatch/seaweedfs/issues/6823
 func (vs *VolumeServer) healthzHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Server", "SeaweedFS Volume "+version.VERSION)
 

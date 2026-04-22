@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func writeNeedleByVersion(version Version, n *Needle, offset uint64, bytesBuffer *bytes.Buffer) (size Size, actualSize int64, err error) {

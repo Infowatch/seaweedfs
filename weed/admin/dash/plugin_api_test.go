@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/admin/plugin"
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/admin/plugin"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
 )
 
 func TestExpirePluginJobAPI(t *testing.T) {

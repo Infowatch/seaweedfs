@@ -87,7 +87,5 @@ These tests use **AWS SDK v2 for Go**, which has the same ETag validation behavi
 
 ## Related
 
-- [GitHub Issue #7768](https://github.com/seaweedfs/seaweedfs/issues/7768)
+- [GitHub Issue #7768](https://github.com/Infowatch/seaweedfs/issues/7768)
 - [AWS S3 ETag Documentation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html)
-
-

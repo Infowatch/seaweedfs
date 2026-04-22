@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 const PartitionCount = 4096

@@ -3,7 +3,7 @@ package tasks
 import (
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
 )
 
 // TaskConfigSchema defines the schema for task configuration

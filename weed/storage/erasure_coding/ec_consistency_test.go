@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 // TestEcConsistency_WritesBetweenEncodeAndEcx reproduces a race condition that

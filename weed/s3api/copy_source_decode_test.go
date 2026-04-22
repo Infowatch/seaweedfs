@@ -8,11 +8,11 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 func TestCopySourceWithExclamationMark(t *testing.T) {
-	// Reproduce https://github.com/seaweedfs/seaweedfs/issues/8544
+	// Reproduce https://github.com/Infowatch/seaweedfs/issues/8544
 	testCases := []struct {
 		name            string
 		rawCopySource   string

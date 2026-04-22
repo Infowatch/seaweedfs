@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
 )
 
 var (

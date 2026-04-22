@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 var (

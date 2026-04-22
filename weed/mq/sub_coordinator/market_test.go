@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
 	"github.com/stretchr/testify/assert"
 )
 

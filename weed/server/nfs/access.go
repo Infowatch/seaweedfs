@@ -5,7 +5,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 type clientAuthorizer struct {

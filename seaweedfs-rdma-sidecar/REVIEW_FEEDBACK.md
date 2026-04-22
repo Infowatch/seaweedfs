@@ -2,7 +2,7 @@
 
 ## Positive Feedback Received ✅
 
-### Source: [GitHub PR #7140 Review](https://github.com/seaweedfs/seaweedfs/pull/7140#pullrequestreview-3126580539)
+### Source: [GitHub PR #7140 Review](https://github.com/Infowatch/seaweedfs/pull/7140#pullrequestreview-3126580539)
 **Reviewer**: Gemini Code Assist (Automated Review Bot)  
 **Date**: August 18, 2025
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer"
 	"github.com/tsuna/gohbase/hrpc"
 )
 

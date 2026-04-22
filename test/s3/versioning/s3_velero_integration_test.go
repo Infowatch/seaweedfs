@@ -14,7 +14,7 @@ import (
 
 // TestVeleroKopiaVersionedObjectListing tests the exact access patterns used by Velero/Kopia
 // when backing up to a versioned S3 bucket. This test validates the fix for:
-// https://github.com/seaweedfs/seaweedfs/discussions/7573
+// https://github.com/Infowatch/seaweedfs/discussions/7573
 //
 // The bug was that when listing versioned objects with nested paths like
 // "kopia/logpaste/kopia.blobcfg", the returned Key would be doubled:

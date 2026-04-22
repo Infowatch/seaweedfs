@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // TestQuickPerformance_10K tests the fixed broker with 10K records

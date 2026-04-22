@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/iam/utils"
+	"github.com/Infowatch/seaweedfs/weed/iam/utils"
 )
 
 // TokenGenerator handles token generation and validation

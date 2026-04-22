@@ -9,7 +9,7 @@ import (
 
 	"seaweedfs-rdma-sidecar/pkg/ipc"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 	"github.com/sirupsen/logrus"
 )
 

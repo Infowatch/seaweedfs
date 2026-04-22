@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sink"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/replication/sink"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 func TestMain(m *testing.M) {
@@ -25,7 +25,7 @@ func TestMain(m *testing.M) {
 // and returns the error produced by ReadUrlAsStream.
 //
 // The error format is defined in ReadUrlAsStream:
-// https://github.com/seaweedfs/seaweedfs/blob/3a765df2ff90839acb9acf910b73513417fa84d1/weed/util/http/http_global_client_util.go#L353
+// https://github.com/Infowatch/seaweedfs/blob/3a765df2ff90839acb9acf910b73513417fa84d1/weed/util/http/http_global_client_util.go#L353
 func readUrlError(t *testing.T, statusCode int) error {
 	t.Helper()
 	server := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
@@ -45,7 +45,7 @@ func readUrlError(t *testing.T, statusCode int) error {
 func TestIsIgnorable404_WrappedErrNotFound(t *testing.T) {
 	readErr := readUrlError(t, http.StatusNotFound)
 	// genProcessFunction wraps sink errors with %w:
-	// https://github.com/seaweedfs/seaweedfs/blob/3a765df2ff90839acb9acf910b73513417fa84d1/weed/command/filer_sync.go#L496
+	// https://github.com/Infowatch/seaweedfs/blob/3a765df2ff90839acb9acf910b73513417fa84d1/weed/command/filer_sync.go#L496
 	genErr := fmt.Errorf("create entry1 : %w", readErr)
 
 	if !isIgnorable404(genErr) {

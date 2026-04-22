@@ -13,8 +13,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/telemetry/proto"
-	"github.com/seaweedfs/seaweedfs/weed/telemetry"
+	"github.com/Infowatch/seaweedfs/telemetry/proto"
+	"github.com/Infowatch/seaweedfs/weed/telemetry"
 	protobuf "google.golang.org/protobuf/proto"
 )
 

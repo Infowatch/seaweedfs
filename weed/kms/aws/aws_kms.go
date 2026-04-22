@@ -14,9 +14,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/kms"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	seaweedkms "github.com/seaweedfs/seaweedfs/weed/kms"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	seaweedkms "github.com/Infowatch/seaweedfs/weed/kms"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func init() {

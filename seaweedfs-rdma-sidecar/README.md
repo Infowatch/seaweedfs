@@ -366,7 +366,7 @@ cargo run --features real-ucx
 ## 🙏 Acknowledgments
 
 - **[UCX Project](https://github.com/openucx/ucx)** - Unified Communication X framework
-- **[SeaweedFS](https://github.com/seaweedfs/seaweedfs)** - Distributed file system
+- **[SeaweedFS](https://github.com/Infowatch/seaweedfs)** - Distributed file system
 - **Rust Community** - Excellent async/await and FFI capabilities
 - **Go Community** - Robust networking and gRPC libraries
 
@@ -382,4 +382,3 @@ cargo run --features real-ucx
 **🚀 Ready to accelerate your SeaweedFS deployment with RDMA?**
 
 Get started with the [Quick Start Guide](#-quick-start) or explore the [Demo Server](cmd/demo-server/) for hands-on experience!
-

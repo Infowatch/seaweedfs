@@ -6,17 +6,17 @@ import (
 	"io"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/operation"
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle_map"
+	"github.com/Infowatch/seaweedfs/weed/operation"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle_map"
 
 	"google.golang.org/grpc"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient/exclusive_locks"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/wdclient/exclusive_locks"
 )
 
 type ShellOptions struct {

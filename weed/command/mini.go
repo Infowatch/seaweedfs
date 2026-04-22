@@ -12,22 +12,22 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	pluginworker "github.com/seaweedfs/seaweedfs/weed/plugin/worker"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	stats_collect "github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
-	"github.com/seaweedfs/seaweedfs/weed/worker"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	pluginworker "github.com/Infowatch/seaweedfs/weed/plugin/worker"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	stats_collect "github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/worker"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 
 	// Import task packages to trigger their auto-registration
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/balance"
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/erasure_coding"
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/vacuum"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/balance"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/erasure_coding"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/vacuum"
 )
 
 type MiniOptions struct {

@@ -4,13 +4,13 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 
 	hashicorpRaft "github.com/hashicorp/raft"
 	"github.com/seaweedfs/raft"
 
-	ui "github.com/seaweedfs/seaweedfs/weed/server/master_ui"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	ui "github.com/Infowatch/seaweedfs/weed/server/master_ui"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 func (ms *MasterServer) uiStatusHandler(w http.ResponseWriter, r *http.Request) {

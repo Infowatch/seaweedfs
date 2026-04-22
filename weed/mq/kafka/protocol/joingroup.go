@@ -7,8 +7,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/consumer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/consumer"
 )
 
 // JoinGroup API (key 11) - Consumer group protocol

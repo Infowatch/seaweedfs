@@ -5,7 +5,7 @@ import (
 	"html/template"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 //go:embed master.html

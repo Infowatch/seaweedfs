@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/schema"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/schema"
 	"github.com/segmentio/kafka-go"
 )
 

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 // TestEcShardMapRegister tests that EC shards are properly registered

@@ -4,15 +4,15 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/remote_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/remote_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // TestVersionedFilePathRewrittenForRemote verifies that the fix for
-// https://github.com/seaweedfs/seaweedfs/discussions/8481#discussioncomment-16209342
+// https://github.com/Infowatch/seaweedfs/discussions/8481#discussioncomment-16209342
 // works correctly: internal .versions/v_{id} paths are rewritten to the
 // original S3 object key before syncing to the remote.
 func TestVersionedFilePathRewrittenForRemote(t *testing.T) {

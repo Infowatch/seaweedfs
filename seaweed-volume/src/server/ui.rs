@@ -291,7 +291,7 @@ pub fn render_volume_server_html(state: &VolumeServerState) -> String {
     <div class="container">
         <div class="page-header">
             <h1>
-                <a href="https://github.com/seaweedfs/seaweedfs"><img src="/seaweedfsstatic/seaweed50x50.png" alt="SeaweedFS"></a>
+                <a href="https://github.com/Infowatch/seaweedfs"><img src="/seaweedfsstatic/seaweed50x50.png" alt="SeaweedFS"></a>
                 SeaweedFS <small>{version}</small>
             </h1>
         </div>

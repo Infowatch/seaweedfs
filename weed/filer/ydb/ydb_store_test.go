@@ -5,7 +5,7 @@ package ydb
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer/store_test"
+	"github.com/Infowatch/seaweedfs/weed/filer/store_test"
 )
 
 func TestStore(t *testing.T) {

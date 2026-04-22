@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // ViperConfig interface extends Configuration with additional methods needed for KMS configuration

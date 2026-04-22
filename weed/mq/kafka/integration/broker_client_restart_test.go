@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 	"google.golang.org/grpc/metadata"
 )
 

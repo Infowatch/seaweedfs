@@ -1,8 +1,8 @@
 package tasks
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // UnsupportedTaskTypeError represents an error for unsupported task types

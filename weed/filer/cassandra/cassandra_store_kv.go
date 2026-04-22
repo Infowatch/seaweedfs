@@ -6,7 +6,7 @@ import (
 	"fmt"
 
 	gocql "github.com/apache/cassandra-gocql-driver/v2"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer"
 )
 
 func (store *CassandraStore) KvPut(ctx context.Context, key []byte, value []byte) (err error) {

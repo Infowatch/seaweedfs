@@ -3,9 +3,9 @@ package broker
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/sub_coordinator"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/sub_coordinator"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

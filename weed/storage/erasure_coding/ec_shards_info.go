@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/dustin/go-humanize"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 // ShardBits is a bitmap representing which shards are present (bit 0 = shard 0, etc.)

@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/iam/ldap"
-	"github.com/seaweedfs/seaweedfs/weed/iam/oidc"
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/iam/ldap"
+	"github.com/Infowatch/seaweedfs/weed/iam/oidc"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

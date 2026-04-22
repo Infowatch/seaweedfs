@@ -3,9 +3,9 @@ package needle
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/stats"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/stats"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func (n *Needle) readNeedleTail(needleBody []byte, version Version) error {

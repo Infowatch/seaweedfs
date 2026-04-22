@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	ui "github.com/seaweedfs/seaweedfs/weed/server/filer_ui"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	ui "github.com/Infowatch/seaweedfs/weed/server/filer_ui"
+	"github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 )
 
 // listDirectoryHandler lists directories and folders under a directory

@@ -10,7 +10,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 const testTableBucketARN = "arn:aws:s3tables:us-east-1:123456789012:bucket/test-bucket"

@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/offset"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/offset"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // recordEntry holds a record with timestamp for TTL cleanup

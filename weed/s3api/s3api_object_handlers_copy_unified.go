@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	weed_server "github.com/seaweedfs/seaweedfs/weed/server"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	weed_server "github.com/Infowatch/seaweedfs/weed/server"
 )
 
 // executeUnifiedCopyStrategy executes the appropriate copy strategy based on encryption state

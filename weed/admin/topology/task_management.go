@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // AssignTask moves a task from pending to assigned and reserves capacity

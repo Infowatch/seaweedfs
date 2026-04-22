@@ -16,9 +16,9 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/keyvault/azkeys"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	seaweedkms "github.com/seaweedfs/seaweedfs/weed/kms"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	seaweedkms "github.com/Infowatch/seaweedfs/weed/kms"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func init() {

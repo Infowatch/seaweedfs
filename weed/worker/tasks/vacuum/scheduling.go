@@ -1,8 +1,8 @@
 package vacuum
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/base"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/base"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // Scheduling implements the scheduling logic for vacuum tasks

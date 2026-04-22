@@ -3,7 +3,7 @@ package app
 import (
     "fmt"
     "time"
-    "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+    "github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 templ VolumeDetails(data dash.VolumeDetailsData) {
@@ -171,7 +171,7 @@ templ VolumeDetails(data dash.VolumeDetailsData) {
                                 </small>
                             </div>
                             <div class="progress" style="height: 8px;">
-                                <div class="progress-bar bg-info" role="progressbar" 
+                                <div class="progress-bar bg-info" role="progressbar"
                                      style={fmt.Sprintf("width: %.1f%%", float64(data.Volume.Size-data.Volume.DeletedByteCount)/float64(data.Volume.Size)*100)}
                                      aria-valuenow={fmt.Sprintf("%.1f", float64(data.Volume.Size-data.Volume.DeletedByteCount)/float64(data.Volume.Size)*100)}
                                      aria-valuemin="0" aria-valuemax="100">
@@ -355,9 +355,9 @@ templ VolumeDetails(data dash.VolumeDetailsData) {
                 </div>
                 <div class="card-body">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-danger vacuum-btn" 
-                                title="Vacuum Volume" 
-                                data-volume-id={fmt.Sprintf("%d", data.Volume.Id)} 
+                        <button type="button" class="btn btn-outline-danger vacuum-btn"
+                                title="Vacuum Volume"
+                                data-volume-id={fmt.Sprintf("%d", data.Volume.Id)}
                                 data-server={data.Volume.Server}>
                             <i class="fas fa-compress-alt me-1"></i>Vacuum
                         </button>
@@ -441,14 +441,14 @@ templ VolumeDetails(data dash.VolumeDetailsData) {
             toast.style.right = '20px';
             toast.style.zIndex = '9999';
             toast.style.minWidth = '300px';
-            
+
             toast.innerHTML = `
                 ${message}
                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             `;
-            
+
             document.body.appendChild(toast);
-            
+
             // Auto-remove after 5 seconds
             setTimeout(() => {
                 if (toast.parentNode) {
@@ -471,14 +471,14 @@ func formatTTL(ttlSeconds uint32) string {
     if ttlSeconds == 0 {
         return "No TTL"
     }
-    
+
     duration := time.Duration(ttlSeconds) * time.Second
-    
+
     // Convert to human readable format
     days := int(duration.Hours()) / 24
     hours := int(duration.Hours()) % 24
     minutes := int(duration.Minutes()) % 60
-    
+
     if days > 0 {
         if hours > 0 {
             return fmt.Sprintf("%dd %dh", days, hours)
@@ -494,4 +494,4 @@ func formatTTL(ttlSeconds uint32) string {
     } else {
         return fmt.Sprintf("%d seconds", int(duration.Seconds()))
     }
-} 
+}

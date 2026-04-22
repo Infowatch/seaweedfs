@@ -5,11 +5,11 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/memory"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func TestOnIamConfigChangeLegacyIdentityDeletionReloadsConfiguration(t *testing.T) {

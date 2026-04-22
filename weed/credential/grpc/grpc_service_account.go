@@ -3,7 +3,7 @@ package grpc
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func (store *IamGrpcStore) CreateServiceAccount(ctx context.Context, sa *iam_pb.ServiceAccount) error {

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/log_buffer"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/log_buffer"
 )
 
 func TestNotifyUpdateEventRecordsRequestMetadataEvent(t *testing.T) {

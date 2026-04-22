@@ -55,7 +55,7 @@ The PostgreSQL server now directly integrates with SeaweedFS Message Queue topic
 
 ### Import the Package
 ```go
-import "github.com/seaweedfs/seaweedfs/weed/server/postgres"
+import "github.com/Infowatch/seaweedfs/weed/server/postgres"
 ```
 
 ### Create and Start Server

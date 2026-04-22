@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

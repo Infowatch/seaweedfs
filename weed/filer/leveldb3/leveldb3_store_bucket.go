@@ -3,7 +3,7 @@ package leveldb
 import (
 	"os"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer"
 )
 
 var _ filer.BucketAware = (*LevelDB3Store)(nil)

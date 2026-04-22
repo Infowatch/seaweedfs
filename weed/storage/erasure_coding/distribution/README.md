@@ -12,7 +12,7 @@ This package provides erasure coding (EC) shard distribution algorithms that are
 
 ```go
 import (
-    "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding/distribution"
+    "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding/distribution"
 )
 
 // Parse replication policy
@@ -179,7 +179,7 @@ For example, with 10+4 EC (can lose 4 shards):
 The shell package wraps this distribution package for `ec.balance`:
 
 ```go
-import "github.com/seaweedfs/seaweedfs/weed/shell"
+import "github.com/Infowatch/seaweedfs/weed/shell"
 
 rebalancer := shell.NewProportionalECRebalancer(nodes, rp, diskType)
 moves, _ := rebalancer.PlanMoves(volumeId, locations)
@@ -190,7 +190,7 @@ moves, _ := rebalancer.PlanMoves(volumeId, locations)
 Worker tasks can use the distribution package directly:
 
 ```go
-import "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding/distribution"
+import "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding/distribution"
 
 ec := distribution.ECConfig{DataShards: 8, ParityShards: 4}
 rep := distribution.NewReplicationConfig(rp)
@@ -206,4 +206,3 @@ Enterprise features can provide custom EC configurations:
 ec, _ := distribution.NewECConfig(customData, customParity)
 rebalancer := distribution.NewRebalancer(ec, rep)
 ```
-

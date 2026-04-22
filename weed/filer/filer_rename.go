@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func (f *Filer) CanRename(ctx context.Context, source, target util.FullPath, oldName string) error {

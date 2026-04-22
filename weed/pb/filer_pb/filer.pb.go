@@ -5850,7 +5850,7 @@ const file_filer_proto_rawDesc = "" +
 	"\rMountRegister\x12\x1e.filer_pb.MountRegisterRequest\x1a\x1f.filer_pb.MountRegisterResponse\"\x00\x12F\n" +
 	"\tMountList\x12\x1a.filer_pb.MountListRequest\x1a\x1b.filer_pb.MountListResponse\"\x00BO\n" +
 	"\x10seaweedfs.clientB\n" +
-	"FilerProtoZ/github.com/seaweedfs/seaweedfs/weed/pb/filer_pbb\x06proto3"
+	"FilerProtoZ/github.com/Infowatch/seaweedfs/weed/pb/filer_pbb\x06proto3"
 
 var (
 	file_filer_proto_rawDescOnce sync.Once

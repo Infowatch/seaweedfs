@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 func TestStatusTpl(t *testing.T) {

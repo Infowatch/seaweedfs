@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -277,7 +277,7 @@ func TestPolicyEnforcementScenarios(t *testing.T) {
 				"Version": "2012-10-17",
 				"Statement": [
 					{
-						"Effect": "Allow", 
+						"Effect": "Allow",
 						"Action": ["s3:PutObjectTagging", "s3:DeleteObjectTagging"],
 						"Resource": "arn:aws:s3:::data-bucket/*"
 					}

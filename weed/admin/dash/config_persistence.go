@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/maintenance"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/balance"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/vacuum"
+	"github.com/Infowatch/seaweedfs/weed/admin/maintenance"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/balance"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/vacuum"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/proto"
 )

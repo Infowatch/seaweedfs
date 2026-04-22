@@ -14,25 +14,25 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/kms"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/kms"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 
 	// Import KMS providers to register them
-	_ "github.com/seaweedfs/seaweedfs/weed/kms/aws"
-	// _ "github.com/seaweedfs/seaweedfs/weed/kms/azure"  // TODO: Fix Azure SDK compatibility issues
-	_ "github.com/seaweedfs/seaweedfs/weed/kms/gcp"
-	_ "github.com/seaweedfs/seaweedfs/weed/kms/local"
-	_ "github.com/seaweedfs/seaweedfs/weed/kms/openbao"
+	_ "github.com/Infowatch/seaweedfs/weed/kms/aws"
+	// _ "github.com/Infowatch/seaweedfs/weed/kms/azure"  // TODO: Fix Azure SDK compatibility issues
+	_ "github.com/Infowatch/seaweedfs/weed/kms/gcp"
+	_ "github.com/Infowatch/seaweedfs/weed/kms/local"
+	_ "github.com/Infowatch/seaweedfs/weed/kms/openbao"
 	"google.golang.org/grpc"
 )
 

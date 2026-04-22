@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/integration"
+	"github.com/Infowatch/seaweedfs/weed/iam/integration"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -48,7 +48,7 @@ func TestLoadIAMManagerFromConfig_Overrides(t *testing.T) {
 			"tokenDuration": "2h",
 			"maxSessionLength": "24h",
 			"issuer": "custom-issuer",
-			"signingKey": "ZXhwbGljaXQtc2lnbmluZy1rZXktMTIzNDU=" 
+			"signingKey": "ZXhwbGljaXQtc2lnbmluZy1rZXktMTIzNDU="
 		},
 		"policy": {
 			"storeType": "memory",

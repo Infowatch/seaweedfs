@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // TestVerifySignedHeadersCoverage_Unit exercises the helper directly.

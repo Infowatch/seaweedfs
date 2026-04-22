@@ -3,8 +3,8 @@ package command
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 func TestMetadataEventDirectoryMembershipUsesDirectoryBoundaries(t *testing.T) {

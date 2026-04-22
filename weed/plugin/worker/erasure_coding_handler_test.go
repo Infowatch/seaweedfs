@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	ecstorage "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	erasurecodingtask "github.com/seaweedfs/seaweedfs/weed/worker/tasks/erasure_coding"
-	workertypes "github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	ecstorage "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	erasurecodingtask "github.com/Infowatch/seaweedfs/weed/worker/tasks/erasure_coding"
+	workertypes "github.com/Infowatch/seaweedfs/weed/worker/types"
 	"google.golang.org/protobuf/proto"
 )
 

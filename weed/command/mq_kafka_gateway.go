@@ -6,9 +6,9 @@ import (
 	_ "net/http/pprof"
 	"os"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/gateway"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/gateway"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 var (

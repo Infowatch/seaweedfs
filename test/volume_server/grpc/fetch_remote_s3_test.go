@@ -16,11 +16,11 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
-	"github.com/seaweedfs/seaweedfs/weed/pb/remote_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/weed/pb/remote_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 )
 
 // findAvailablePort finds a free TCP port on localhost.

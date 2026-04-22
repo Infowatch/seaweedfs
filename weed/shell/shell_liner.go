@@ -11,14 +11,14 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
 
 	"github.com/peterh/liner"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 	"golang.org/x/term"
 )
 

@@ -9,10 +9,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/protocol"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/schema"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/protocol"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/schema"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

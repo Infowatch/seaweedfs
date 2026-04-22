@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"hash/crc32"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/compression"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/compression"
 )
 
 // RecordBatch represents a parsed Kafka record batch

@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // StoreSSECIVInMetadata stores the SSE-C IV in entry metadata as base64 encoded string

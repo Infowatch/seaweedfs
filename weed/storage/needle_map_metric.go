@@ -6,9 +6,9 @@ import (
 	"os"
 	"sync/atomic"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/idx"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/idx"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 	boom "github.com/tylertreat/BoomFilters"
 )
 

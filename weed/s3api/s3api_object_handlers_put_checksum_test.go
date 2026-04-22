@@ -5,8 +5,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 func TestDetectRequestedChecksumAlgorithm(t *testing.T) {
@@ -35,7 +35,7 @@ func TestDetectRequestedChecksumAlgorithm(t *testing.T) {
 		},
 		{
 			// Presigned URL: AWS SDK hoists the sdk-checksum-algorithm header into the query string.
-			// Regression test for https://github.com/seaweedfs/seaweedfs/issues/9075
+			// Regression test for https://github.com/Infowatch/seaweedfs/issues/9075
 			name: "presigned url hoists sdk algorithm to query",
 			setup: func(r *http.Request) {
 				q := r.URL.Query()

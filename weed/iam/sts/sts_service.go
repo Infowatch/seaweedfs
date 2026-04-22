@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
-	"github.com/seaweedfs/seaweedfs/weed/iam/utils"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/iam/utils"
 )
 
 // TrustPolicyValidator interface for validating trust policies during role assumption

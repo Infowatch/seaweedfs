@@ -3,7 +3,7 @@ package policy
 // Tests for S3 bucket policy JSON round-trip idempotency.
 // These validate behavior that IaC tools (Terraform, Ansible) depend on:
 // PUT a policy, GET it back, and verify the JSON matches exactly.
-// See https://github.com/seaweedfs/seaweedfs/issues/8657
+// See https://github.com/Infowatch/seaweedfs/issues/8657
 
 import (
 	"encoding/json"

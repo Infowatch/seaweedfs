@@ -1,17 +1,17 @@
-module github.com/seaweedfs/seaweedfs/test/kafka
+module github.com/Infowatch/seaweedfs/test/kafka
 
 go 1.25.0
 
 require (
 	github.com/IBM/sarama v1.46.0
 	github.com/linkedin/goavro/v2 v2.15.0
-	github.com/seaweedfs/seaweedfs v0.0.0-00010101000000-000000000000
+	github.com/Infowatch/seaweedfs v0.0.0-00010101000000-000000000000
 	github.com/segmentio/kafka-go v0.4.49
 	github.com/stretchr/testify v1.11.1
 	google.golang.org/grpc v1.79.3
 )
 
-replace github.com/seaweedfs/seaweedfs => ../../
+replace github.com/Infowatch/seaweedfs => ../../
 
 require (
 	cloud.google.com/go/auth v0.18.2 // indirect

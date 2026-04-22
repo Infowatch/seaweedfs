@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 	"github.com/stretchr/testify/assert"
 )
 

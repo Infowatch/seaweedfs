@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 func TestMountRegister_DisabledIsNoOp(t *testing.T) {

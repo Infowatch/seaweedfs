@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/maintenance"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/admin/maintenance"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 // Core cluster topology structures

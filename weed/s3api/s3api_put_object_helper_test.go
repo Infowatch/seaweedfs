@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/memory"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 func TestGetRequestDataReader_ChunkedEncodingWithoutIAM(t *testing.T) {

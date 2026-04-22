@@ -4,23 +4,23 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iamapi"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iamapi"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
 
 	// Import credential stores to register them
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/filer_etc"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/postgres"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/filer_etc"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/memory"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/postgres"
 )
 
 var (
@@ -49,16 +49,16 @@ var cmdIam = &Command{
 
 	DEPRECATION NOTICE:
 	The standalone 'weed iam' command is deprecated and will be removed in a future release.
-	
+
 	The IAM API is now embedded in the S3 server by default. Simply use 'weed s3' instead,
 	which provides both S3 and IAM APIs on the same port (enabled by default with -iam=true).
-	
+
 	This simplifies deployment by running a single server instead of two separate servers,
 	following the pattern used by MinIO and Ceph RGW.
-	
+
 	To use the embedded IAM API:
 	  weed s3 -port=8333          # IAM API is available on the same port
-	
+
 	To disable the embedded IAM API (if you prefer the old behavior):
 	  weed s3 -iam=false          # Run S3 without IAM
 	  weed iam -port=8111         # Run IAM separately (deprecated)

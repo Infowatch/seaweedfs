@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 var (

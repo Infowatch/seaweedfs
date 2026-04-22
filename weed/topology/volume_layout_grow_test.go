@@ -3,12 +3,12 @@ package topology
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
-// Reproduces https://github.com/seaweedfs/seaweedfs/issues/8986
+// Reproduces https://github.com/Infowatch/seaweedfs/issues/8986
 //
 // Topology: 1 DC with 3 racks, replication "010" (different-rack).
 // Each volume has replicas on 2 of the 3 racks.

@@ -4,7 +4,7 @@ package iamapi
 // for backwards compatibility with existing code.
 
 import (
-	iamlib "github.com/seaweedfs/seaweedfs/weed/iam"
+	iamlib "github.com/Infowatch/seaweedfs/weed/iam"
 )
 
 // Type aliases for IAM response types from shared package

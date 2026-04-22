@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 )
 
 func TestAdminStatusAndHealthz(t *testing.T) {

@@ -10,8 +10,8 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import (
 	"fmt"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 	"strings"
 	"time"
 )

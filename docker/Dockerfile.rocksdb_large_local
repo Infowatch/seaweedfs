@@ -2,10 +2,10 @@ FROM chrislusf/rocksdb_dev_env as builder
 
 # build SeaweedFS
 RUN mkdir -p /go/src/github.com/seaweedfs/
-ADD . /go/src/github.com/seaweedfs/seaweedfs
+ADD . /go/src/github.com/Infowatch/seaweedfs
 RUN ls -al /go/src/github.com/seaweedfs/ && \
-  cd /go/src/github.com/seaweedfs/seaweedfs/weed \
-  && export LDFLAGS="-X github.com/seaweedfs/seaweedfs/weed/util/version.COMMIT=$(git rev-parse --short HEAD)" \
+  cd /go/src/github.com/Infowatch/seaweedfs/weed \
+  && export LDFLAGS="-X github.com/Infowatch/seaweedfs/weed/util/version.COMMIT=$(git rev-parse --short HEAD)" \
   && go install -tags "5BytesOffset rocksdb" -ldflags "-extldflags -static ${LDFLAGS}"
 
 
@@ -13,8 +13,8 @@ FROM alpine AS final
 LABEL author="Chris Lu"
 COPY --from=builder /go/bin/weed /usr/bin/
 RUN mkdir -p /etc/seaweedfs
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/filer_rocksdb.toml /etc/seaweedfs/filer.toml
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/entrypoint.sh /entrypoint.sh
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/filer_rocksdb.toml /etc/seaweedfs/filer.toml
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/entrypoint.sh /entrypoint.sh
 
 # Install dependencies and create non-root user
 RUN apk upgrade --no-cache && \

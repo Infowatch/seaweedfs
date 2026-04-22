@@ -13,14 +13,14 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	weed_server "github.com/seaweedfs/seaweedfs/weed/server"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	weed_server "github.com/Infowatch/seaweedfs/weed/server"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 
 	"github.com/getsentry/sentry-go"
-	"github.com/seaweedfs/seaweedfs/weed/command"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/command"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 var IsDebug *bool

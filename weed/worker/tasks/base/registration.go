@@ -3,11 +3,11 @@ package base
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // GenericFactory creates task instances using a TaskDefinition

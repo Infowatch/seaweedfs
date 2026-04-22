@@ -52,21 +52,21 @@ ENV CGO_LDFLAGS="-lfdb_c"
 
 # build SeaweedFS sources; prefer local context but fall back to git clone if context only has docker files
 ARG SOURCE_REF=master
-WORKDIR /go/src/github.com/seaweedfs/seaweedfs
+WORKDIR /go/src/github.com/Infowatch/seaweedfs
 COPY . .
 RUN set -euo pipefail && \
     if [ ! -d weed ]; then \
         echo "Local build context does not include SeaweedFS sources; cloning ${SOURCE_REF}" >&2; \
-        mkdir -p /tmp/local-context && cp -a /go/src/github.com/seaweedfs/seaweedfs/. /tmp/local-context && \
-        cd / && rm -rf /go/src/github.com/seaweedfs/seaweedfs && \
-        git clone --depth 1 --branch ${SOURCE_REF} https://github.com/seaweedfs/seaweedfs /go/src/github.com/seaweedfs/seaweedfs && \
-        cp -a /tmp/local-context/. /go/src/github.com/seaweedfs/seaweedfs/docker/ && \
+        mkdir -p /tmp/local-context && cp -a /go/src/github.com/Infowatch/seaweedfs/. /tmp/local-context && \
+        cd / && rm -rf /go/src/github.com/Infowatch/seaweedfs && \
+        git clone --depth 1 --branch ${SOURCE_REF} https://github.com/Infowatch/seaweedfs /go/src/github.com/Infowatch/seaweedfs && \
+        cp -a /tmp/local-context/. /go/src/github.com/Infowatch/seaweedfs/docker/ && \
         rm -rf /tmp/local-context && \
-        cd /go/src/github.com/seaweedfs/seaweedfs; \
+        cd /go/src/github.com/Infowatch/seaweedfs; \
     fi && \
     cd weed \
   && COMMIT_SHA=$(git rev-parse --short HEAD 2>/dev/null || echo "unknown") \
-  && export LDFLAGS="-X github.com/seaweedfs/seaweedfs/weed/util/version.COMMIT=${COMMIT_SHA}" \
+  && export LDFLAGS="-X github.com/Infowatch/seaweedfs/weed/util/version.COMMIT=${COMMIT_SHA}" \
   && go install -tags "5BytesOffset foundationdb" -ldflags "${LDFLAGS}"
 
 
@@ -91,8 +91,8 @@ RUN ldconfig
 # Copy SeaweedFS binary and configuration
 COPY --from=builder /go/bin/weed /usr/bin/
 RUN mkdir -p /etc/seaweedfs
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/filer_foundationdb.toml /etc/seaweedfs/filer.toml
-COPY --from=builder /go/src/github.com/seaweedfs/seaweedfs/docker/entrypoint.sh /entrypoint.sh
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/filer_foundationdb.toml /etc/seaweedfs/filer.toml
+COPY --from=builder /go/src/github.com/Infowatch/seaweedfs/docker/entrypoint.sh /entrypoint.sh
 
 # Create non-root user
 RUN groupadd -g 1000 seaweed && \
@@ -129,4 +129,3 @@ WORKDIR /data
 USER seaweed
 
 ENTRYPOINT ["/entrypoint.sh"]
-

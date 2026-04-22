@@ -2,8 +2,8 @@ package app
 
 import (
     "fmt"
-    "github.com/seaweedfs/seaweedfs/weed/admin/dash"
-    "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
+    "github.com/Infowatch/seaweedfs/weed/admin/dash"
+    "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 )
 
 templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
@@ -76,7 +76,7 @@ templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
                                 <td><strong>Missing Shards:</strong></td>
                                 <td>
                                     for i, shardID := range data.MissingShards {
-                                        if i > 0 { 
+                                        if i > 0 {
                                             <span>, </span>
                                         }
                                         @renderEcShardBadge(uint32(shardID), true)
@@ -88,7 +88,7 @@ templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
                             <td><strong>Data Centers:</strong></td>
                             <td>
                                 for i, dc := range data.DataCenters {
-                                    if i > 0 { 
+                                    if i > 0 {
                                         <span>, </span>
                                     }
                                     <span class="badge bg-primary">{dc}</span>
@@ -111,7 +111,7 @@ templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
                 </div>
             </div>
         </div>
-        
+
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
@@ -140,7 +140,7 @@ templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Shard Distribution Visualization -->
                     <div class="mt-3">
                         <h6>Present Shards:</h6>
@@ -284,18 +284,18 @@ templ EcVolumeDetails(data dash.EcVolumeDetailsData) {
             }
         </div>
     </div>
-    
+
     <script>
         // Sorting functionality
         function sortBy(field) {
             const currentSort = new URLSearchParams(window.location.search).get('sort_by');
             const currentOrder = new URLSearchParams(window.location.search).get('sort_order') || 'asc';
-            
+
             let newOrder = 'asc';
             if (currentSort === field && currentOrder === 'asc') {
                 newOrder = 'desc';
             }
-            
+
             const url = new URL(window.location);
             url.searchParams.set('sort_by', field);
             url.searchParams.set('sort_order', newOrder);
@@ -332,4 +332,4 @@ func bytesToHumanReadableUint64(bytes uint64) string {
         exp++
     }
     return fmt.Sprintf("%.1f%cB", float64(bytes)/float64(div), "KMGTPE"[exp])
-} 
+}

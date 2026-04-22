@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/kms"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/kms"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // LocalKMSProvider implements a local, in-memory KMS for development and testing

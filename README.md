@@ -2,7 +2,7 @@
 
 **Original project**
 
-https://github.com/seaweedfs/seaweedfs/
+https://github.com/Infowatch/seaweedfs/
 
 
 **TODO**

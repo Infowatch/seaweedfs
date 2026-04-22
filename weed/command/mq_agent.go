@@ -1,14 +1,14 @@
 package command
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/mq/agent"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_agent_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/agent"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_agent_pb"
 	"google.golang.org/grpc/reflection"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 var (
@@ -35,7 +35,7 @@ var cmdMqAgent = &Command{
 	Short:     "<WIP> start a message queue agent",
 	Long: `start a message queue agent
 
-	The agent runs on local server to accept gRPC calls to write or read messages. 
+	The agent runs on local server to accept gRPC calls to write or read messages.
 	The messages are sent to message queue brokers.
 
 `,

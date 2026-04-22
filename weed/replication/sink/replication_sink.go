@@ -1,9 +1,9 @@
 package sink
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type ReplicationSink interface {

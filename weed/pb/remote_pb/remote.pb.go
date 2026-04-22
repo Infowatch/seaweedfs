@@ -588,7 +588,7 @@ const file_remote_proto_rawDesc = "" +
 	"\x04path\x18\x03 \x01(\tR\x04path\x129\n" +
 	"\x19listing_cache_ttl_seconds\x18\x04 \x01(\x05R\x16listingCacheTtlSecondsBP\n" +
 	"\x10seaweedfs.clientB\n" +
-	"FilerProtoZ0github.com/seaweedfs/seaweedfs/weed/pb/remote_pbb\x06proto3"
+	"FilerProtoZ0github.com/Infowatch/seaweedfs/weed/pb/remote_pbb\x06proto3"
 
 var (
 	file_remote_proto_rawDescOnce sync.Once

@@ -4,9 +4,9 @@ import (
 	"sort"
 	"sync"
 
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 
-	new_map "github.com/seaweedfs/seaweedfs/weed/storage/needle_map"
+	new_map "github.com/Infowatch/seaweedfs/weed/storage/needle_map"
 )
 
 const (

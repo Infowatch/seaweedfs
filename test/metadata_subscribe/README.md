@@ -11,7 +11,7 @@ Tests basic metadata subscription functionality:
 - Upload files and verify events are received
 
 ### TestMetadataSubscribeSingleFilerNoStall
-Regression test for [issue #4977](https://github.com/seaweedfs/seaweedfs/issues/4977):
+Regression test for [issue #4977](https://github.com/Infowatch/seaweedfs/issues/4977):
 - Tests that metadata subscription doesn't stall in single-filer setups
 - Simulates high-load file uploads while a subscriber tries to keep up
 - Verifies that events are received without significant stalling

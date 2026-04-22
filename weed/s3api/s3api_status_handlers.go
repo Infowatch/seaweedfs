@@ -3,7 +3,7 @@ package s3api
 import (
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 func (s3a *S3ApiServer) StatusHandler(w http.ResponseWriter, r *http.Request) {

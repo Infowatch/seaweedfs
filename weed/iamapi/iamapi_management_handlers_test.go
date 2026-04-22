@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -187,7 +187,7 @@ func TestPutGetUserPolicyPreservesStatements(t *testing.T) {
 }
 
 // TestPutGetUserPolicyIssue9008 is a regression test for
-// https://github.com/seaweedfs/seaweedfs/issues/9008: put-user-policy followed
+// https://github.com/Infowatch/seaweedfs/issues/9008: put-user-policy followed
 // by get-user-policy must return the same policy document that was submitted,
 // with Action and Resource lists intact (no duplication, no collapsing).
 func TestPutGetUserPolicyIssue9008(t *testing.T) {

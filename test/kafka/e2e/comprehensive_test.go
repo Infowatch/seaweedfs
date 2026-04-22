@@ -3,7 +3,7 @@ package e2e
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestComprehensiveE2E tests complete end-to-end workflows

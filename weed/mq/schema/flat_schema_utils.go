@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // SplitFlatSchemaToKeyValue takes a flat RecordType and key column names,

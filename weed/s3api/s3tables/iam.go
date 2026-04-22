@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/integration"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/integration"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // IAMAuthorizer allows s3tables handlers to evaluate IAM policies without importing s3api.

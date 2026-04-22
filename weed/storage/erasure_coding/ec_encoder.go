@@ -8,12 +8,12 @@ import (
 
 	"github.com/klauspost/reedsolomon"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/idx"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle_map"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
-	"github.com/seaweedfs/seaweedfs/weed/storage/volume_info"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/idx"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle_map"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/volume_info"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 const (

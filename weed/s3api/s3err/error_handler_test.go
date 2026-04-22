@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,7 +3,7 @@ package protocol
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/compression"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/compression"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -9,15 +9,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 
 	// Import task packages to trigger their auto-registration
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/balance"
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/erasure_coding"
-	_ "github.com/seaweedfs/seaweedfs/weed/worker/tasks/vacuum"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/balance"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/erasure_coding"
+	_ "github.com/Infowatch/seaweedfs/weed/worker/tasks/vacuum"
 )
 
 // Worker represents a maintenance worker instance

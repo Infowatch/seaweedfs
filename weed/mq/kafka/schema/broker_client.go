@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/pub_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/sub_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/pub_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/sub_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // BrokerClient wraps pub_client.TopicPublisher to handle schematized messages

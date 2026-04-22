@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/integration"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/protocol"
-	filer_pb "github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	schema_pb "github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/filer_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/integration"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/protocol"
+	filer_pb "github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	schema_pb "github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // mockRecord implements the SMQRecord interface for testing

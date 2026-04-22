@@ -29,7 +29,7 @@ This document describes the SDK versions tested against SeaweedFS S3 API and kno
 
 ### AWS SDK v2 for Java - ETag Validation
 
-**Issue**: [GitHub #7768](https://github.com/seaweedfs/seaweedfs/issues/7768)
+**Issue**: [GitHub #7768](https://github.com/Infowatch/seaweedfs/issues/7768)
 
 AWS SDK v2 for Java includes strict ETag validation in `ChecksumsEnabledValidator.validatePutObjectChecksum`. It decodes the ETag as a hexadecimal MD5 hash using `Base16Codec.decode()`.
 
@@ -122,5 +122,4 @@ AWS SDK v2 supports SHA-256 and CRC32 checksums in addition to MD5. SeaweedFS cu
 
 - [AWS S3 ETag Documentation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html)
 - [AWS SDK v2 Migration Guide](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migration.html)
-- [GitHub Issue #7768](https://github.com/seaweedfs/seaweedfs/issues/7768)
-
+- [GitHub Issue #7768](https://github.com/Infowatch/seaweedfs/issues/7768)

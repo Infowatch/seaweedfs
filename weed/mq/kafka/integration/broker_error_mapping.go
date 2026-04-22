@@ -3,7 +3,7 @@ package integration
 import (
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
 )
 
 // Kafka Protocol Error Codes (copied from protocol package to avoid import cycle)

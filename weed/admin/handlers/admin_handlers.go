@@ -9,12 +9,12 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/stats"
 )
 
 // AdminHandlers contains all the HTTP handlers for the admin interface

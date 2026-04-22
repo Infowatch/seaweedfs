@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/security"
 )
 
 type scriptedHTTPResponse struct {

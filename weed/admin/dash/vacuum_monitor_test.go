@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
 
-	adminplugin "github.com/seaweedfs/seaweedfs/weed/admin/plugin"
+	adminplugin "github.com/Infowatch/seaweedfs/weed/admin/plugin"
 )
 
 // TestVacuumMonitorStateTransitions verifies the state transition logic that

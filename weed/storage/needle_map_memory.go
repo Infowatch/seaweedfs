@@ -3,11 +3,11 @@ package storage
 import (
 	"os"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/idx"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle_map"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/idx"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle_map"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 )
 

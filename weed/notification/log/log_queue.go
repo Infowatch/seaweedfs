@@ -1,9 +1,9 @@
 package kafka
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/notification"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/notification"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	"google.golang.org/protobuf/proto"
 )
 

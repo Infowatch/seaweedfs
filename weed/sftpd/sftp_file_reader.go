@@ -5,9 +5,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	filer_pb "github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/utils"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	filer_pb "github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/utils"
 )
 
 type SeaweedFileReaderAt struct {

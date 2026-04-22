@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func TestSegmentBsearchKey(t *testing.T) {

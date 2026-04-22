@@ -14,13 +14,13 @@ import (
 	"sync"
 
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	iamlib "github.com/seaweedfs/seaweedfs/weed/iam"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	iamlib "github.com/Infowatch/seaweedfs/weed/iam"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 )
 
 // Constants from shared package

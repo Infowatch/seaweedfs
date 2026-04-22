@@ -3,10 +3,10 @@ package balance
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 func rp(t *testing.T, code string) *super_block.ReplicaPlacement {

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 
-	"github.com/seaweedfs/seaweedfs/weed/sequence"
-	"github.com/seaweedfs/seaweedfs/weed/storage"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/sequence"
+	"github.com/Infowatch/seaweedfs/weed/storage"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
 )
 
 var topologyLayout = `

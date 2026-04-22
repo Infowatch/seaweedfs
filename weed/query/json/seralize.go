@@ -1,6 +1,6 @@
 package json
 
-import "github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
+import "github.com/Infowatch/seaweedfs/weed/query/sqltypes"
 
 func ToJson(buf []byte, selections []string, values []sqltypes.Value) []byte {
 	buf = append(buf, '{')

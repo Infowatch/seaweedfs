@@ -4,7 +4,7 @@ import (
 	_ "embed"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster/maintenance"
+	"github.com/Infowatch/seaweedfs/weed/cluster/maintenance"
 )
 
 func init() {

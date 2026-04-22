@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/IBM/sarama"
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestSMQIntegration tests that the Kafka gateway properly integrates with SeaweedMQ

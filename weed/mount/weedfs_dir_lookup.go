@@ -3,8 +3,8 @@ package mount
 import (
 	"github.com/seaweedfs/go-fuse/v2/fuse"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // Lookup is called by the kernel when the VFS wants to know

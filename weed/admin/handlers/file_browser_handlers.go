@@ -17,15 +17,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/http/client"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/http/client"
 )
 
 type FileBrowserHandlers struct {

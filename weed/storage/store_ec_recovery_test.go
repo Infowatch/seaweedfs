@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/klauspost/reedsolomon"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 // mockEcVolume creates a mock EC volume for testing

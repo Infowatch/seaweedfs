@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 )
 
 // testMasterClient implements HasLookupFileIdFunction and CacheInvalidator for tests

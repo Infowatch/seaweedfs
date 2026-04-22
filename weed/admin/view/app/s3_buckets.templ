@@ -2,7 +2,7 @@ package app
 
 import (
     "fmt"
-    "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+    "github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 templ S3Buckets(data dash.S3BucketsData) {
@@ -234,20 +234,20 @@ templ S3Buckets(data dash.S3BucketsData) {
                                                        title="Browse Files">
                                                         <i class="fas fa-folder-open"></i>
                                                     </a>
-                                                    <button type="button" 
+                                                    <button type="button"
                                                             class="btn btn-outline-primary btn-sm view-details-btn"
                                                             data-bucket-name={bucket.Name}
                                                             title="View Details">
                                                         <i class="fas fa-eye"></i>
                                                     </button>
-                                                    <button type="button" 
+                                                    <button type="button"
                                                             class="btn btn-outline-info btn-sm owner-btn"
                                                             data-bucket-name={bucket.Name}
                                                             data-current-owner={bucket.Owner}
                                                             title="Manage Owner">
                                                         <i class="fas fa-user-edit"></i>
                                                     </button>
-                                                    <button type="button" 
+                                                    <button type="button"
                                                             class="btn btn-outline-warning btn-sm quota-btn"
                                                             data-bucket-name={bucket.Name}
                                                             data-current-quota={fmt.Sprintf("%d", getQuotaInMB(bucket.Quota))}
@@ -255,7 +255,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                                                             title="Manage Quota">
                                                         <i class="fas fa-tachometer-alt"></i>
                                                     </button>
-                                                    <button type="button" 
+                                                    <button type="button"
                                                             class="btn btn-outline-danger btn-sm delete-bucket-btn"
                                                             data-bucket-name={bucket.Name}
                                                             title="Delete Bucket">
@@ -272,8 +272,8 @@ templ S3Buckets(data dash.S3BucketsData) {
                                                 <div>
                                                     					<h5>No Object Store buckets found</h5>
                                                     <p>Create your first bucket to get started with S3 storage.</p>
-                                                    <button type="button" class="btn btn-primary" 
-                                                            data-bs-toggle="modal" 
+                                                    <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal"
                                                             data-bs-target="#createBucketModal">
                                                         <i class="fas fa-plus me-1"></i>Create Bucket
                                                     </button>
@@ -369,9 +369,9 @@ templ S3Buckets(data dash.S3BucketsData) {
                     <div class="modal-body">
                         <div class="mb-3">
                             <label for="bucketName" class="form-label">Bucket Name</label>
-                            <input type="text" class="form-control" id="bucketName" name="name" 
+                            <input type="text" class="form-control" id="bucketName" name="name"
                                    placeholder="my-bucket-name" required
-                                   pattern="[a-z0-9.-]+" 
+                                   pattern="[a-z0-9.-]+"
                                    title="Bucket name must contain only lowercase letters, numbers, dots, and hyphens">
                             <div class="form-text">
                                 Bucket names must be between 3 and 63 characters, contain only lowercase letters, numbers, dots, and hyphens.
@@ -388,7 +388,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                                 The S3 identity that owns this bucket. Non-admin users can only access buckets they own.
                             </div>
                         </div>
-                        
+
                         <div class="mb-3">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="enableQuota" name="quota_enabled">
@@ -397,12 +397,12 @@ templ S3Buckets(data dash.S3BucketsData) {
                                 </label>
                             </div>
                         </div>
-                        
+
                         <div class="mb-3" id="quotaSettings" style="display: none;">
                             <div class="row">
                                 <div class="col-md-8">
                                     <label for="quotaSize" class="form-label">Quota Size</label>
-                                    <input type="number" class="form-control" id="quotaSize" name="quota_size" 
+                                    <input type="number" class="form-control" id="quotaSize" name="quota_size"
                                            placeholder="1024" min="1" step="1">
                                 </div>
                                 <div class="col-md-4">
@@ -467,7 +467,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                                     </div>
                                     <div id="defaultRetentionSettings" style="display: none;">
                                         <label for="objectLockDuration" class="form-label">Default Retention (days)</label>
-                                        <input type="number" class="form-control" id="objectLockDuration" name="object_lock_duration" 
+                                        <input type="number" class="form-control" id="objectLockDuration" name="object_lock_duration"
                                                placeholder="30" min="1" max="36500" step="1">
                                         <div class="form-text">
                                             Default retention period for new objects (1-36500 days).
@@ -532,7 +532,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                             <label class="form-label">Bucket Name</label>
                             <input type="text" class="form-control" id="quotaBucketName" readonly>
                         </div>
-                        
+
                         <div class="mb-3">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="quotaEnabled" name="quota_enabled">
@@ -541,12 +541,12 @@ templ S3Buckets(data dash.S3BucketsData) {
                                 </label>
                             </div>
                         </div>
-                        
+
                         <div class="mb-3" id="quotaSizeSettings">
                             <div class="row">
                                 <div class="col-md-8">
                                     <label for="quotaSizeMB" class="form-label">Quota Size</label>
-                                    <input type="number" class="form-control" id="quotaSizeMB" name="quota_size" 
+                                    <input type="number" class="form-control" id="quotaSizeMB" name="quota_size"
                                            placeholder="1024" min="0" step="1">
                                 </div>
                                 <div class="col-md-4">
@@ -617,7 +617,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                             <label class="form-label">Bucket Name</label>
                             <input type="text" class="form-control" id="ownerBucketName" readonly>
                         </div>
-                        
+
                         <div class="mb-3">
                             <label for="bucketOwnerSelect" class="form-label">Owner</label>
                             <select class="form-select" id="bucketOwnerSelect" name="owner">
@@ -708,14 +708,14 @@ templ S3Buckets(data dash.S3BucketsData) {
         // Populate owner dropdown when create bucket modal opens
         document.getElementById('createBucketModal').addEventListener('show.bs.modal', async function() {
             const ownerSelect = document.getElementById('bucketOwner');
-            
+
             // Only fetch if not already populated
             if (ownerSelect.options.length <= 1) {
                 try {
                     const response = await fetch('/api/users');
                     const data = await response.json();
                     const users = data.users || [];
-                    
+
                     users.forEach(user => {
                         const option = document.createElement('option');
                         option.value = user.username;
@@ -734,7 +734,7 @@ templ S3Buckets(data dash.S3BucketsData) {
         // Handle form submission
         createBucketForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const formData = new FormData(this);
             const data = {
                 name: formData.get('name'),
@@ -802,14 +802,14 @@ templ S3Buckets(data dash.S3BucketsData) {
                 const bucketName = this.dataset.bucketName;
                 const currentQuota = parseInt(this.dataset.currentQuota);
                 const quotaEnabled = this.dataset.quotaEnabled === 'true';
-                
+
                 document.getElementById('quotaBucketName').value = bucketName;
                 document.getElementById('quotaEnabled').checked = quotaEnabled;
                 document.getElementById('quotaSizeMB').value = currentQuota;
-                
+
                 // Toggle quota size settings
                 document.getElementById('quotaSizeSettings').style.display = quotaEnabled ? 'block' : 'none';
-                
+
                 // Store bucket name on form element instead of global window property
                 quotaForm.dataset.bucketName = bucketName;
                 quotaModalInstance.show();
@@ -834,7 +834,7 @@ templ S3Buckets(data dash.S3BucketsData) {
         // Handle quota form submission
         document.getElementById('quotaForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const bucketName = this.dataset.bucketName;
             if (!bucketName) return;
 
@@ -883,17 +883,17 @@ templ S3Buckets(data dash.S3BucketsData) {
             button.addEventListener('click', async function() {
                 const bucketName = this.dataset.bucketName;
                 const currentOwner = this.dataset.currentOwner || '';
-                
+
                 document.getElementById('ownerBucketName').value = bucketName;
                 // Store bucket name on form element instead of global window property
                 ownerForm.dataset.bucketName = bucketName;
-                
+
                 // Show loading spinner
                 document.getElementById('ownerLoadingSpinner').style.display = 'block';
                 document.getElementById('bucketOwnerSelect').disabled = true;
-                
+
                 ownerModalInstance.show();
-                
+
                 // Fetch users if not cached
                 try {
                     if (!cachedUsers) {
@@ -901,11 +901,11 @@ templ S3Buckets(data dash.S3BucketsData) {
                         const data = await response.json();
                         cachedUsers = data.users || [];
                     }
-                    
+
                     // Populate the select dropdown
                     const select = document.getElementById('bucketOwnerSelect');
                     select.innerHTML = '<option value="">No owner (admin-only access)</option>';
-                    
+
                     cachedUsers.forEach(user => {
                         const option = document.createElement('option');
                         option.value = user.username;
@@ -915,7 +915,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                         }
                         select.appendChild(option);
                     });
-                    
+
                     select.disabled = false;
                 } catch (error) {
                     console.error('Error fetching users:', error);
@@ -934,7 +934,7 @@ templ S3Buckets(data dash.S3BucketsData) {
         // Handle owner form submission
         document.getElementById('ownerForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const bucketName = this.dataset.bucketName;
             if (!bucketName) return;
 
@@ -971,28 +971,28 @@ templ S3Buckets(data dash.S3BucketsData) {
         document.querySelectorAll('.view-details-btn').forEach(button => {
             button.addEventListener('click', function() {
                 const bucketName = this.dataset.bucketName;
-                
+
                 // Update modal title
-                document.getElementById('bucketDetailsModalLabel').innerHTML = 
+                document.getElementById('bucketDetailsModalLabel').innerHTML =
                     '<i class="fas fa-cube me-2"></i>Bucket Details - ' + bucketName;
-                
+
                 // Show loading spinner
-                document.getElementById('bucketDetailsContent').innerHTML = 
+                document.getElementById('bucketDetailsContent').innerHTML =
                     '<div class="text-center py-4">' +
                     '<div class="spinner-border text-primary" role="status">' +
                     '<span class="visually-hidden">Loading...</span>' +
                     '<\\/div>' +
                     '<div class="mt-2">Loading bucket details...</div>' +
                     '<\\/div>';
-                
+
                 detailsModalInstance.show();
-                
+
                 // Fetch bucket details
                 fetch('/api/s3/buckets/' + bucketName)
                     .then(response => response.json())
                     .then(data => {
                         if (data.error) {
-                            document.getElementById('bucketDetailsContent').innerHTML = 
+                            document.getElementById('bucketDetailsContent').innerHTML =
                                 '<div class="alert alert-danger">' +
                                 '<i class="fas fa-exclamation-triangle me-2"></i>' +
                                 'Error loading bucket details: ' + data.error +
@@ -1003,7 +1003,7 @@ templ S3Buckets(data dash.S3BucketsData) {
                     })
                     .catch(error => {
                         console.error('Error fetching bucket details:', error);
-                        document.getElementById('bucketDetailsContent').innerHTML = 
+                        document.getElementById('bucketDetailsContent').innerHTML =
                             '<div class="alert alert-danger">' +
                             '<i class="fas fa-exclamation-triangle me-2"></i>' +
                             'Error loading bucket details: ' + error.message +
@@ -1215,7 +1215,7 @@ func getQuotaStatusColor(used, quota int64, enabled bool) string {
     if !enabled || quota <= 0 {
         return "secondary"
     }
-    
+
     percentage := float64(used) / float64(quota) * 100
     if percentage >= 90 {
         return "danger"

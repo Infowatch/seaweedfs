@@ -17,12 +17,12 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/config"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/consumer"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/metrics"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/producer"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/tracker"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/config"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/consumer"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/metrics"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/producer"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/tracker"
 )
 
 var (

@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	s3const "github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	s3const "github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
 )
 
 // Policy Engine Types

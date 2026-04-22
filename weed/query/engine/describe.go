@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
+	"github.com/Infowatch/seaweedfs/weed/query/sqltypes"
 )
 
 // executeDescribeStatement handles DESCRIBE table commands

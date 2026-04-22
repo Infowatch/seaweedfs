@@ -9,11 +9,11 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/compression"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/integration"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/schema"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/compression"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/integration"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/schema"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // TestSchemaAwareParsing tests the schema-aware message parsing functionality

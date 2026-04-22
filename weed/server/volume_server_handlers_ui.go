@@ -5,14 +5,14 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
-	ui "github.com/seaweedfs/seaweedfs/weed/server/volume_server_ui"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/storage"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
+	ui "github.com/Infowatch/seaweedfs/weed/server/volume_server_ui"
+	"github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/storage"
 )
 
 func (vs *VolumeServer) uiStatusHandler(w http.ResponseWriter, r *http.Request) {

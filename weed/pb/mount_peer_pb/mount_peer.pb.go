@@ -513,7 +513,7 @@ const file_mount_peer_proto_rawDesc = "" +
 	"\rChunkAnnounce\x12#.mount_peer_pb.ChunkAnnounceRequest\x1a$.mount_peer_pb.ChunkAnnounceResponse\"\x00\x12V\n" +
 	"\vChunkLookup\x12!.mount_peer_pb.ChunkLookupRequest\x1a\".mount_peer_pb.ChunkLookupResponse\"\x00\x12U\n" +
 	"\n" +
-	"FetchChunk\x12 .mount_peer_pb.FetchChunkRequest\x1a!.mount_peer_pb.FetchChunkResponse\"\x000\x01B6Z4github.com/seaweedfs/seaweedfs/weed/pb/mount_peer_pbb\x06proto3"
+	"FetchChunk\x12 .mount_peer_pb.FetchChunkRequest\x1a!.mount_peer_pb.FetchChunkResponse\"\x000\x01B6Z4github.com/Infowatch/seaweedfs/weed/pb/mount_peer_pbb\x06proto3"
 
 var (
 	file_mount_peer_proto_rawDescOnce sync.Once

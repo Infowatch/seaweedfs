@@ -3,7 +3,7 @@ package needle
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func TestParseFileIdFromString(t *testing.T) {

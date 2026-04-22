@@ -12,12 +12,12 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/iam/integration"
-	"github.com/seaweedfs/seaweedfs/weed/iam/ldap"
-	"github.com/seaweedfs/seaweedfs/weed/iam/oidc"
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/iam/integration"
+	"github.com/Infowatch/seaweedfs/weed/iam/ldap"
+	"github.com/Infowatch/seaweedfs/weed/iam/oidc"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -217,7 +217,7 @@ func TestS3MultipartUploadWithJWT(t *testing.T) {
 // TestS3ListObjectsV2PrefixCondition tests that ListObjectsV2 requests with a prefix
 // query parameter correctly populate s3:prefix in the policy evaluation context and
 // use bucket-level resource ARNs, so that policies with s3:prefix conditions work.
-// This reproduces the bug reported in https://github.com/seaweedfs/seaweedfs/issues/8969
+// This reproduces the bug reported in https://github.com/Infowatch/seaweedfs/issues/8969
 func TestS3ListObjectsV2PrefixCondition(t *testing.T) {
 	// Set up IAM system
 	iamManager := integration.NewIAMManager()

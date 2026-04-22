@@ -7,7 +7,7 @@
 package master_pb
 
 import (
-	volume_server_pb "github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
+	volume_server_pb "github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -4773,7 +4773,7 @@ const file_master_proto_rawDesc = "" +
 	"\x10RaftRemoveServer\x12\".master_pb.RaftRemoveServerRequest\x1a#.master_pb.RaftRemoveServerResponse\"\x00\x12o\n" +
 	"\x16RaftLeadershipTransfer\x12(.master_pb.RaftLeadershipTransferRequest\x1a).master_pb.RaftLeadershipTransferResponse\"\x00\x12K\n" +
 	"\n" +
-	"VolumeGrow\x12\x1c.master_pb.VolumeGrowRequest\x1a\x1d.master_pb.VolumeGrowResponse\"\x00B2Z0github.com/seaweedfs/seaweedfs/weed/pb/master_pbb\x06proto3"
+	"VolumeGrow\x12\x1c.master_pb.VolumeGrowRequest\x1a\x1d.master_pb.VolumeGrowResponse\"\x00B2Z0github.com/Infowatch/seaweedfs/weed/pb/master_pbb\x06proto3"
 
 var (
 	file_master_proto_rawDescOnce sync.Once

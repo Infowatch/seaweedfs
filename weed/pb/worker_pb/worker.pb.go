@@ -4055,7 +4055,7 @@ const file_worker_proto_rawDesc = "" +
 	"\flast_updated\x18\x02 \x01(\x03R\vlastUpdated\x12#\n" +
 	"\radmin_version\x18\x03 \x01(\tR\fadminVersion2V\n" +
 	"\rWorkerService\x12E\n" +
-	"\fWorkerStream\x12\x18.worker_pb.WorkerMessage\x1a\x17.worker_pb.AdminMessage(\x010\x01B2Z0github.com/seaweedfs/seaweedfs/weed/pb/worker_pbb\x06proto3"
+	"\fWorkerStream\x12\x18.worker_pb.WorkerMessage\x1a\x17.worker_pb.AdminMessage(\x010\x01B2Z0github.com/Infowatch/seaweedfs/weed/pb/worker_pbb\x06proto3"
 
 var (
 	file_worker_proto_rawDescOnce sync.Once

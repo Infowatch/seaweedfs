@@ -3,10 +3,10 @@ package sts
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/ldap"
-	"github.com/seaweedfs/seaweedfs/weed/iam/oidc"
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/ldap"
+	"github.com/Infowatch/seaweedfs/weed/iam/oidc"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
 )
 
 // ProviderFactory creates identity providers from configuration

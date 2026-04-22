@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 func newErrorResponse(errCode string, errMsg string, requestID string) ErrorResponse {

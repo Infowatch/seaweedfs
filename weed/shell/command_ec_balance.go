@@ -4,8 +4,8 @@ import (
 	"flag"
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func init() {

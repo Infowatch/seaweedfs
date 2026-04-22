@@ -7,11 +7,11 @@ import (
 
 	"slices"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func init() {
@@ -39,7 +39,7 @@ func (c *commandVolumeServerEvacuate) Help() string {
 	Usually this is used to prepare to shutdown or upgrade the volume server.
 
 	Sometimes a volume can not be moved because there are no
-	good destination to meet the replication requirement. 
+	good destination to meet the replication requirement.
 	E.g. a volume replication 001 in a cluster with 2 volume servers can not be moved.
 	You can use "-skipNonMoveable" to move the rest volumes.
 

@@ -29,7 +29,7 @@ import (
 	"sync"
 	"time"
 
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 )
 
 // MaxSize is the maximum size of a log file in bytes.

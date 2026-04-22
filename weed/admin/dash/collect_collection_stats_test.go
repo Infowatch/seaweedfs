@@ -3,7 +3,7 @@ package dash
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 // TestCollectCollectionStatsECUnevenShards verifies that EC shards spread

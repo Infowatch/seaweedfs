@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/seaweedfs/go-fuse/v2/fuse"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type InodeToPath struct {
@@ -193,7 +193,7 @@ func (i *InodeToPath) MarkChildrenCached(fullpath util.FullPath) {
 	defer i.Unlock()
 	inode, found := i.path2inode[fullpath]
 	if !found {
-		// https://github.com/seaweedfs/seaweedfs/issues/4968
+		// https://github.com/Infowatch/seaweedfs/issues/4968
 		// glog.Fatalf("MarkChildrenCached not found inode %v", fullpath)
 		glog.Warningf("MarkChildrenCached not found inode %v", fullpath)
 		return

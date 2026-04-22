@@ -9,21 +9,21 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster/maintenance"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/cluster/maintenance"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend"
+	"github.com/Infowatch/seaweedfs/weed/util"
 
 	"github.com/seaweedfs/raft"
 	"google.golang.org/grpc/peer"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/topology"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/topology"
 )
 
 func (ms *MasterServer) RegisterUuids(heartbeat *master_pb.Heartbeat) (duplicated_uuids []string, err error) {
@@ -131,7 +131,7 @@ func (ms *MasterServer) SendHeartbeat(stream master_pb.Seaweed_SendHeartbeatServ
 
 		ms.Topo.Sequence.SetMax(heartbeat.MaxFileKey)
 		if dn == nil {
-			// Skip delta heartbeat for volume server versions  better than 3.28 https://github.com/seaweedfs/seaweedfs/pull/3630
+			// Skip delta heartbeat for volume server versions  better than 3.28 https://github.com/Infowatch/seaweedfs/pull/3630
 			if heartbeat.Ip == "" {
 				continue
 			} // ToDo must be removed after update major version

@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
-	"github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/query/sqltypes"
 )
 
 // AggregationSpec defines an aggregation function to be computed

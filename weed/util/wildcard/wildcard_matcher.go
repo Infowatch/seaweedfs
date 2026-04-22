@@ -5,7 +5,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // WildcardMatcher provides unified wildcard matching functionality.

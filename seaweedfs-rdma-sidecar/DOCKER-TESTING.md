@@ -280,7 +280,7 @@ This Docker setup can be adapted for production by:
 
 - [Main README](README.md) - Complete project overview
 - [Docker Compose Reference](https://docs.docker.com/compose/)
-- [SeaweedFS Documentation](https://github.com/seaweedfs/seaweedfs/wiki)
+- [SeaweedFS Documentation](https://github.com/Infowatch/seaweedfs/wiki)
 - [UCX Documentation](https://github.com/openucx/ucx)
 
 ---

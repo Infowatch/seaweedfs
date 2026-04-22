@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
 )
 
 // TaskConfig defines the interface that all task configuration types must implement

@@ -17,7 +17,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 const (

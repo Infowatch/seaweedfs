@@ -9,7 +9,7 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import "fmt"
-import "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+import "github.com/Infowatch/seaweedfs/weed/admin/dash"
 
 func Subscribers(data dash.SubscribersData) templ.Component {
 	return templruntime.GeneratedTemplate(func(templ_7745c5c3_Input templruntime.GeneratedComponentInput) (templ_7745c5c3_Err error) {

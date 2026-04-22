@@ -6,7 +6,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
-	"github.com/seaweedfs/seaweedfs/telemetry/proto"
+	"github.com/Infowatch/seaweedfs/telemetry/proto"
 )
 
 type PrometheusStorage struct {

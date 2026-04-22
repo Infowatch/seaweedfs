@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/seaweedfs/seaweedfs/telemetry/proto"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/telemetry/proto"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 	protobuf "google.golang.org/protobuf/proto"
 )
 

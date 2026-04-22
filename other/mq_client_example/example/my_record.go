@@ -1,8 +1,8 @@
 package example
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/mq/schema"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/schema"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 type MyRecord struct {

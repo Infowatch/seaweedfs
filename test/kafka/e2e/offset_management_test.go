@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestOffsetManagement tests end-to-end offset management scenarios

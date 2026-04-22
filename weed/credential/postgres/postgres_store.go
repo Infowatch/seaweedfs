@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/util"
 
 	_ "github.com/jackc/pgx/v5/stdlib"
 )

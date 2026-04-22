@@ -261,4 +261,4 @@ When adding new retention tests:
 
 - [AWS S3 Object Lock Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html)
 - [AWS S3 API Reference - Object Retention](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObjectRetention.html)
-- [SeaweedFS S3 API Documentation](https://github.com/seaweedfs/seaweedfs/wiki/Amazon-S3-API) 
+- [SeaweedFS S3 API Documentation](https://github.com/Infowatch/seaweedfs/wiki/Amazon-S3-API)

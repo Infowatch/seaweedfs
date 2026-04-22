@@ -58,7 +58,7 @@ Tests use `testdata/userstore.json` which defines test users:
 
 ### TestHomeDirPathTranslation
 
-Tests the fix for [issue #7470](https://github.com/seaweedfs/seaweedfs/issues/7470) where
+Tests the fix for [issue #7470](https://github.com/Infowatch/seaweedfs/issues/7470) where
 users with a non-root HomeDir (e.g., `/sftp/testuser`) could not upload files to `/`
 because the path wasn't being translated to their home directory.
 
@@ -88,6 +88,3 @@ To debug test failures:
    config := DefaultTestConfig()
    config.EnableDebug = true
    ```
-
-
-

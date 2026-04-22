@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/seaweedfs/seaweedfs/weed/filer/abstract_sql"
+	"github.com/Infowatch/seaweedfs/weed/filer/abstract_sql"
 )
 
 type SqlGenMysql struct {

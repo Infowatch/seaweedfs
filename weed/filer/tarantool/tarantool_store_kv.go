@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer"
 	"github.com/tarantool/go-tarantool/v2/crud"
 	"github.com/tarantool/go-tarantool/v2/pool"
 )

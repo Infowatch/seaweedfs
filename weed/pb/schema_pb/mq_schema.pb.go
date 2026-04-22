@@ -1315,7 +1315,7 @@ const file_mq_schema_proto_rawDesc = "" +
 	"\x04DATE\x10\t\x12\v\n" +
 	"\aDECIMAL\x10\n" +
 	"\x12\b\n" +
-	"\x04TIME\x10\vB2Z0github.com/seaweedfs/seaweedfs/weed/pb/schema_pbb\x06proto3"
+	"\x04TIME\x10\vB2Z0github.com/Infowatch/seaweedfs/weed/pb/schema_pbb\x06proto3"
 
 var (
 	file_mq_schema_proto_rawDescOnce sync.Once

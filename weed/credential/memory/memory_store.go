@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func init() {

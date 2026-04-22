@@ -3,10 +3,10 @@ package vacuum
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/base"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/base"
 )
 
 // Config extends BaseConfig with vacuum-specific settings

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
 )
 
 // Test suite for canScheduleTaskNow() function and related scheduling logic

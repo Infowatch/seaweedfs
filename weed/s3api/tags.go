@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type Tag struct {

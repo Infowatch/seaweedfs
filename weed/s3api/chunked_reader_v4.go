@@ -33,8 +33,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 
 	"github.com/dustin/go-humanize"
 	"github.com/minio/crc64nvme"

@@ -11,7 +11,7 @@ import (
 
 // TestHomeDirPathTranslation tests that SFTP operations correctly translate
 // paths relative to the user's HomeDir.
-// This is the fix for https://github.com/seaweedfs/seaweedfs/issues/7470
+// This is the fix for https://github.com/Infowatch/seaweedfs/issues/7470
 func TestHomeDirPathTranslation(t *testing.T) {
 	if testing.Short() {
 		t.Skip("skipping integration test in short mode")

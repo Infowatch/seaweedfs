@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -95,13 +95,13 @@ func TestCompleteSQLFixes(t *testing.T) {
 		// 2. Large timestamp precision
 		// 3. Multiple conditions
 		// 4. Different data types
-		sql := `SELECT 
+		sql := `SELECT
 					_ts_ns AS ts,
-					id AS record_id, 
+					id AS record_id,
 					user_id AS uid
-				FROM ecommerce.user_events 
-				WHERE ts = 1756947416566456262 
-					AND record_id = 897795 
+				FROM ecommerce.user_events
+				WHERE ts = 1756947416566456262
+					AND record_id = 897795
 					AND uid = 'user123'`
 
 		stmt, err := ParseSQL(sql)

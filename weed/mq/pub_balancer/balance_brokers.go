@@ -4,7 +4,7 @@ import (
 	"math/rand/v2"
 
 	cmap "github.com/orcaman/concurrent-map/v2"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
 )
 
 func BalanceTopicPartitionOnBrokers(brokers cmap.ConcurrentMap[string, *BrokerStats]) BalanceAction {

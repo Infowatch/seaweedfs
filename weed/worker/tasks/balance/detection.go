@@ -6,14 +6,14 @@ import (
 	"sort"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/base"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks/util"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/base"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks/util"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // Detection implements the detection logic for balance tasks.

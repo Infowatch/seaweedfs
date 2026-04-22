@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 // oauthTestEnv holds a weed mini instance started with IAM credentials

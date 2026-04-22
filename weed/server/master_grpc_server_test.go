@@ -3,7 +3,7 @@ package weed_server
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

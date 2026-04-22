@@ -53,7 +53,7 @@ mvn test -Dtest=ETagValidationTest -DS3_ENDPOINT=http://localhost:8333
 
 ### ETagValidationTest (AWS SDK v2)
 
-Tests for [GitHub Issue #7768](https://github.com/seaweedfs/seaweedfs/issues/7768) - ETag format validation.
+Tests for [GitHub Issue #7768](https://github.com/Infowatch/seaweedfs/issues/7768) - ETag format validation.
 
 | Test | Description |
 |------|-------------|
@@ -103,8 +103,7 @@ Go SDK validation is performed by separate test suites:
 
 ## Related
 
-- [GitHub Issue #7768](https://github.com/seaweedfs/seaweedfs/issues/7768)
+- [GitHub Issue #7768](https://github.com/Infowatch/seaweedfs/issues/7768)
 - [AWS S3 ETag Documentation](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html)
 - [Go ETag Tests](/test/s3/etag/)
 - [SDK Compatibility Matrix](/test/s3/SDK_COMPATIBILITY.md)
-

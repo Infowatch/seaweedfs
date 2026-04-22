@@ -1,7 +1,7 @@
 package pub_balancer
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
 	"google.golang.org/grpc"
 )
 

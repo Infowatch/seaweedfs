@@ -9,11 +9,11 @@ import (
 	"sync"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
-	"github.com/seaweedfs/seaweedfs/weed/iam/utils"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/iam/utils"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 // maxPoliciesForEvaluation defines an upper bound on the number of policies that

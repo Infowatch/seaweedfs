@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // ServiceAccountHandlers contains HTTP handlers for service account management

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/linkedin/goavro/v2"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 func TestNewAvroDecoder(t *testing.T) {

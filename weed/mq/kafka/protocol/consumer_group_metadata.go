@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/consumer"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/consumer"
 )
 
 // ConsumerProtocolMetadata represents parsed consumer protocol metadata

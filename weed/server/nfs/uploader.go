@@ -3,8 +3,8 @@ package nfs
 import (
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/operation"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/operation"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 type chunkUploader interface {

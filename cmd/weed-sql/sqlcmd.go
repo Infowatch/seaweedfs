@@ -12,10 +12,10 @@ import (
 	"time"
 
 	"github.com/peterh/liner"
-	"github.com/seaweedfs/seaweedfs/weed/query/engine"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
-	"github.com/seaweedfs/seaweedfs/weed/util/sqlutil"
+	"github.com/Infowatch/seaweedfs/weed/query/engine"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/util/sqlutil"
 )
 
 const usageLine = "weed-sql [-master=localhost:9333] [-interactive] [-file=query.sql] [-output=table|json|csv] [-database=dbname] [-query=\"SQL\"]"

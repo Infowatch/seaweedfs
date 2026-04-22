@@ -2,7 +2,7 @@ package app
 
 import (
     "fmt"
-    "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+    "github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 templ Admin(data dash.AdminData) {
@@ -289,7 +289,7 @@ templ Admin(data dash.AdminData) {
                                             <td>{vs.Rack}</td>
                                             <td>
                                                 <div class="progress" style="height: 20px;">
-                                                    <div class="progress-bar" role="progressbar" 
+                                                    <div class="progress-bar" role="progressbar"
                                                          style={fmt.Sprintf("width: %d%%", calculatePercent(vs.Volumes, vs.MaxVolumes))}>
                                                         {fmt.Sprintf("%d/%d", vs.Volumes, vs.MaxVolumes)}
                                                     </div>
@@ -394,4 +394,4 @@ templ Admin(data dash.AdminData) {
             </div>
         </div>
     </div>
-} 
+}

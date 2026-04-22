@@ -5,9 +5,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
 )
 
 // MessageQueueHandlers contains all the HTTP handlers for message queue management

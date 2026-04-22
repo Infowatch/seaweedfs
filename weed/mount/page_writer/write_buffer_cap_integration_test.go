@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // TestWriteBufferCap_SharedAcrossPipelines exercises the full write-budget

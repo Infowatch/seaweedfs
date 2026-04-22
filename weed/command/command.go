@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 )
 
 var Commands = []*Command{

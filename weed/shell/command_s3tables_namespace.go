@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 func init() {

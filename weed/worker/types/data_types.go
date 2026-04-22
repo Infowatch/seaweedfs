@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
 )
 
 // ReplicaLocation identifies where a volume replica lives.

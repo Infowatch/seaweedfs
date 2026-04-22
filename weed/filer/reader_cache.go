@@ -7,11 +7,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/util/chunk_cache"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
-	"github.com/seaweedfs/seaweedfs/weed/util/mem"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/util/chunk_cache"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/util/mem"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 )
 
 type ReaderCache struct {

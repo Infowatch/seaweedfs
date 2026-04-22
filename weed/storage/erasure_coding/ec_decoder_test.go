@@ -5,9 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	erasure_coding "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	erasure_coding "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 func TestHasLiveNeedles_AllDeletedIsFalse(t *testing.T) {

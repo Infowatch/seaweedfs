@@ -17,10 +17,10 @@ import (
 	"unicode/utf8"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -138,7 +138,7 @@ func TestCheckaAnonymousRequestAuthType(t *testing.T) {
 // check happens inside ListBucketsHandler, so the global auth step must let
 // the request through.
 //
-// Regression test for https://github.com/seaweedfs/seaweedfs/issues/9072
+// Regression test for https://github.com/Infowatch/seaweedfs/issues/9072
 func TestAnonymousListBucketsWithPrefixAction(t *testing.T) {
 	iam := &IdentityAccessManagement{
 		hashes:       make(map[string]*sync.Pool),

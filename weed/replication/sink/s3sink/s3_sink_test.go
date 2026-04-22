@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 func TestBuildTaggingString_ShouldStripTagPrefix(t *testing.T) {

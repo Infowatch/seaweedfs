@@ -7,9 +7,9 @@ import (
 	"time"
 
 	jwt "github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
-	"github.com/seaweedfs/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/weed/security"
 )
 
 func TestJWTAuthForWriteAndRead(t *testing.T) {

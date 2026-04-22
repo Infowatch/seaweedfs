@@ -3,8 +3,8 @@ package balance
 import (
 	"slices"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/super_block"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/super_block"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // rackKey uniquely identifies a rack within a data center.

@@ -18,7 +18,7 @@ import (
 
 	v4 "github.com/aws/aws-sdk-go-v2/aws/signer/v4"
 	"github.com/aws/aws-sdk-go-v2/credentials"
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 var (

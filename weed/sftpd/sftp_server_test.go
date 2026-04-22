@@ -3,7 +3,7 @@ package sftpd
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/user"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/user"
 	"github.com/stretchr/testify/assert"
 )
 

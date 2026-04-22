@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/jackc/pgx/v5/pgconn"
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func (store *PostgresStore) CreateGroup(ctx context.Context, group *iam_pb.Group) error {

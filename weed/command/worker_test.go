@@ -3,7 +3,7 @@ package command
 import (
 	"testing"
 
-	pluginworker "github.com/seaweedfs/seaweedfs/weed/plugin/worker"
+	pluginworker "github.com/Infowatch/seaweedfs/weed/plugin/worker"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

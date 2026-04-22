@@ -3,7 +3,7 @@ package gcs
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/remote_storage"
+	"github.com/Infowatch/seaweedfs/weed/remote_storage"
 	"github.com/stretchr/testify/require"
 )
 

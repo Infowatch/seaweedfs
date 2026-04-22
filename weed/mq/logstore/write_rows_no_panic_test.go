@@ -6,8 +6,8 @@ import (
 
 	parquet "github.com/parquet-go/parquet-go"
 	"github.com/parquet-go/parquet-go/compress/zstd"
-	"github.com/seaweedfs/seaweedfs/weed/mq/schema"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/schema"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // TestWriteRowsNoPanic builds a representative schema and rows and ensures WriteRows completes without panic.

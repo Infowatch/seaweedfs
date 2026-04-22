@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/karlseguin/ccache/v2"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // CacheableStore defines the interface for stores that can be cached

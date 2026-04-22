@@ -12,8 +12,8 @@ import (
 
 	"github.com/go-ldap/ldap/v3"
 	"github.com/mitchellh/mapstructure"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
 )
 
 // LDAPConfig holds configuration for LDAP provider

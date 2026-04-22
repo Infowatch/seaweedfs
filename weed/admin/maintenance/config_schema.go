@@ -1,7 +1,7 @@
 package maintenance
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/admin/config"
+	"github.com/Infowatch/seaweedfs/weed/admin/config"
 )
 
 // Type aliases for backward compatibility

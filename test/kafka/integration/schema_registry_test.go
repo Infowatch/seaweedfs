@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestSchemaRegistryEventualConsistency reproduces the issue where schemas

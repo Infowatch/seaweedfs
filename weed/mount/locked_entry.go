@@ -3,7 +3,7 @@ package mount
 import (
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 type LockedEntry struct {

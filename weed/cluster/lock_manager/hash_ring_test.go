@@ -5,7 +5,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"github.com/stretchr/testify/assert"
 )
 

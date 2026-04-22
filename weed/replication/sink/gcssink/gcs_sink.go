@@ -7,16 +7,16 @@ import (
 	"strings"
 
 	"cloud.google.com/go/storage"
-	"github.com/seaweedfs/seaweedfs/weed/replication/repl_util"
+	"github.com/Infowatch/seaweedfs/weed/replication/repl_util"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
 	"google.golang.org/api/option"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sink"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/replication/sink"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type GcsSink struct {

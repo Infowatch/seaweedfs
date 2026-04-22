@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/wildcard"
+	"github.com/Infowatch/seaweedfs/weed/util/wildcard"
 	"github.com/stretchr/testify/assert"
 )
 

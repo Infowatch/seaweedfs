@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/images"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/images"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 const (

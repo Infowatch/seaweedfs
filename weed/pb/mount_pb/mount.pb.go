@@ -112,7 +112,7 @@ const file_mount_proto_rawDesc = "" +
 	"\fSeaweedMount\x12N\n" +
 	"\tConfigure\x12\x1e.messaging_pb.ConfigureRequest\x1a\x1f.messaging_pb.ConfigureResponse\"\x00BO\n" +
 	"\x10seaweedfs.clientB\n" +
-	"MountProtoZ/github.com/seaweedfs/seaweedfs/weed/pb/mount_pbb\x06proto3"
+	"MountProtoZ/github.com/Infowatch/seaweedfs/weed/pb/mount_pbb\x06proto3"
 
 var (
 	file_mount_proto_rawDescOnce sync.Once

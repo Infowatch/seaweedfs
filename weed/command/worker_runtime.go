@@ -13,14 +13,14 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	pluginworker "github.com/seaweedfs/seaweedfs/weed/plugin/worker"
-	_ "github.com/seaweedfs/seaweedfs/weed/plugin/worker/handlers" // register all handler subpackages
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	statsCollect "github.com/seaweedfs/seaweedfs/weed/stats"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/version"
-	"github.com/seaweedfs/seaweedfs/weed/worker"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	pluginworker "github.com/Infowatch/seaweedfs/weed/plugin/worker"
+	_ "github.com/Infowatch/seaweedfs/weed/plugin/worker/handlers" // register all handler subpackages
+	"github.com/Infowatch/seaweedfs/weed/security"
+	statsCollect "github.com/Infowatch/seaweedfs/weed/stats"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/version"
+	"github.com/Infowatch/seaweedfs/weed/worker"
 	"google.golang.org/grpc"
 )
 

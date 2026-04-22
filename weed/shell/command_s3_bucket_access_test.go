@@ -6,7 +6,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func TestUpdateBucketActions_SetActions(t *testing.T) {

@@ -3136,7 +3136,7 @@ const file_iam_proto_rawDesc = "" +
 	"\x11GetServiceAccount\x12 .iam_pb.GetServiceAccountRequest\x1a!.iam_pb.GetServiceAccountResponse\x12^\n" +
 	"\x13ListServiceAccounts\x12\".iam_pb.ListServiceAccountsRequest\x1a#.iam_pb.ListServiceAccountsResponse\x12y\n" +
 	"\x1cGetServiceAccountByAccessKey\x12+.iam_pb.GetServiceAccountByAccessKeyRequest\x1a,.iam_pb.GetServiceAccountByAccessKeyResponseBK\n" +
-	"\x10seaweedfs.clientB\bIamProtoZ-github.com/seaweedfs/seaweedfs/weed/pb/iam_pbb\x06proto3"
+	"\x10seaweedfs.clientB\bIamProtoZ-github.com/Infowatch/seaweedfs/weed/pb/iam_pbb\x06proto3"
 
 var (
 	file_iam_proto_rawDescOnce sync.Once

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestGatewayBasicFunctionality tests basic gateway operations

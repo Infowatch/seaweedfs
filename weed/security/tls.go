@@ -14,9 +14,9 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	util_http_client "github.com/seaweedfs/seaweedfs/weed/util/http/client"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	util_http_client "github.com/Infowatch/seaweedfs/weed/util/http/client"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/credentials/insecure"

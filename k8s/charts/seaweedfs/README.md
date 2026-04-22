@@ -29,9 +29,9 @@ so your deployment will be spread/HA.
 ## Prerequisites
 ### Database
 
-leveldb is the default database, this supports multiple filer replicas that will [sync automatically](https://github.com/seaweedfs/seaweedfs/wiki/Filer-Store-Replication), with some [limitations](https://github.com/seaweedfs/seaweedfs/wiki/Filer-Store-Replication#limitation).
+leveldb is the default database, this supports multiple filer replicas that will [sync automatically](https://github.com/Infowatch/seaweedfs/wiki/Filer-Store-Replication), with some [limitations](https://github.com/Infowatch/seaweedfs/wiki/Filer-Store-Replication#limitation).
 
-When the [limitations](https://github.com/seaweedfs/seaweedfs/wiki/Filer-Store-Replication#limitation) apply, or for a large number of filer replicas, an external datastore is recommended.
+When the [limitations](https://github.com/Infowatch/seaweedfs/wiki/Filer-Store-Replication#limitation) apply, or for a large number of filer replicas, an external datastore is recommended.
 
 Such as MySQL-compatible database, as specified in the `values.yaml` at `filer.extraEnvironmentVars`.
 This database should be pre-configured and initialized. If using the default `db-init-config`, the configmap name is now dynamic (e.g., `<release>-seaweedfs-db-init-config`). You can override this name via `filer.dbInitConfigName`.

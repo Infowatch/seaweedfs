@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	parquet "github.com/parquet-go/parquet-go"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 func ToParquetSchema(topicName string, recordType *schema_pb.RecordType) (*parquet.Schema, error) {

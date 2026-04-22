@@ -17,7 +17,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 type TestEnvironment struct {
@@ -83,7 +83,7 @@ func TestTrinoIcebergCatalog(t *testing.T) {
 
 // TestTrinoMultiLevelNamespace tests that multi-level namespaces (dot-separated)
 // produce correct S3 paths so Trino can read back data it writes.
-// Regression test for https://github.com/seaweedfs/seaweedfs/issues/8959
+// Regression test for https://github.com/Infowatch/seaweedfs/issues/8959
 func TestTrinoMultiLevelNamespace(t *testing.T) {
 	if testing.Short() {
 		t.Skip("Skipping integration test in short mode")

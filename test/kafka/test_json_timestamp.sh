@@ -13,7 +13,7 @@ echo "Messages produced. Waiting 2 seconds for processing..."
 sleep 2
 
 echo "Querying messages..."
-cd /Users/chrislu/go/src/github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest
+cd /Users/chrislu/go/src/github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest
 docker compose exec kafka-gateway /usr/bin/weed-sql \
   -master=seaweedfs-master:9333 \
   -database=kafka \

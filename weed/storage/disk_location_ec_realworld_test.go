@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 )
 
 // TestCalculateExpectedShardSizeWithRealEncoding validates our shard size calculation

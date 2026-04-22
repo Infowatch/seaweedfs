@@ -85,7 +85,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 )
 
 // severity identifies the sort of log: info, warning etc. It also implements

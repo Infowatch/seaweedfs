@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 func init() {

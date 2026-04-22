@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/linkedin/goavro/v2"
-	schema_pb "github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	schema_pb "github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // LoadTestMessage represents the test message structure

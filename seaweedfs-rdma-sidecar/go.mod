@@ -3,7 +3,7 @@ module seaweedfs-rdma-sidecar
 go 1.25.0
 
 require (
-	github.com/seaweedfs/seaweedfs v0.0.0-00010101000000-000000000000
+	github.com/Infowatch/seaweedfs v0.0.0-00010101000000-000000000000
 	github.com/sirupsen/logrus v1.9.4-0.20230606125235-dd1b4c2e81af
 	github.com/spf13/cobra v1.8.0
 	github.com/vmihailenco/msgpack/v5 v5.4.1
@@ -47,4 +47,4 @@ require (
 //
 // To build this module, ensure the main SeaweedFS repository is checked out
 // as a sibling directory to this `seaweedfs-rdma-sidecar` directory.
-replace github.com/seaweedfs/seaweedfs => ../
+replace github.com/Infowatch/seaweedfs => ../

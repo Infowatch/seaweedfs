@@ -3,8 +3,8 @@ package credential
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // CredentialConfig represents the credential configuration from credential.toml

@@ -7,7 +7,7 @@
 package s3_pb
 
 import (
-	iam_pb "github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	iam_pb "github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -424,7 +424,7 @@ const file_s3_proto_rawDesc = "" +
 	"\fDeletePolicy\x12\x1b.iam_pb.DeletePolicyRequest\x1a\x1c.iam_pb.DeletePolicyResponse\x12=\n" +
 	"\bPutGroup\x12\x17.iam_pb.PutGroupRequest\x1a\x18.iam_pb.PutGroupResponse\x12F\n" +
 	"\vRemoveGroup\x12\x1a.iam_pb.RemoveGroupRequest\x1a\x1b.iam_pb.RemoveGroupResponseBI\n" +
-	"\x10seaweedfs.clientB\aS3ProtoZ,github.com/seaweedfs/seaweedfs/weed/pb/s3_pbb\x06proto3"
+	"\x10seaweedfs.clientB\aS3ProtoZ,github.com/Infowatch/seaweedfs/weed/pb/s3_pbb\x06proto3"
 
 var (
 	file_s3_proto_rawDescOnce sync.Once

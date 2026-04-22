@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/tasks"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/tasks"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // BaseTypedTask provides a base implementation for typed tasks with logger support

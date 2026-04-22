@@ -1,4 +1,4 @@
-module github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest
+module github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest
 
 go 1.24.0
 

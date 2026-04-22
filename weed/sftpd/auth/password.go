@@ -5,7 +5,7 @@ import (
 	"math/rand/v2"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/user"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/user"
 	"golang.org/x/crypto/ssh"
 )
 

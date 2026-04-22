@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/query/sqltypes"
+	"github.com/Infowatch/seaweedfs/weed/query/sqltypes"
 )
 
 // System column constants used throughout the SQL engine

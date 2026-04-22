@@ -3,7 +3,7 @@ package filer
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 func Test_removeGarbageChunks(t *testing.T) {

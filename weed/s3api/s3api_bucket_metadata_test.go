@@ -3,8 +3,8 @@ package s3api
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/s3_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/cors"
+	"github.com/Infowatch/seaweedfs/weed/pb/s3_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/cors"
 )
 
 func TestBucketMetadataStruct(t *testing.T) {

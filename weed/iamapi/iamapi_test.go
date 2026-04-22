@@ -14,10 +14,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/copier"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/linkedin/goavro/v2"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 // AvroDecoder handles Avro schema decoding and conversion to SeaweedMQ format

@@ -6,7 +6,7 @@ import (
 	"syscall"
 
 	"github.com/seaweedfs/go-fuse/v2/fuse"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 var lookupSupplementaryGroupIDs = func(callerUid uint32) ([]string, error) {

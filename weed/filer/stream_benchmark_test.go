@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 )
 
 func TestMain(m *testing.M) {

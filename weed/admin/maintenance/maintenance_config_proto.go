@@ -1,7 +1,7 @@
 package maintenance
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
 )
 
 // DefaultMaintenanceConfigProto returns default configuration as protobuf

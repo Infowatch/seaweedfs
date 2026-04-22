@@ -1,6 +1,6 @@
 package topology
 
-import "github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
+import "github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 
 // TaskType represents different types of maintenance operations
 type TaskType string

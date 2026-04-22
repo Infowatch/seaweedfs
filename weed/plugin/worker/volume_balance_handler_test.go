@@ -7,10 +7,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	balancetask "github.com/seaweedfs/seaweedfs/weed/worker/tasks/balance"
-	workertypes "github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	balancetask "github.com/Infowatch/seaweedfs/weed/worker/tasks/balance"
+	workertypes "github.com/Infowatch/seaweedfs/weed/worker/types"
 	"google.golang.org/protobuf/proto"
 )
 

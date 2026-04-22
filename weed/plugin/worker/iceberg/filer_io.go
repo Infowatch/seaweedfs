@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/apache/iceberg-go/table"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

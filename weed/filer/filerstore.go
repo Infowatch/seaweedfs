@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 const CountEntryChunksForGzip = 50

@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	pluginworkers "github.com/seaweedfs/seaweedfs/test/plugin_workers"
-	"github.com/seaweedfs/seaweedfs/weed/pb/plugin_pb"
-	pluginworker "github.com/seaweedfs/seaweedfs/weed/plugin/worker"
+	pluginworkers "github.com/Infowatch/seaweedfs/test/plugin_workers"
+	"github.com/Infowatch/seaweedfs/weed/pb/plugin_pb"
+	pluginworker "github.com/Infowatch/seaweedfs/weed/plugin/worker"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"

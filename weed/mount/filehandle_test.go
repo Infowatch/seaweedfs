@@ -3,7 +3,7 @@ package mount
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestFileHandleFullPathFallsBackAfterForget(t *testing.T) {

@@ -280,7 +280,7 @@ print(f"Count at snapshot: {count}")
 
 // TestSparkMultiLevelNamespace tests that multi-level namespaces produce correct
 // S3 paths (dot-separated) so that Spark can read back the data it writes.
-// Regression test for https://github.com/seaweedfs/seaweedfs/issues/8959
+// Regression test for https://github.com/Infowatch/seaweedfs/issues/8959
 func TestSparkMultiLevelNamespace(t *testing.T) {
 	if testing.Short() {
 		t.Skip("Skipping integration test in short mode")

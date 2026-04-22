@@ -10,7 +10,7 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import (
 	"fmt"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 func S3Buckets(data dash.S3BucketsData) templ.Component {

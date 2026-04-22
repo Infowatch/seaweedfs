@@ -9,7 +9,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // TestSSES3MultipartUploadStoresDerivedIV verifies the critical fix where

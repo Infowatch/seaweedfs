@@ -3,7 +3,7 @@ package s3api
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // TestPrefixNormalizationInList verifies that prefixes are normalized consistently in list operations

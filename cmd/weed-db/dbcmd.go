@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/server/postgres"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	"github.com/Infowatch/seaweedfs/weed/server/postgres"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 )
 
 const usageLine = "weed-db -port=5432 -master=<master_server>"

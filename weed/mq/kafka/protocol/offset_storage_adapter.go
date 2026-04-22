@@ -1,7 +1,7 @@
 package protocol
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/consumer_offset"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/consumer_offset"
 )
 
 // offsetStorageAdapter adapts consumer_offset.OffsetStorage to ConsumerOffsetStorage interface

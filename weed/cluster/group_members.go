@@ -3,7 +3,7 @@ package cluster
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 type GroupMembers struct {

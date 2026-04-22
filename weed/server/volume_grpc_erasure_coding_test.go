@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage"
+	"github.com/Infowatch/seaweedfs/weed/storage"
 )
 
 func TestCheckEcVolumeStatusCountOnlyDataShards(t *testing.T) {

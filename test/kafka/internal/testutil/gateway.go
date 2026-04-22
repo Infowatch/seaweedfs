@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/gateway"
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/schema"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/gateway"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/schema"
 )
 
 // GatewayTestServer wraps the gateway server with common test utilities

@@ -74,7 +74,7 @@ message TelemetryData {
 
 ```bash
 # Clone and start the complete monitoring stack
-git clone https://github.com/seaweedfs/seaweedfs.git
+git clone https://github.com/Infowatch/seaweedfs.git
 cd seaweedfs
 docker compose -f telemetry/docker-compose.yml up -d
 

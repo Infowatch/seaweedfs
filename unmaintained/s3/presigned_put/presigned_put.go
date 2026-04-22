@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/s3"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 // Downloads an item from an S3 Bucket in the region configured in the shared config

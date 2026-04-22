@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -336,14 +336,14 @@ func TestAliasIntegrationWithProductionScenarios(t *testing.T) {
 			},
 		}
 
-		sql := `SELECT 
-					id AS event_id, 
-					_ts_ns AS event_time, 
+		sql := `SELECT
+					id AS event_id,
+					_ts_ns AS event_time,
 					user_id AS uid,
 					event_type AS action
-				FROM ecommerce.user_events 
-				WHERE event_time = 1756947416566456262 
-					AND uid = 'user123' 
+				FROM ecommerce.user_events
+				WHERE event_time = 1756947416566456262
+					AND uid = 'user123'
 					AND action = 'click'`
 
 		stmt, err := ParseSQL(sql)

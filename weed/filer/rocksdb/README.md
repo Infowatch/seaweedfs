@@ -36,6 +36,6 @@ go get github.com/tecbot/gorocksdb
 # compile with rocksdb
 
 ```
-cd ~/go/src/github.com/seaweedfs/seaweedfs/weed
+cd ~/go/src/github.com/Infowatch/seaweedfs/weed
 go install -tags rocksdb
 ```

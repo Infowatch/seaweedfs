@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
 )
 
 func TestReadModeProxyMissingLocalVolume(t *testing.T) {

@@ -1,8 +1,8 @@
 package topology
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/erasure_coding"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/erasure_coding"
 )
 
 // CalculateTaskStorageImpact calculates storage impact for different task types

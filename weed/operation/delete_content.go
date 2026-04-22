@@ -8,10 +8,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 	"google.golang.org/grpc"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
 )
 
 type DeleteResult struct {

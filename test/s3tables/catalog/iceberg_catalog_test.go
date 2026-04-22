@@ -17,7 +17,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/testutil"
 )
 
 // sharedEnv is the single TestEnvironment shared across all tests in this package.

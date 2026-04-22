@@ -3,7 +3,7 @@ package worker
 import (
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // Registry manages workers and their statistics

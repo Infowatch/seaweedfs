@@ -6,10 +6,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/sequence"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/sequence"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 
-	new_map "github.com/seaweedfs/seaweedfs/weed/storage/needle_map"
+	new_map "github.com/Infowatch/seaweedfs/weed/storage/needle_map"
 )
 
 func TestSnowflakeSequencer(t *testing.T) {

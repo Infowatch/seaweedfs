@@ -5,8 +5,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/proto"
 	"testing"

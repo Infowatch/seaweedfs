@@ -11,7 +11,7 @@ import (
 	sync "sync"
 	unsafe "unsafe"
 
-	remote_pb "github.com/seaweedfs/seaweedfs/weed/pb/remote_pb"
+	remote_pb "github.com/Infowatch/seaweedfs/weed/pb/remote_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 )
@@ -7296,7 +7296,7 @@ const file_volume_server_proto_rawDesc = "" +
 	"\rScrubEcVolume\x12&.volume_server_pb.ScrubEcVolumeRequest\x1a'.volume_server_pb.ScrubEcVolumeResponse\"\x00\x12L\n" +
 	"\x05Query\x12\x1e.volume_server_pb.QueryRequest\x1a\x1f.volume_server_pb.QueriedStripe\"\x000\x01\x12q\n" +
 	"\x12VolumeNeedleStatus\x12+.volume_server_pb.VolumeNeedleStatusRequest\x1a,.volume_server_pb.VolumeNeedleStatusResponse\"\x00\x12G\n" +
-	"\x04Ping\x12\x1d.volume_server_pb.PingRequest\x1a\x1e.volume_server_pb.PingResponse\"\x00B9Z7github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pbb\x06proto3"
+	"\x04Ping\x12\x1d.volume_server_pb.PingRequest\x1a\x1e.volume_server_pb.PingResponse\"\x00B9Z7github.com/Infowatch/seaweedfs/weed/pb/volume_server_pbb\x06proto3"
 
 var (
 	file_volume_server_proto_rawDescOnce sync.Once

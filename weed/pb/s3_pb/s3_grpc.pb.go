@@ -8,7 +8,7 @@ package s3_pb
 
 import (
 	context "context"
-	iam_pb "github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	iam_pb "github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"

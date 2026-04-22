@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	reqid "github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	reqid "github.com/Infowatch/seaweedfs/weed/util/request_id"
 )
 
 const requestIDField = "request_id"

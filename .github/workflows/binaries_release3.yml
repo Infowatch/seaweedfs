@@ -5,7 +5,7 @@ name: "go: build versioned binaries for freebsd"
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -15,10 +15,9 @@ permissions:
   contents: read
 
 jobs:
-
   build-release-binaries_freebsd:
     permissions:
-      contents: write  # for wangyoucao577/go-release-action to upload release assets
+      contents: write # for wangyoucao577/go-release-action to upload release assets
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -38,7 +37,7 @@ jobs:
           overwrite: true
           pre_command: export CGO_ENABLED=0 && export GODEBUG=http2client=0
           # build_flags: -tags 5BytesOffset # optional, default is
-          ldflags: -s -w -extldflags -static -X github.com/seaweedfs/seaweedfs/weed/util/version.COMMIT=${{github.sha}}
+          ldflags: -s -w -extldflags -static -X github.com/Infowatch/seaweedfs/weed/util/version.COMMIT=${{github.sha}}
           # Where to run `go build .`
           project_path: weed
           binary_name: weed
@@ -52,7 +51,7 @@ jobs:
           overwrite: true
           pre_command: export CGO_ENABLED=0 && export GODEBUG=http2client=0
           build_flags: -tags 5BytesOffset # optional, default is
-          ldflags: -s -w -extldflags -static -X github.com/seaweedfs/seaweedfs/weed/util/version.COMMIT=${{github.sha}}
+          ldflags: -s -w -extldflags -static -X github.com/Infowatch/seaweedfs/weed/util/version.COMMIT=${{github.sha}}
           # Where to run `go build .`
           project_path: weed
           binary_name: weed

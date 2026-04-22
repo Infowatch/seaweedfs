@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // ResolvePeerAdvertiseAddr returns the host:port this mount should

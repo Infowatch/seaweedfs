@@ -60,7 +60,7 @@ func TestServerIntegration(t *testing.T) {
 	contentStr := string(content)
 
 	// Check for FoundationDB import
-	if strings.Contains(contentStr, `"github.com/seaweedfs/seaweedfs/weed/filer/foundationdb"`) {
+	if strings.Contains(contentStr, `"github.com/Infowatch/seaweedfs/weed/filer/foundationdb"`) {
 		t.Log("✅ FoundationDB import found in filer_server.go")
 	} else {
 		t.Error("❌ FoundationDB import not found in filer_server.go")
@@ -75,7 +75,7 @@ func TestServerIntegration(t *testing.T) {
 
 	foundImports := 0
 	for _, imp := range expectedImports {
-		if strings.Contains(contentStr, fmt.Sprintf(`"github.com/seaweedfs/seaweedfs/weed/filer/%s"`, imp)) {
+		if strings.Contains(contentStr, fmt.Sprintf(`"github.com/Infowatch/seaweedfs/weed/filer/%s"`, imp)) {
 			foundImports++
 		}
 	}

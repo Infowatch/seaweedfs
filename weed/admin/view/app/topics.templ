@@ -2,7 +2,7 @@ package app
 
 import "fmt"
 import "strings"
-import "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+import "github.com/Infowatch/seaweedfs/weed/admin/dash"
 
 templ Topics(data dash.TopicsData) {
     <div class="container-fluid">
@@ -143,14 +143,14 @@ templ Topics(data dash.TopicsData) {
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="topicNamespace" class="form-label">Namespace *</label>
-                                    <input type="text" class="form-control" id="topicNamespace" name="namespace" required 
+                                    <input type="text" class="form-control" id="topicNamespace" name="namespace" required
                                            placeholder="e.g., default">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="topicName" class="form-label">Topic Name *</label>
-                                    <input type="text" class="form-control" id="topicName" name="name" required 
+                                    <input type="text" class="form-control" id="topicName" name="name" required
                                            placeholder="e.g., user-events">
                                 </div>
                             </div>
@@ -159,12 +159,12 @@ templ Topics(data dash.TopicsData) {
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="partitionCount" class="form-label">Partition Count *</label>
-                                    <input type="number" class="form-control" id="partitionCount" name="partitionCount" 
+                                    <input type="number" class="form-control" id="partitionCount" name="partitionCount"
                                            required min="1" max="100" value="6">
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Retention Configuration -->
                         <div class="card mt-3">
                             <div class="card-header">
@@ -174,7 +174,7 @@ templ Topics(data dash.TopicsData) {
                             </div>
                             <div class="card-body">
                                 <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" id="enableRetention" 
+                                    <input class="form-check-input" type="checkbox" id="enableRetention"
                                            name="enableRetention" onchange="toggleRetentionFields()">
                                     <label class="form-check-label" for="enableRetention">
                                         Enable data retention
@@ -185,7 +185,7 @@ templ Topics(data dash.TopicsData) {
                                         <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="retentionValue" class="form-label">Retention Duration</label>
-                                                <input type="number" class="form-control" id="retentionValue" 
+                                                <input type="number" class="form-control" id="retentionValue"
                                                        name="retentionValue" min="1" value="7">
                                             </div>
                                         </div>
@@ -228,7 +228,7 @@ templ Topics(data dash.TopicsData) {
         function toggleRetentionFields() {
             var enableRetention = document.getElementById('enableRetention').checked;
             var retentionFields = document.getElementById('retentionFields');
-            
+
             if (enableRetention) {
                 retentionFields.style.display = 'block';
             } else {
@@ -239,19 +239,19 @@ templ Topics(data dash.TopicsData) {
         function createTopic() {
             var form = document.getElementById('createTopicForm');
             var formData = new FormData(form);
-            
+
             if (!form.checkValidity()) {
                 form.classList.add('was-validated');
                 return;
             }
-            
+
             var namespace = formData.get('namespace');
             var name = formData.get('name');
             var partitionCount = formData.get('partitionCount');
             var enableRetention = formData.get('enableRetention');
             var retentionValue = enableRetention === 'on' ? parseInt(formData.get('retentionValue')) : 0;
             var retentionUnit = enableRetention === 'on' ? formData.get('retentionUnit') : 'hours';
-            
+
             // Convert retention to seconds
             var retentionSeconds = 0;
             if (enableRetention === 'on' && retentionValue > 0) {
@@ -261,7 +261,7 @@ templ Topics(data dash.TopicsData) {
                     retentionSeconds = retentionValue * 86400;
                 }
             }
-            
+
             var topicData = {
                 namespace: namespace,
                 name: name,
@@ -271,7 +271,7 @@ templ Topics(data dash.TopicsData) {
                     retention_seconds: retentionSeconds
                 }
             };
-            
+
             // Create the topic
             fetch('/api/mq/topics/create', {
                 method: 'POST',
@@ -300,7 +300,7 @@ templ Topics(data dash.TopicsData) {
 
         function exportTopicsCSV() {
             var csvContent = 'Namespace,Topic Name,Partitions,Retention Enabled,Retention Value,Retention Unit\n';
-            
+
             var rows = document.querySelectorAll('#topicsTable tbody tr.topic-row');
             rows.forEach(function(row) {
                 var cells = row.querySelectorAll('td');
@@ -308,14 +308,14 @@ templ Topics(data dash.TopicsData) {
                 var topicName = cells[1].textContent.trim();
                 var partitions = cells[2].textContent.trim();
                 var retention = cells[3].textContent.trim();
-                
+
                 var retentionEnabled = retention !== 'Disabled';
                 var retentionValue = retentionEnabled ? retention.split(' ')[0] : '';
                 var retentionUnit = retentionEnabled ? retention.split(' ')[1] : '';
-                
+
                 csvContent += namespace + ',' + topicName + ',' + partitions + ',' + retentionEnabled + ',' + retentionValue + ',' + retentionUnit + '\n';
             });
-            
+
             var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             var link = document.createElement('a');
             var url = URL.createObjectURL(blob);
@@ -335,11 +335,11 @@ templ Topics(data dash.TopicsData) {
                     e.stopPropagation();
                     var topicName = this.getAttribute('data-topic-name');
                     var detailsRow = document.getElementById('details-' + topicName.replace(/\./g, '_'));
-                    
+
                     if (detailsRow.style.display === 'none') {
                         detailsRow.style.display = 'table-row';
                         this.innerHTML = '<i class="fas fa-eye-slash"></i>';
-                        
+
                         // Load topic details
                         loadTopicDetails(topicName);
                     } else {
@@ -353,7 +353,7 @@ templ Topics(data dash.TopicsData) {
         function loadTopicDetails(topicName) {
             var detailsRow = document.getElementById('details-' + topicName.replace(/\./g, '_'));
             var contentDiv = detailsRow.querySelector('.topic-details-content');
-            
+
             fetch('/admin/topics/' + encodeURIComponent(topicName) + '/details')
                 .then(response => response.json())
                 .then(data => {
@@ -376,7 +376,7 @@ templ Topics(data dash.TopicsData) {
                     }
                     html += '</div>';
                     html += '</div>';
-                    
+
                     contentDiv.innerHTML = html;
                 })
                 .catch(error => {
@@ -385,4 +385,4 @@ templ Topics(data dash.TopicsData) {
                 });
         }
     </script>
-} 
+}

@@ -3,10 +3,10 @@ package agent
 import (
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/pub_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/sub_client"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_agent_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/pub_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/sub_client"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_agent_pb"
 	"google.golang.org/grpc"
 )
 

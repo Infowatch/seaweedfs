@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/filer/abstract_sql"
-	"github.com/seaweedfs/seaweedfs/weed/filer/postgres"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer/abstract_sql"
+	"github.com/Infowatch/seaweedfs/weed/filer/postgres"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 var _ filer.BucketAware = (*PostgresStore2)(nil)

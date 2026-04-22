@@ -5,21 +5,21 @@ import (
 	"sync"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer_client"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/mq/pub_balancer"
-	"github.com/seaweedfs/seaweedfs/weed/mq/sub_coordinator"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/filer_client"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/mq/pub_balancer"
+	"github.com/Infowatch/seaweedfs/weed/mq/sub_coordinator"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
-	"github.com/seaweedfs/seaweedfs/weed/cluster/lock_manager"
-	"github.com/seaweedfs/seaweedfs/weed/pb/mq_pb"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/cluster/lock_manager"
+	"github.com/Infowatch/seaweedfs/weed/pb/mq_pb"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 	"google.golang.org/grpc"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 )
 
 type MessageQueueBrokerOption struct {

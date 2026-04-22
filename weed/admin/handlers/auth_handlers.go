@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gorilla/sessions"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // AuthHandlers contains authentication-related HTTP handlers

@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mount_peer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/mount_peer_pb"
 	"google.golang.org/grpc"
 )
 

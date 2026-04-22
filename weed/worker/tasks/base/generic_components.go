@@ -3,7 +3,7 @@ package base
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // GenericDetector implements TaskDetector using function-based logic

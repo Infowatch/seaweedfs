@@ -4362,7 +4362,7 @@ const file_plugin_proto_rawDesc = "" +
 	"\x18ACTIVITY_SOURCE_DETECTOR\x10\x02\x12\x1c\n" +
 	"\x18ACTIVITY_SOURCE_EXECUTOR\x10\x032f\n" +
 	"\x14PluginControlService\x12N\n" +
-	"\fWorkerStream\x12\x1c.plugin.WorkerToAdminMessage\x1a\x1c.plugin.AdminToWorkerMessage(\x010\x01B2Z0github.com/seaweedfs/seaweedfs/weed/pb/plugin_pbb\x06proto3"
+	"\fWorkerStream\x12\x1c.plugin.WorkerToAdminMessage\x1a\x1c.plugin.AdminToWorkerMessage(\x010\x01B2Z0github.com/Infowatch/seaweedfs/weed/pb/plugin_pbb\x06proto3"
 
 var (
 	file_plugin_proto_rawDescOnce sync.Once

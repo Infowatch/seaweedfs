@@ -3,8 +3,8 @@ package tasks
 import (
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // ConfigUpdateFunc is a function type for updating task configurations

@@ -1,6 +1,6 @@
 package s3err
 
-import "github.com/seaweedfs/seaweedfs/weed/util/constants"
+import "github.com/Infowatch/seaweedfs/weed/util/constants"
 
 /*
  * MinIO Go Library for Amazon S3 Compatible Cloud Storage

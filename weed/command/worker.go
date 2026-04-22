@@ -3,7 +3,7 @@ package command
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
 )
 
 var cmdWorker = &Command{

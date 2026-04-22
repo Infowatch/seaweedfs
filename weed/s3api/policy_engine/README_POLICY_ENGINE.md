@@ -367,4 +367,4 @@ The policy engine provides a seamless upgrade path from SeaweedFS's existing sim
 | Cross-account access | Access across different accounts |
 | VPC Endpoint policies | Network-level policies |
 
-For feature requests or to track progress, see the [GitHub Issues](https://github.com/seaweedfs/seaweedfs/issues). 
+For feature requests or to track progress, see the [GitHub Issues](https://github.com/Infowatch/seaweedfs/issues).

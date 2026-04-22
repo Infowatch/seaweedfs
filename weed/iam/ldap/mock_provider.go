@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
 )
 
 // MockLDAPProvider is a mock implementation for testing

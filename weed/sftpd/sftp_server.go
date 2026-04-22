@@ -11,11 +11,11 @@ import (
 	"time"
 
 	"github.com/pkg/sftp"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	filer_pb "github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/user"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	filer_pb "github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/user"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	"google.golang.org/grpc"
 )
 

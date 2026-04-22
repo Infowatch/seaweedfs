@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // CoordinatorRegistryInterface defines the interface for coordinator registry operations

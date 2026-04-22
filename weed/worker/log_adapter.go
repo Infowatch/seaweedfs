@@ -3,8 +3,8 @@ package worker
 import (
 	"fmt"
 
-	wtasks "github.com/seaweedfs/seaweedfs/weed/worker/tasks"
-	wtypes "github.com/seaweedfs/seaweedfs/weed/worker/types"
+	wtasks "github.com/Infowatch/seaweedfs/weed/worker/tasks"
+	wtypes "github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // taskLoggerAdapter adapts a tasks.TaskLogger to the types.Logger interface used by tasks

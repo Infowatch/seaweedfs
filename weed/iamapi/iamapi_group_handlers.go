@@ -8,10 +8,10 @@ import (
 	"sort"
 
 	"github.com/aws/aws-sdk-go/service/iam"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
 )
 
 func (iama *IamApiServer) CreateGroup(s3cfg *iam_pb.S3ApiConfiguration, values url.Values) (*CreateGroupResponse, *IamError) {

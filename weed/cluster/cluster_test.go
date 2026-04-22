@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 func TestConcurrentAddRemoveNodes(t *testing.T) {

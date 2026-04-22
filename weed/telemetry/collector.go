@@ -3,10 +3,10 @@ package telemetry
 import (
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/telemetry/proto"
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/topology"
+	"github.com/Infowatch/seaweedfs/telemetry/proto"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/topology"
 )
 
 // Collector gathers telemetry data from a SeaweedFS cluster

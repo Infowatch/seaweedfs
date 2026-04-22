@@ -7,7 +7,7 @@
 package mq_agent_pb
 
 import (
-	schema_pb "github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	schema_pb "github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -683,7 +683,7 @@ const file_mq_agent_proto_rawDesc = "" +
 	"\x13ClosePublishSession\x12(.messaging_pb.ClosePublishSessionRequest\x1a).messaging_pb.ClosePublishSessionResponse\"\x00\x12^\n" +
 	"\rPublishRecord\x12\".messaging_pb.PublishRecordRequest\x1a#.messaging_pb.PublishRecordResponse\"\x00(\x010\x01\x12d\n" +
 	"\x0fSubscribeRecord\x12$.messaging_pb.SubscribeRecordRequest\x1a%.messaging_pb.SubscribeRecordResponse\"\x00(\x010\x01B`\n" +
-	"\x12seaweedfs.mq_agentB\x16MessageQueueAgentProtoZ2github.com/seaweedfs/seaweedfs/weed/pb/mq_agent_pbb\x06proto3"
+	"\x12seaweedfs.mq_agentB\x16MessageQueueAgentProtoZ2github.com/Infowatch/seaweedfs/weed/pb/mq_agent_pbb\x06proto3"
 
 var (
 	file_mq_agent_proto_rawDescOnce sync.Once

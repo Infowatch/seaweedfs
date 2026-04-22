@@ -4,11 +4,11 @@ import (
 	"context"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/replication"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sink"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sub"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/replication"
+	"github.com/Infowatch/seaweedfs/weed/replication/sink"
+	"github.com/Infowatch/seaweedfs/weed/replication/sub"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func init() {

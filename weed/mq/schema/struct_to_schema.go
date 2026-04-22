@@ -3,7 +3,7 @@ package schema
 import (
 	"reflect"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 func StructToSchema(instance any) *schema_pb.RecordType {

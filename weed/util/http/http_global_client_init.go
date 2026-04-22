@@ -1,8 +1,8 @@
 package http
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	util_http_client "github.com/seaweedfs/seaweedfs/weed/util/http/client"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	util_http_client "github.com/Infowatch/seaweedfs/weed/util/http/client"
 )
 
 var (

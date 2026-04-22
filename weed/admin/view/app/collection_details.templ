@@ -2,8 +2,8 @@ package app
 
 import (
 	"fmt"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 templ CollectionDetails(data dash.CollectionDetailsData) {
@@ -103,8 +103,8 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 	<!-- Size Information Note -->
 	<div class="alert alert-info" role="alert">
 		<i class="fas fa-info-circle me-2"></i>
-		<strong>Size Information:</strong> 
-		Logical size represents the actual data stored (regular volumes only). 
+		<strong>Size Information:</strong>
+		Logical size represents the actual data stored (regular volumes only).
 		EC volumes show shard counts instead of size - physical storage for EC volumes is approximately 1.4x the original data due to erasure coding redundancy.
 	</div>
 
@@ -121,7 +121,7 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 					return end
 				}())} of {fmt.Sprintf("%d", data.TotalVolumes + data.TotalEcVolumes)} items
 			</span>
-			
+
 			<div class="d-flex align-items-center">
 				<label for="pageSize" class="form-label me-2 mb-0">Show:</label>
 				<select id="pageSize" class="form-select form-select-sm" style="width: auto;" onchange="changePageSize(this.value)">
@@ -201,8 +201,8 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						</td>
 						<td>
 							<div class="btn-group" role="group">
-								<button type="button" class="btn btn-sm btn-outline-primary" 
-										onclick="showVolumeDetails(event)" 
+								<button type="button" class="btn btn-sm btn-outline-primary"
+										onclick="showVolumeDetails(event)"
 										data-volume-id={ fmt.Sprintf("%d", volume.Id) }
 										data-server={ volume.Server }
 										title="View volume details">
@@ -212,7 +212,7 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						</td>
 					</tr>
 				}
-				
+
 				// Display EC volumes
 				for _, ecVolume := range data.EcVolumes {
 					<tr>
@@ -244,15 +244,15 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						</td>
 						<td>
 							<div class="btn-group" role="group">
-								<button type="button" class="btn btn-sm btn-outline-info" 
-										onclick="showEcVolumeDetails(event)" 
+								<button type="button" class="btn btn-sm btn-outline-info"
+										onclick="showEcVolumeDetails(event)"
 										data-volume-id={ fmt.Sprintf("%d", ecVolume.VolumeID) }
 										title="View EC volume details">
 									<i class="fas fa-info-circle"></i>
 								</button>
 								if !ecVolume.IsComplete {
-									<button type="button" class="btn btn-sm btn-outline-warning" 
-											onclick="repairEcVolume(event)" 
+									<button type="button" class="btn btn-sm btn-outline-warning"
+											onclick="repairEcVolume(event)"
 											data-volume-id={ fmt.Sprintf("%d", ecVolume.VolumeID) }
 											title="Repair missing shards">
 										<i class="fas fa-wrench"></i>
@@ -262,7 +262,7 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						</td>
 					</tr>
 				}
-				
+
 				// Show message when no volumes found
 				if len(data.RegularVolumes) == 0 && len(data.EcVolumes) == 0 {
 					<tr>
@@ -288,7 +288,7 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						<a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.Page-1) }>Previous</a>
 					</li>
 				}
-				
+
 				for i := 1; i <= data.TotalPages; i++ {
 					if i == data.Page {
 						<li class="page-item active">
@@ -308,7 +308,7 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 						</li>
 					}
 				}
-				
+
 				if data.Page < data.TotalPages {
 					<li class="page-item">
 						<a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.Page+1) }>Next</a>
@@ -326,12 +326,12 @@ templ CollectionDetails(data dash.CollectionDetailsData) {
 		function sortBy(field) {
 			const currentSort = new URLSearchParams(window.location.search).get('sort_by');
 			const currentOrder = new URLSearchParams(window.location.search).get('sort_order') || 'asc';
-			
+
 			let newOrder = 'asc';
 			if (currentSort === field && currentOrder === 'asc') {
 				newOrder = 'desc';
 			}
-			
+
 			const url = new URL(window.location);
 			url.searchParams.set('sort_by', field);
 			url.searchParams.set('sort_order', newOrder);

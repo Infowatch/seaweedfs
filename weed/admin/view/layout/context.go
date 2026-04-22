@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/a-h/templ"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 // ViewContext contains per-request metadata needed by layout templates.

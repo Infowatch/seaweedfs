@@ -3,8 +3,8 @@ package util
 import (
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/topology"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/admin/topology"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 // ResolveServerAddress resolves a server ID to its network address using the active topology

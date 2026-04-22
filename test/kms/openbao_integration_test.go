@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/kms"
-	_ "github.com/seaweedfs/seaweedfs/weed/kms/openbao"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/kms"
+	_ "github.com/Infowatch/seaweedfs/weed/kms/openbao"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
 )
 
 func TestRustVolumeArgsIncludeReadMode(t *testing.T) {

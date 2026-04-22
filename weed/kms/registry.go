@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // ProviderRegistry manages KMS provider implementations

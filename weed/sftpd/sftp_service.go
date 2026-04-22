@@ -11,10 +11,10 @@ import (
 	"time"
 
 	"github.com/pkg/sftp"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/auth"
-	"github.com/seaweedfs/seaweedfs/weed/sftpd/user"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/auth"
+	"github.com/Infowatch/seaweedfs/weed/sftpd/user"
 	"golang.org/x/crypto/ssh"
 	"google.golang.org/grpc"
 )

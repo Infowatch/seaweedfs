@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // Manager provides reusable S3 Tables operations for shell/admin without HTTP routing.

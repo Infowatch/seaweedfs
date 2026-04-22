@@ -3,7 +3,7 @@ package engine
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/schema"
+	"github.com/Infowatch/seaweedfs/weed/mq/schema"
 )
 
 // TestConvertMQSchemaToTableInfo_NoSchema tests that topics without schemas

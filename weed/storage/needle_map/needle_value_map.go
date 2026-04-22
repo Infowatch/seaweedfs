@@ -1,7 +1,7 @@
 package needle_map
 
 import (
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 type NeedleValueMap interface {

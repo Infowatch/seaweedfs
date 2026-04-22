@@ -3,7 +3,7 @@ package framework
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
 )
 
 // DualVolumeCluster is deprecated. Use MultiVolumeCluster instead.

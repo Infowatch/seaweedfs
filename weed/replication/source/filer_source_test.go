@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 func TestMain(m *testing.M) {

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/security"
 )
 
 func TestFilerServer_maybeCheckJwtAuthorization_Scoped(t *testing.T) {

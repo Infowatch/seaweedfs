@@ -4,9 +4,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/sequence"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/sequence"
 )
 
 // newInodeSequencer constructs the inode sequencer used to assign object

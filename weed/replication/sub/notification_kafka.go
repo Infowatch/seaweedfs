@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	kafkanotif "github.com/seaweedfs/seaweedfs/weed/notification/kafka"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	kafkanotif "github.com/Infowatch/seaweedfs/weed/notification/kafka"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	"google.golang.org/protobuf/proto"
 )
 

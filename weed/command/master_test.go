@@ -3,7 +3,7 @@ package command
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 func TestPeerIndexIgnoresGrpcPort(t *testing.T) {

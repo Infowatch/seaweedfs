@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 func IcebergTableDetails(data dash.IcebergTableDetailsData) templ.Component {

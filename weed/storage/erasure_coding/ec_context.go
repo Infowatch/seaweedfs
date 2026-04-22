@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/klauspost/reedsolomon"
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 // ECContext encapsulates erasure coding parameters for encoding/decoding operations

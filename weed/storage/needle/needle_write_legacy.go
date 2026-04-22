@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend"
-	. "github.com/seaweedfs/seaweedfs/weed/storage/types"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/buffer_pool"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend"
+	. "github.com/Infowatch/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/buffer_pool"
 )
 
 func (n *Needle) LegacyPrepareWriteBuffer(version Version, writeBytes *bytes.Buffer) (Size, int64, error) {

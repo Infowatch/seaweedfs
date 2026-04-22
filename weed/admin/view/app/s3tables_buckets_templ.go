@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 func S3TablesBuckets(data dash.S3TablesBucketsData) templ.Component {

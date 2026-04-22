@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
 
 	// Import all store implementations to register them
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/filer_etc"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/postgres"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/filer_etc"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/memory"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/postgres"
 )
 
 func TestStoreRegistration(t *testing.T) {

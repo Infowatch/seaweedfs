@@ -6,8 +6,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/mount_peer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util/chunk_cache"
+	"github.com/Infowatch/seaweedfs/weed/pb/mount_peer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util/chunk_cache"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"

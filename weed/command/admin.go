@@ -17,20 +17,20 @@ import (
 	"syscall"
 	"time"
 
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 
 	"github.com/gorilla/mux"
 	"github.com/gorilla/sessions"
 	"github.com/spf13/viper"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/admin/handlers"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/filer_etc" // Register filer_etc credential store
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/grace"
+	"github.com/Infowatch/seaweedfs/weed/admin"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/admin/handlers"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/filer_etc" // Register filer_etc credential store
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/grace"
 )
 
 var (

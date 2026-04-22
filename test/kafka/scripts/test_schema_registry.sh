@@ -20,7 +20,7 @@ fi
 
 # Start SeaweedFS infrastructure
 echo "🌱 Starting SeaweedFS infrastructure..."
-cd /Users/chrislu/go/src/github.com/seaweedfs/seaweedfs
+cd /Users/chrislu/go/src/github.com/Infowatch/seaweedfs
 
 # Clean up any existing processes
 pkill -f "weed server" || true
@@ -53,7 +53,7 @@ echo "[OK] SeaweedFS infrastructure ready"
 
 # Run the schema registry E2E tests
 echo "🧪 Running Schema Registry E2E tests..."
-cd /Users/chrislu/go/src/github.com/seaweedfs/seaweedfs/test/kafka
+cd /Users/chrislu/go/src/github.com/Infowatch/seaweedfs/test/kafka
 
 export SEAWEEDFS_MASTERS=127.0.0.1:9333
 

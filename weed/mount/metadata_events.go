@@ -3,8 +3,8 @@ package mount
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/mount/meta_cache"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/mount/meta_cache"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 	"google.golang.org/protobuf/proto"
 )
 

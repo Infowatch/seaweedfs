@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/redis/go-redis/v9"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer"
 )
 
 func (store *UniversalRedis2Store) KvPut(ctx context.Context, key []byte, value []byte) (err error) {

@@ -9,11 +9,11 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v5"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/iam/integration"
-	"github.com/seaweedfs/seaweedfs/weed/iam/providers"
-	"github.com/seaweedfs/seaweedfs/weed/iam/sts"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/iam/integration"
+	"github.com/Infowatch/seaweedfs/weed/iam/providers"
+	"github.com/Infowatch/seaweedfs/weed/iam/sts"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // privateNetworks contains pre-parsed private IP ranges for efficient lookups
@@ -255,7 +255,7 @@ func (s3iam *S3IAMIntegration) AuthorizeAction(ctx context.Context, identity *IA
 
 	// For list operations, populate the s3:prefix condition key and ensure the
 	// resource ARN stays at bucket level (matching AWS ListBucket semantics).
-	// See https://github.com/seaweedfs/seaweedfs/issues/8969
+	// See https://github.com/Infowatch/seaweedfs/issues/8969
 	resourceObjectKey := objectKey
 	if action == "List" {
 		listPrefix := r.URL.Query().Get("prefix")

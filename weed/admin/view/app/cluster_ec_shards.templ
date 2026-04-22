@@ -2,7 +2,7 @@ package app
 
 import (
     "fmt"
-    "github.com/seaweedfs/seaweedfs/weed/admin/dash"
+    "github.com/Infowatch/seaweedfs/weed/admin/dash"
 )
 
 templ ClusterEcShards(data dash.ClusterEcShardsData) {
@@ -236,15 +236,15 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
                         </td>
                         <td>
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-sm btn-outline-primary" 
-                                        onclick="showShardDetails(event)" 
+                                <button type="button" class="btn btn-sm btn-outline-primary"
+                                        onclick="showShardDetails(event)"
                                         data-volume-id={ fmt.Sprintf("%d", shard.VolumeID) }
                                         title="View EC volume details">
                                     <i class="fas fa-info-circle"></i>
                                 </button>
                                 if !shard.IsComplete {
-                                    <button type="button" class="btn btn-sm btn-outline-warning" 
-                                            onclick="repairVolume(event)" 
+                                    <button type="button" class="btn btn-sm btn-outline-warning"
+                                            onclick="repairVolume(event)"
                                             data-volume-id={ fmt.Sprintf("%d", shard.VolumeID) }
                                             title="Repair missing shards">
                                         <i class="fas fa-wrench"></i>
@@ -269,7 +269,7 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
                         </a>
                     </li>
                 }
-                
+
                 <!-- First page -->
                 if data.CurrentPage > 3 {
                     <li class="page-item">
@@ -281,24 +281,24 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
                         </li>
                     }
                 }
-                
+
                 <!-- Current page and neighbors -->
                 if data.CurrentPage > 1 && data.CurrentPage-1 >= 1 {
                     <li class="page-item">
                         <a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.CurrentPage-1) }>{fmt.Sprintf("%d", data.CurrentPage-1)}</a>
                     </li>
                 }
-                
+
                 <li class="page-item active">
                     <span class="page-link">{fmt.Sprintf("%d", data.CurrentPage)}</span>
                 </li>
-                
+
                 if data.CurrentPage < data.TotalPages && data.CurrentPage+1 <= data.TotalPages {
                     <li class="page-item">
                         <a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.CurrentPage+1) }>{fmt.Sprintf("%d", data.CurrentPage+1)}</a>
                     </li>
                 }
-                
+
                 <!-- Last page -->
                 if data.CurrentPage < data.TotalPages-2 {
                     if data.CurrentPage < data.TotalPages-3 {
@@ -310,7 +310,7 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
                         <a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.TotalPages) }>{fmt.Sprintf("%d", data.TotalPages)}</a>
                     </li>
                 }
-                
+
                 if data.CurrentPage < data.TotalPages {
                     <li class="page-item">
                         <a class="page-link" href="#" onclick="goToPage(event)" data-page={ fmt.Sprintf("%d", data.CurrentPage+1) }>
@@ -329,11 +329,11 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
             const currentSort = "{data.SortBy}";
             const currentOrder = "{data.SortOrder}";
             let newOrder = 'asc';
-            
+
             if (currentSort === field && currentOrder === 'asc') {
                 newOrder = 'desc';
             }
-            
+
             updateUrl({
                 sortBy: field,
                 sortOrder: newOrder,
@@ -383,7 +383,7 @@ templ ClusterEcShards(data dash.ClusterEcShardsData) {
             // Get data from the button element (not the icon inside it)
             const button = event.target.closest('button');
             const volumeId = button.getAttribute('data-volume-id');
-            
+
             // Navigate to the EC volume details page
             window.location.href = (window.__BASE_PATH__ || '') + `/storage/ec-volumes/${volumeId}`;
         }
@@ -447,7 +447,7 @@ func calculateDistributionSummary(volumeID uint32, allShards []dash.EcShardWithI
     dataCenters := make(map[string]bool)
     racks := make(map[string]bool)
     servers := make(map[string]bool)
-    
+
     for _, s := range allShards {
         if s.VolumeID == volumeID {
             dataCenters[s.DataCenter] = true
@@ -455,7 +455,6 @@ func calculateDistributionSummary(volumeID uint32, allShards []dash.EcShardWithI
             servers[s.Server] = true
         }
     }
-    
+
     return fmt.Sprintf("%d DCs, %d racks, %d servers", len(dataCenters), len(racks), len(servers))
 }
-

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/volume_server_pb"
-	_ "github.com/seaweedfs/seaweedfs/weed/storage/backend/rclone_backend"
-	_ "github.com/seaweedfs/seaweedfs/weed/storage/backend/s3_backend"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/volume_server_pb"
+	_ "github.com/Infowatch/seaweedfs/weed/storage/backend/rclone_backend"
+	_ "github.com/Infowatch/seaweedfs/weed/storage/backend/s3_backend"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	jsonpb "google.golang.org/protobuf/encoding/protojson"
 )
 

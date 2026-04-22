@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/mem"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/mem"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 
 	"io"
 	"net/http"
@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 
-	"github.com/seaweedfs/seaweedfs/weed/security"
-	util_http_client "github.com/seaweedfs/seaweedfs/weed/util/http/client"
+	"github.com/Infowatch/seaweedfs/weed/security"
+	util_http_client "github.com/Infowatch/seaweedfs/weed/util/http/client"
 )
 
 var ErrNotFound = fmt.Errorf("not found")
@@ -81,7 +81,7 @@ func Post(url string, values url.Values) ([]byte, error) {
 	return b, nil
 }
 
-// github.com/seaweedfs/seaweedfs/unmaintained/repeated_vacuum/repeated_vacuum.go
+// github.com/Infowatch/seaweedfs/unmaintained/repeated_vacuum/repeated_vacuum.go
 // may need increasing http.Client.Timeout
 func Get(url string) ([]byte, bool, error) {
 	return GetAuthenticated(url, "")

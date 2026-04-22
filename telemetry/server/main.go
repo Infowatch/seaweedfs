@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/seaweedfs/seaweedfs/telemetry/server/api"
-	"github.com/seaweedfs/seaweedfs/telemetry/server/dashboard"
-	"github.com/seaweedfs/seaweedfs/telemetry/server/storage"
+	"github.com/Infowatch/seaweedfs/telemetry/server/api"
+	"github.com/Infowatch/seaweedfs/telemetry/server/dashboard"
+	"github.com/Infowatch/seaweedfs/telemetry/server/storage"
 )
 
 var (

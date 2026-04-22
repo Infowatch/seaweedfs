@@ -20,12 +20,12 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/s3"
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/weed/command"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/weed/command"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 	"github.com/stretchr/testify/require"
 )
 
@@ -425,7 +425,7 @@ func TestS3MultipartOperationsInheritPutObjectPermissions(t *testing.T) {
 }
 
 // TestS3IAMManagedPolicyLifecycle is an end-to-end integration test covering the
-// user-reported use case in https://github.com/seaweedfs/seaweedfs/issues/8506
+// user-reported use case in https://github.com/Infowatch/seaweedfs/issues/8506
 // where managed policy operations (GetPolicy, ListPolicies, DeletePolicy,
 // AttachUserPolicy, DetachUserPolicy) returned 500 errors.
 func TestS3IAMManagedPolicyLifecycle(t *testing.T) {

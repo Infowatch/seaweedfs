@@ -1,6 +1,6 @@
 # SeaweedFS Volume Server (Rust)
 
-A drop-in replacement for the [SeaweedFS](https://github.com/seaweedfs/seaweedfs) Go volume server, rewritten in Rust. It uses binary-compatible storage formats (`.dat`, `.idx`, `.vif`) and speaks the same HTTP and gRPC protocols, so it works with an unmodified Go master server.
+A drop-in replacement for the [SeaweedFS](https://github.com/Infowatch/seaweedfs) Go volume server, rewritten in Rust. It uses binary-compatible storage formats (`.dat`, `.idx`, `.vif`) and speaks the same HTTP and gRPC protocols, so it works with an unmodified Go master server.
 
 ## Building
 

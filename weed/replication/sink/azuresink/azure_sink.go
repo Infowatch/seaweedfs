@@ -12,14 +12,14 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/appendblob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/blob"
 	"github.com/Azure/azure-sdk-for-go/sdk/storage/azblob/bloberror"
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/remote_storage/azure"
-	"github.com/seaweedfs/seaweedfs/weed/replication/repl_util"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sink"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/remote_storage/azure"
+	"github.com/Infowatch/seaweedfs/weed/replication/repl_util"
+	"github.com/Infowatch/seaweedfs/weed/replication/sink"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 type AzureSink struct {

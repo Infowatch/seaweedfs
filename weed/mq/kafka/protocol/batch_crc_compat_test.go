@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/integration"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/integration"
 )
 
 // TestBatchConstruction tests that our batch construction produces valid CRC

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package com.seaweedfs.loadtest;
 
-option go_package = "github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema/pb";
+option go_package = "github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema/pb";
 
 message LoadTestMessage {
   string id = 1;

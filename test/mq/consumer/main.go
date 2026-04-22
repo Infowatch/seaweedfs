@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/client/agent_client"
-	"github.com/seaweedfs/seaweedfs/weed/mq/topic"
-	"github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	"github.com/Infowatch/seaweedfs/weed/mq/client/agent_client"
+	"github.com/Infowatch/seaweedfs/weed/mq/topic"
+	"github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 )
 
 var (

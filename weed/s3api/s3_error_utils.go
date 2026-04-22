@@ -1,8 +1,8 @@
 package s3api
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // ErrorHandlers provide common error handling patterns for S3 API operations

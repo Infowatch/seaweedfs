@@ -18,13 +18,13 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
-	. "github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
-	"github.com/seaweedfs/seaweedfs/weed/util/request_id"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/credential/memory"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
+	. "github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/util/request_id"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
@@ -1260,7 +1260,7 @@ func TestEmbeddedIamCreateAccessKeyForExistingUser(t *testing.T) {
 }
 
 // TestEmbeddedIamPutGetUserPolicyRoundTrip is a regression test for
-// https://github.com/seaweedfs/seaweedfs/issues/9008: put-user-policy followed
+// https://github.com/Infowatch/seaweedfs/issues/9008: put-user-policy followed
 // by get-user-policy must return the same policy document, with Action and Resource
 // lists intact (no wildcard expansion, no duplication, no collapsing).
 func TestEmbeddedIamPutGetUserPolicyRoundTrip(t *testing.T) {

@@ -1,6 +1,6 @@
 package s3api
 
-import "github.com/seaweedfs/seaweedfs/weed/glog"
+import "github.com/Infowatch/seaweedfs/weed/glog"
 
 // calculateIVWithOffset calculates a unique IV by combining a base IV with an offset.
 // This ensures each chunk/part uses a unique IV, preventing CTR mode IV reuse vulnerabilities.

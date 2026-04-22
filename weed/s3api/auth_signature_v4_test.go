@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 func TestExtractV4AuthInfoFromHeader_S3Tables(t *testing.T) {

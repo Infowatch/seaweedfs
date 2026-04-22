@@ -5,8 +5,8 @@ import (
 	"io"
 	"sort"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 )
 
 type indexEntry struct {
@@ -86,7 +86,7 @@ func CheckIndexFile(r io.ReaderAt, indexFileSize int64, version needle.Version) 
 		// The check below is intended to ensure all index entries are contiguous; unfortunately, Seaweed
 		// can delete index entries for files while keeping their data, so volumes with deleted files
 		// will fail this test :(
-		// See https://github.com/seaweedfs/seaweedfs/issues/8204 for details.
+		// See https://github.com/Infowatch/seaweedfs/issues/8204 for details.
 		/*
 			if e.offset != lastEnd + 1 {
 				errs = append(errs, fmt.Errorf("offset %d for needle %d (#%d) doesn't match end of needle %d at %d", e.offset, e.id, e.index+1, last.id, lastEnd))

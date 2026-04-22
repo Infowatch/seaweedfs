@@ -3,7 +3,7 @@ package s3api
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/credential"
 	"github.com/stretchr/testify/assert"
 )
 

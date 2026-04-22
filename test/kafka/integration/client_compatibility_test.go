@@ -9,7 +9,7 @@ import (
 	"github.com/IBM/sarama"
 	"github.com/segmentio/kafka-go"
 
-	"github.com/seaweedfs/seaweedfs/test/kafka/internal/testutil"
+	"github.com/Infowatch/seaweedfs/test/kafka/internal/testutil"
 )
 
 // TestClientCompatibility tests compatibility with different Kafka client libraries and versions

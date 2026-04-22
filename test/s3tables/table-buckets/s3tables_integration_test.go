@@ -17,10 +17,10 @@ import (
 
 	"flag"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/weed/command"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/weed/command"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 // TestMain starts a single default weed mini cluster for the whole package and

@@ -24,11 +24,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/framework"
-	"github.com/seaweedfs/seaweedfs/weed/command"
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	flag "github.com/seaweedfs/seaweedfs/weed/util/fla9"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/volume_server/framework"
+	"github.com/Infowatch/seaweedfs/weed/command"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	flag "github.com/Infowatch/seaweedfs/weed/util/fla9"
 )
 
 const (

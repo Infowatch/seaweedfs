@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/telemetry/proto"
-	"github.com/seaweedfs/seaweedfs/telemetry/server/storage"
+	"github.com/Infowatch/seaweedfs/telemetry/proto"
+	"github.com/Infowatch/seaweedfs/telemetry/server/storage"
 	protobuf "google.golang.org/protobuf/proto"
 )
 

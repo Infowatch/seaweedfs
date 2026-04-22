@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/test/testutil"
-	"github.com/seaweedfs/seaweedfs/test/volume_server/matrix"
+	"github.com/Infowatch/seaweedfs/test/testutil"
+	"github.com/Infowatch/seaweedfs/test/volume_server/matrix"
 )
 
 type ClusterWithFiler struct {

@@ -9,10 +9,10 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/filer/abstract_sql"
-	"github.com/seaweedfs/seaweedfs/weed/filer/mysql"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/filer/abstract_sql"
+	"github.com/Infowatch/seaweedfs/weed/filer/mysql"
+	"github.com/Infowatch/seaweedfs/weed/util"
 	_ "modernc.org/sqlite"
 )
 

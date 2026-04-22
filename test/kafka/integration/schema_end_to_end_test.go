@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/seaweedfs/seaweedfs/weed/mq/kafka/schema"
+	"github.com/Infowatch/seaweedfs/weed/mq/kafka/schema"
 )
 
 // TestSchemaEndToEnd_AvroRoundTrip tests the complete Avro schema round-trip workflow

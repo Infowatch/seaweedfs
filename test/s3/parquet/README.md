@@ -303,7 +303,7 @@ When adding new tests:
 
 - [PyArrow Documentation](https://arrow.apache.org/docs/python/parquet.html)
 - [s3fs Documentation](https://s3fs.readthedocs.io/)
-- [SeaweedFS S3 API](https://github.com/seaweedfs/seaweedfs/wiki/Amazon-S3-API)
+- [SeaweedFS S3 API](https://github.com/Infowatch/seaweedfs/wiki/Amazon-S3-API)
 - [AWS S3 API Reference](https://docs.aws.amazon.com/AmazonS3/latest/API/)
 
 ---

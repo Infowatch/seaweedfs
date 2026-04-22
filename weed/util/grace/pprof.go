@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 )
 
 // StartDebugServer starts an HTTP server for pprof debugging on the specified port.

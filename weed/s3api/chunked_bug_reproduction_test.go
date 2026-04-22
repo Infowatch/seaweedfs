@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3err"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3err"
 )
 
 // TestChunkedEncodingMixedFormat tests the fix for GitHub issue #6847

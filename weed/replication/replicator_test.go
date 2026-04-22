@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/replication/sink"
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/replication/sink"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 var _ sink.ReplicationSink = (*recordingSink)(nil)

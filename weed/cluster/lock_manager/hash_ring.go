@@ -5,7 +5,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb"
 )
 
 const DefaultVnodeCount = 50

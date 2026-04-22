@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func (store *MemoryStore) CreateServiceAccount(ctx context.Context, sa *iam_pb.ServiceAccount) error {

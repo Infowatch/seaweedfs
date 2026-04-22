@@ -3,8 +3,8 @@ package grpc
 import (
 	"context"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/pb/iam_pb"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/pb/iam_pb"
 )
 
 func (store *IamGrpcStore) LoadConfiguration(ctx context.Context) (*iam_pb.S3ApiConfiguration, error) {

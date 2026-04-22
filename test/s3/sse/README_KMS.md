@@ -228,7 +228,7 @@ From benchmark results:
 
 ## 🔗 Related Documentation
 
-- [SeaweedFS S3 API Documentation](https://github.com/seaweedfs/seaweedfs/wiki/Amazon-S3-API)
+- [SeaweedFS S3 API Documentation](https://github.com/Infowatch/seaweedfs/wiki/Amazon-S3-API)
 - [OpenBao Transit Secrets Engine](https://github.com/openbao/openbao/blob/main/website/content/docs/secrets/transit.md)
 - [AWS S3 Server-Side Encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html)
 

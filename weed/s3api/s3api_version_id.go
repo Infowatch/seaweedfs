@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	s3_constants "github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	s3_constants "github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // Version ID format constants

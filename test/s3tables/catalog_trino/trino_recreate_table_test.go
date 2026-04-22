@@ -7,7 +7,7 @@ import (
 )
 
 // TestTrinoCreateDropRecreateTable is a regression test for
-// https://github.com/seaweedfs/seaweedfs/issues/9074
+// https://github.com/Infowatch/seaweedfs/issues/9074
 //
 // Trino CTAS was failing with "Cannot create a table on a non-empty
 // location" because Trino's pre-write check saw leftover data files from

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/util/constants"
+	"github.com/Infowatch/seaweedfs/weed/util/constants"
 )
 
 // APIError structure

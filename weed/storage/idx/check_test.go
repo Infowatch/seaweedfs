@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/needle"
+	"github.com/Infowatch/seaweedfs/weed/storage/needle"
 )
 
 func TestCheckIndexFile(t *testing.T) {

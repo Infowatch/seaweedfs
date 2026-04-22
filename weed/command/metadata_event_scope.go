@@ -1,8 +1,8 @@
 package command
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func metadataEventDirectoryMembership(resp *filer_pb.SubscribeMetadataResponse, dir string) (sourceInDir, targetInDir bool) {

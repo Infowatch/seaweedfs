@@ -1,7 +1,7 @@
 package skiplist
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/glog"
 	"google.golang.org/protobuf/proto"
 )
 

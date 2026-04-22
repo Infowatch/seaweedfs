@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package mount_peer_pb;
 
-option go_package = "github.com/seaweedfs/seaweedfs/weed/pb/mount_peer_pb";
+option go_package = "github.com/Infowatch/seaweedfs/weed/pb/mount_peer_pb";
 
 //////////////////////////////////////////////////
 // Peer chunk sharing — mount-to-mount chunk directory

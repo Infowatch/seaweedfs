@@ -9,23 +9,23 @@ import (
 	"strings"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3bucket"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3bucket"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster/lock_manager"
-	"github.com/seaweedfs/seaweedfs/weed/filer/empty_folder_cleanup"
-	"github.com/seaweedfs/seaweedfs/weed/sequence"
+	"github.com/Infowatch/seaweedfs/weed/cluster/lock_manager"
+	"github.com/Infowatch/seaweedfs/weed/filer/empty_folder_cleanup"
+	"github.com/Infowatch/seaweedfs/weed/sequence"
 
-	"github.com/seaweedfs/seaweedfs/weed/cluster"
-	"github.com/seaweedfs/seaweedfs/weed/pb"
-	"github.com/seaweedfs/seaweedfs/weed/pb/master_pb"
+	"github.com/Infowatch/seaweedfs/weed/cluster"
+	"github.com/Infowatch/seaweedfs/weed/pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/master_pb"
 
 	"google.golang.org/grpc"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/util"
-	"github.com/seaweedfs/seaweedfs/weed/util/log_buffer"
-	"github.com/seaweedfs/seaweedfs/weed/wdclient"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util/log_buffer"
+	"github.com/Infowatch/seaweedfs/weed/wdclient"
 	"golang.org/x/sync/singleflight"
 )
 

@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"sort"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // Hash computes a SHA1 hash of the input string.

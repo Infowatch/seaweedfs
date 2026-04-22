@@ -3,8 +3,8 @@ package filersink
 import (
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/replication/source"
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/replication/source"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 func TestTargetPathToSourcePath(t *testing.T) {

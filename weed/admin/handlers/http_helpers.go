@@ -4,7 +4,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/internal/httputil"
+	"github.com/Infowatch/seaweedfs/weed/admin/internal/httputil"
 )
 
 func writeJSON(w http.ResponseWriter, status int, payload interface{}) {

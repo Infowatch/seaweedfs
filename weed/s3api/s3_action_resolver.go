@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // ResolveS3Action determines the specific S3 action from HTTP request context.

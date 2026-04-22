@@ -7,8 +7,8 @@
 package mq_pb
 
 import (
-	filer_pb "github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	schema_pb "github.com/seaweedfs/seaweedfs/weed/pb/schema_pb"
+	filer_pb "github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	schema_pb "github.com/Infowatch/seaweedfs/weed/pb/schema_pb"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -4555,7 +4555,7 @@ const file_mq_broker_proto_rawDesc = "" +
 	"\fFetchMessage\x12!.messaging_pb.FetchMessageRequest\x1a\".messaging_pb.FetchMessageResponse\"\x00\x12q\n" +
 	"\x14GetUnflushedMessages\x12).messaging_pb.GetUnflushedMessagesRequest\x1a*.messaging_pb.GetUnflushedMessagesResponse\"\x000\x01\x12r\n" +
 	"\x15GetPartitionRangeInfo\x12*.messaging_pb.GetPartitionRangeInfoRequest\x1a+.messaging_pb.GetPartitionRangeInfoResponse\"\x00BO\n" +
-	"\fseaweedfs.mqB\x11MessageQueueProtoZ,github.com/seaweedfs/seaweedfs/weed/pb/mq_pbb\x06proto3"
+	"\fseaweedfs.mqB\x11MessageQueueProtoZ,github.com/Infowatch/seaweedfs/weed/pb/mq_pbb\x06proto3"
 
 var (
 	file_mq_broker_proto_rawDescOnce sync.Once

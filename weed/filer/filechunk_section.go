@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 const SectionSize = 2 * 1024 * 1024 * 32 // 64MiB

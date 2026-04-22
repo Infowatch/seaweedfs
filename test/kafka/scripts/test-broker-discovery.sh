@@ -6,7 +6,7 @@ set -e
 
 echo "=== Testing SeaweedFS Broker Discovery ==="
 
-cd /Users/chrislu/go/src/github.com/seaweedfs/seaweedfs
+cd /Users/chrislu/go/src/github.com/Infowatch/seaweedfs
 
 # Build weed binary
 echo "Building weed binary..."
@@ -88,7 +88,7 @@ if [ "$broker_ready" = false ]; then
   echo "[FAIL] MQ broker failed to start"
   echo "Server logs:"
   cat /tmp/weed-discovery-server.log
-  echo "Broker logs:"  
+  echo "Broker logs:"
   cat /tmp/weed-discovery-broker.log
   exit 1
 fi
@@ -119,7 +119,7 @@ fi
 echo
 echo "📊 Test Results:"
 echo "  Broker startup: ✅"
-echo "  Broker registration: ✅"  
+echo "  Broker registration: ✅"
 echo "  Gateway discovery: $([ "$discovery_success" = true ] && echo "✅" || echo "❌")"
 
 echo

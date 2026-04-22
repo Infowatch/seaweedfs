@@ -7,12 +7,12 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/idx"
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
-	util_http "github.com/seaweedfs/seaweedfs/weed/util/http"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/idx"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
+	util_http "github.com/Infowatch/seaweedfs/weed/util/http"
 )
 
 var (

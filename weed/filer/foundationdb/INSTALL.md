@@ -95,7 +95,7 @@ go get github.com/apple/foundationdb/bindings/go/src/fdb
 
 ```bash
 # Clone SeaweedFS repository
-git clone https://github.com/seaweedfs/seaweedfs.git
+git clone https://github.com/Infowatch/seaweedfs.git
 cd seaweedfs
 
 # Build with FoundationDB support
@@ -424,8 +424,8 @@ export FDB_TRACE_PATH=/tmp/fdb_trace
 ### Getting Help
 
 1. **FoundationDB Documentation**: https://apple.github.io/foundationdb/
-2. **SeaweedFS Community**: https://github.com/seaweedfs/seaweedfs/discussions
-3. **Issue Reporting**: https://github.com/seaweedfs/seaweedfs/issues
+2. **SeaweedFS Community**: https://github.com/Infowatch/seaweedfs/discussions
+3. **Issue Reporting**: https://github.com/Infowatch/seaweedfs/issues
 
 For specific FoundationDB filer store issues, include:
 - FoundationDB version and cluster configuration

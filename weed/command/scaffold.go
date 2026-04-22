@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 
-	"github.com/seaweedfs/seaweedfs/weed/command/scaffold"
+	"github.com/Infowatch/seaweedfs/weed/command/scaffold"
 )
 
 func init() {

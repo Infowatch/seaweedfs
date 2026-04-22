@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
-	"github.com/seaweedfs/seaweedfs/weed/s3api"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3_constants"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/s3api"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3_constants"
 )
 
 // MaybeDecryptReader wraps reader with SSE decryption if the entry has encrypted chunks.

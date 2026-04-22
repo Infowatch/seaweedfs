@@ -13,10 +13,10 @@ import (
 
 	"github.com/IBM/sarama"
 	"github.com/linkedin/goavro/v2"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/config"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/metrics"
-	pb "github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema/pb"
-	"github.com/seaweedfs/seaweedfs/test/kafka/kafka-client-loadtest/internal/tracker"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/config"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/metrics"
+	pb "github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/schema/pb"
+	"github.com/Infowatch/seaweedfs/test/kafka/kafka-client-loadtest/internal/tracker"
 	"google.golang.org/protobuf/proto"
 )
 

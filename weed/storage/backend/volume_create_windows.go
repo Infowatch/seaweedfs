@@ -3,11 +3,11 @@
 package backend
 
 import (
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend/memory_map"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend/memory_map"
 	"golang.org/x/sys/windows"
 
-	"github.com/seaweedfs/seaweedfs/weed/glog"
-	"github.com/seaweedfs/seaweedfs/weed/storage/backend/memory_map/os_overloads"
+	"github.com/Infowatch/seaweedfs/weed/glog"
+	"github.com/Infowatch/seaweedfs/weed/storage/backend/memory_map/os_overloads"
 )
 
 func CreateVolumeFile(fileName string, preallocate int64, memoryMapSizeMB uint32) (BackendStorageFile, error) {

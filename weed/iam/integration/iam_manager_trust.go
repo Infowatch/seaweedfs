@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/seaweedfs/seaweedfs/weed/iam/policy"
-	"github.com/seaweedfs/seaweedfs/weed/iam/utils"
+	"github.com/Infowatch/seaweedfs/weed/iam/policy"
+	"github.com/Infowatch/seaweedfs/weed/iam/utils"
 )
 
 // ValidateTrustPolicyForPrincipal validates if a principal is allowed to assume a role

@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/pb/worker_pb"
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/pb/worker_pb"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 // BaseTask provides common task functionality

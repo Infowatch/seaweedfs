@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/storage/types"
+	"github.com/Infowatch/seaweedfs/weed/storage/types"
 	"github.com/stretchr/testify/assert"
 )
 

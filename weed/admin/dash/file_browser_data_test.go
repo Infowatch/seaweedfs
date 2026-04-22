@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/util"
+	"github.com/Infowatch/seaweedfs/weed/util"
 )
 
 // TestGenerateBreadcrumbs tests the actual breadcrumb generation function

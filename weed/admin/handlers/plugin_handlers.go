@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	adminplugin "github.com/seaweedfs/seaweedfs/weed/admin/plugin"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/app"
-	"github.com/seaweedfs/seaweedfs/weed/admin/view/layout"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	adminplugin "github.com/Infowatch/seaweedfs/weed/admin/plugin"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/app"
+	"github.com/Infowatch/seaweedfs/weed/admin/view/layout"
 )
 
 // PluginHandlers handles plugin UI pages.

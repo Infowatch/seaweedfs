@@ -7,8 +7,8 @@ import (
 	"math/rand/v2"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/filer"
-	"github.com/seaweedfs/seaweedfs/weed/pb/filer_pb"
+	"github.com/Infowatch/seaweedfs/weed/filer"
+	"github.com/Infowatch/seaweedfs/weed/pb/filer_pb"
 )
 
 func TestShouldMergeChunks_NoChunks(t *testing.T) {

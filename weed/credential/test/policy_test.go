@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/seaweedfs/seaweedfs/weed/credential"
-	"github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/policy_engine"
+	"github.com/Infowatch/seaweedfs/weed/credential"
+	"github.com/Infowatch/seaweedfs/weed/credential/memory"
+	"github.com/Infowatch/seaweedfs/weed/s3api/policy_engine"
 
 	// Import all store implementations to register them
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/filer_etc"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/memory"
-	_ "github.com/seaweedfs/seaweedfs/weed/credential/postgres"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/filer_etc"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/memory"
+	_ "github.com/Infowatch/seaweedfs/weed/credential/postgres"
 )
 
 // TestPolicyManagement tests policy management across all credential stores

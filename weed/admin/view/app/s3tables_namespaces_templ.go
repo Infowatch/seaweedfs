@@ -12,8 +12,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/seaweedfs/seaweedfs/weed/admin/dash"
-	"github.com/seaweedfs/seaweedfs/weed/s3api/s3tables"
+	"github.com/Infowatch/seaweedfs/weed/admin/dash"
+	"github.com/Infowatch/seaweedfs/weed/s3api/s3tables"
 )
 
 func S3TablesNamespaces(data dash.S3TablesNamespacesData) templ.Component {

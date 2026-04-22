@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/seaweedfs/seaweedfs/weed/worker/types"
+	"github.com/Infowatch/seaweedfs/weed/worker/types"
 )
 
 func TestPendingOperations_ConflictDetection(t *testing.T) {
