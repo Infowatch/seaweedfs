@@ -22,6 +22,13 @@ func (v *Volume) readNeedle(n *needle.Needle, readOption *ReadOption, onReadSize
 	v.dataFileAccessLock.RLock()
 	defer v.dataFileAccessLock.RUnlock()
 
+	// По-скольку одновременно могут приходить запросы на модификацию для этого же needle, важно сразу же возвращать
+	// ошибку на верхний уровень, иначе могут возникать непредвиденные ситуации как в PPF-10524,11001
+	// Конкретно в методе doClose: nm, DataBackend становятся nil и в других потоках при обращении к ним возникают паники (nil ptr deref)
+	if v.nm == nil || v.DataBackend == nil {
+		return -1, ErrNotReady
+	}
+
 	nv, ok := v.nm.Get(n.Id)
 	if !ok || nv.Offset.IsZero() {
 		return -1, ErrorNotFound
