@@ -64,7 +64,7 @@ func NewVolume(dirname string, dirIdx string, collection string, id needle.Volum
 	v.needleMapKind = needleMapKind
 	v.ldbTimeout = ldbTimeout
 	e = v.load(true, true, needleMapKind, preallocate)
-	v.startWorker()
+	// v.startWorker() // Отключаем асинхронный воркер, так как запись переведена на синхронный режим
 	return
 }
 

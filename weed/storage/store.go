@@ -382,12 +382,15 @@ func (s *Store) Close() {
 }
 
 func (s *Store) WriteVolumeNeedle(i needle.VolumeId, n *needle.Needle, checkCookie bool, fsync bool) (isUnchanged bool, err error) {
+	if fsync {
+		return false, fmt.Errorf("async write (fsync=true) is disabled to prevent goroutine leaks; use sync path")
+	}
 	if v := s.findVolume(i); v != nil {
 		if v.IsReadOnly() {
 			err = fmt.Errorf("volume %d is read only", i)
 			return
 		}
-		_, _, isUnchanged, err = v.writeNeedle2(n, checkCookie, fsync && s.isStopping)
+		_, _, isUnchanged, err = v.writeNeedle2(n, checkCookie, fsync)
 		return
 	}
 	glog.V(0).Infoln("volume", i, "not found!")
