@@ -68,6 +68,9 @@ func (v *Volume) load(alsoLoadIndex bool, createDatIfMissing bool, needleMapKind
 		if fileSize >= super_block.SuperBlockSize {
 			alreadyHasSuperBlock = true
 		}
+		if err != nil {
+			return fmt.Errorf("cannot open volume data file %s: %w", v.FileName(".dat"), err)
+		}
 		v.DataBackend = backend.NewDiskFile(dataFile)
 	} else {
 		if createDatIfMissing {
