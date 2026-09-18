@@ -64,6 +64,9 @@ func (v *Volume) load(alsoLoadIndex bool, createDatIfMissing bool, needleMapKind
 			dataFile, err = os.Open(v.FileName(".dat"))
 			v.noWriteOrDelete = true
 		}
+		if err != nil {
+			return fmt.Errorf("cannot open volume data file %s: %w", v.FileName(".dat"), err)
+		}
 		v.lastModifiedTsSeconds = uint64(modifiedTime.Unix())
 		if fileSize >= super_block.SuperBlockSize {
 			alreadyHasSuperBlock = true
